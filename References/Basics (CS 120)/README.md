@@ -5,7 +5,7 @@
 - [Topics](#Topics)
   - [General Terminology](#General-terminology)
   - [Variables](#Variables)
-  - [if, else if, else, switch](#if-else--if-else-switch)
+  - [if, else if, else, switch](#if-else-if-else-switch)
   - [Loops](#Loops)
   - [Arrays](#Arrays)
   - [Functions](#Functions)
