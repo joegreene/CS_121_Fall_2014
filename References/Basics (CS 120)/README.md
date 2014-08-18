@@ -9,6 +9,7 @@
   - [Loops](#loops)
   - [Arrays](#arrays)
   - [Functions](#functions)
+- [Sources Used](#source-used)
 
 ### Intro
 This page serves as a refresher on CS 120 content. Note that this does not mean it will 
@@ -340,12 +341,10 @@ Common errors/issues/issues:
 - __Creating functions never used__: Delete unnecessary functions whenever needed or possible
 - __Forgetting to define the body of a function__: Best thing to do is make it right after the prototype is declared.
 
-## Sources:
-http://www.cplusplus.com/doc/tutorial/ 
-
-http://www.tutorialspoint.com/cplusplus/index.htm 
-
-http://stackoverflow.com/ 
+#### Sources Used
+- http://www.cplusplus.com/doc/tutorial/ 
+- http://www.tutorialspoint.com/cplusplus/index.htm 
+- http://stackoverflow.com/ 
 
 -------------------------------------------------------------------------------
 
