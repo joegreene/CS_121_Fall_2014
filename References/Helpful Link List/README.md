@@ -1,13 +1,13 @@
 # Helpful Website List
 ## Topics
   - [Intro](#intro)
-    - [Documentation Help and Style](#documentation-help-and-style)
+    - [Documentation Help, Techniques, and Style](#documentation-help-techniques-and-style)
     - [Compilers and IDEs](#compilers-and-ides)
     - [General FAQ](#general-faq)
     - [Text Document Viewers](#text-document-viewers)
     - [Reference Websites](#reference-websites)
     - [Tutorial Websites](#tutorial-websites)
-    - [Neat Websites for Fun (and CPSC 131 Prep)](#neat-websites-for-fun-(and-cpsc-131-prep))
+    - [Neat Websites for Fun (and CPSC 131 Prep)](#neat-websites-for-fun-and-cpsc-131-prep)
 
 ### Intro
 Below is a list of websites I've either found useful or have been recommended to me while taking the CPSC 121 class (and CPSC 131 class).
