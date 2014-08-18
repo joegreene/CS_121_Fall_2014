@@ -346,3 +346,9 @@ http://www.cplusplus.com/doc/tutorial/
 http://www.tutorialspoint.com/cplusplus/index.htm 
 
 http://stackoverflow.com/ 
+
+-------------------------------------------------------------------------------
+
+Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
+Released under [The MIT License] (http://opensource.org/licenses/MIT)  
+Project located at <https://github.com/joegreene/Spring-2014-CS-Lab--SI-/>
