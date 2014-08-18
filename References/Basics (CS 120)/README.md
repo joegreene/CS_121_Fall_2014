@@ -57,9 +57,9 @@ Commonly used data types:
 - `int`: Integer (non floating-point)
 - `string`: Sequence of characters (NOTE: This is not a primitive type (noted by requiring the header `string`))
 
-Byte-sizes and data ranges vary per standard. For Visual Studio (2013) you can check [here](#http://msdn.microsoft.com/en-us/library/cc953fe1.aspx) for more information.
+Byte-sizes and data ranges vary per standard. For Visual Studio (2013) you can check [here](http://msdn.microsoft.com/en-us/library/cc953fe1.aspx) for more information.
 
-For a better distinction on `double` and `float`, click [here](#http://stackoverflow.com/questions/2386772/difference-between-float-and-double).
+For a better distinction on `double` and `float`, click [here](http://stackoverflow.com/questions/2386772/difference-between-float-and-double).
 
 Terms tied to variables:
 - __Constant Variable__: A variable that does not and cannot change throughout the program (declared as `const`)
@@ -71,11 +71,11 @@ Terms tied to variables:
 
 Common errors/issues:
 - __Case sensitivity (identifiers): Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)
-- __Disregarding naming schemes__: Look at [this page](#) for naming schemes (e.g. invalid characters for identifiers)
+- __Disregarding naming schemes__: Look at [this page](http://msdn.microsoft.com/en-us/library/565w213d.aspx) for naming schemes (e.g. invalid characters for identifiers)
 - __Using an undeclared variable__: Avoid this by keeping track of what variables you need and where you place them
 - __Using an uninitialized variable__: Best way to avoid this is to assign a value to a variable as soon as it is declared
 
-For more information regarding variables, best to look at [this page](#http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm).
+For more information regarding variables, best to look at [this page](http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm).
 
 ##### if, else if, else, switch
 Selection statements, or `if`, `else if`, `else`, and `switch`, help control the flow of a program. Noting that programs work top to bottom, one line at a time, selection 
@@ -200,7 +200,7 @@ Terms tied to loop structures:
 - __Post-test__: To perform the conditional check AFTER running the loop (do-while)
 
 Common errors/issues:
-- __Off-by-one Error__: When miscounting looping by one (more info [here](#http://en.wikipedia.org/wiki/Off-by-one_error)).
+- __Off-by-one Error__: When miscounting looping by one (more info [here](http://en.wikipedia.org/wiki/Off-by-one_error)).
 
 ##### Arrays
 Arrays help store variables of the same type. The ones we've worked with so far have a static (unchanging/fixed) size. 
@@ -214,23 +214,25 @@ Examples of array declarations/initializations:
 
 Example (parallel arrays):
 ```C++
-  const int NUM_MOVIES = 5;              //constant variable to handle the number of movies
-  std::string movie_titles[NUM_MOVIES];  //list of movie titles
-  double movie_scores[NUM_MOVIES];       //list of movie scores
-  bool movie_recommend[NUM_MOVIES];      //boolean array to say if a movie is recommended or not
+  const int MAX_MOVIE_COUNT = 5;              //constant variable to handle the number of movies
+  int movie_count = 0;                   //counter for number of movies
+  std::string movie_titles[MAX_MOVIE_COUNT];  //list of movie titles
+  double movie_scores[MAX_MOVIE_COUNT];       //list of movie scores
+  bool movie_recommend[MAX_MOVIE_COUNT];      //boolean array to say if a movie is recommended or not
   
   movie_titles[0] = "Spaceballs";        //Assign first movie title, "Spaceballs"
   movie_scores[0] = 100.0;               //Assign first movie score, 100.0 (I like this movie)
   movie_recommend[0] = true;             //Recommend the movie (true)
+  movie_count++;                         //Increment counter
   
-  //other movie assignments go here
+  //other movie assignments go here, incrementing counter afterwards
   
   //Movie print header
   std::cout << "MOVIE LIST:\n";
   std::cout << "-----------\n";
   
   //Print each movie title
-  for(int i = 0; i < NUM_MOVIES; ++i)
+  for(int i = 0; i < movie_count; ++i)
   {
     std::cout << "Movie title: " << movie_titles[i]
       << "\nScore: " << movie_scores[i]
@@ -257,10 +259,10 @@ Output:
   ...
 ```
 
-Another way to compact the loop is by means of the [conditional operator](#http://www.cplusplus.com/forum/articles/14631/):
+Another way to compact the loop is by means of the [conditional operator](http://www.cplusplus.com/forum/articles/14631/):
 ```C++
   //Print each movie title
-  for(int i = 0; i < NUM_MOVIES; ++i)
+  for(int i = 0; i < MAX_MOVIE_COUNT; ++i)
   {
     std::cout << "Movie title: " << movie_titles[i]
       << "\nScore: " << movie_scores[i]
@@ -268,7 +270,7 @@ Another way to compact the loop is by means of the [conditional operator](#http:
   }
 ```
 
-It might look more confusing, but it's there if you want to use it. Helps best with small statements.
+It might look more confusing at first and it's there if you want to use it. Helps best with small statements.
 
 Terms tied to arrays:
 - __Index__: Position in the array (started from 0 and goes to n-1, where n is the length of the array)

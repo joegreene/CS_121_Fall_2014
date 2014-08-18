@@ -65,7 +65,7 @@ Popular text viewers:
 - http://www.gnu.org/software/emacs/ - Rivals Vim. I'm not sure if I recommend this one because it's more time-demanding than Vim, but still worth a shot (especially if you're working on a linux distro).
 - http://macromates.com/ - I've never used this myself, but I heard it's a great text editor for Mac OS X
 
-Also as a side note: When I say Emacs rivals Vim, [I mean it](#http://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim).
+Also as a side note: When I say Emacs rivals Vim, [I mean it](http://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim).
 
 #### Tutorial Websites
 - http://www.cprogramming.com/tutorial/c++-tutorial.html - I don't use this as much as the others, but still helps
