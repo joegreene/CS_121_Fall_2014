@@ -1,14 +1,14 @@
 # Basics
 
 ## Contents
-- [Intro](#Intro)
-- [Topics](#Topics)
-  - [General Terminology](#General-terminology)
-  - [Variables](#Variables)
+- [Intro](#intro)
+- [Topics](#topics)
+  - [General Terminology](#general-terminology)
+  - [Variables](#variables)
   - [if, else if, else, switch](#if-else-if-else-switch)
-  - [Loops](#Loops)
-  - [Arrays](#Arrays)
-  - [Functions](#Functions)
+  - [Loops](#loops)
+  - [Arrays](#arrays)
+  - [Functions](#functions)
 
 ### Intro
 This page serves as a refresher on CS 120 content. Note that this does not mean it will 
@@ -196,7 +196,7 @@ Terms tied to loop structures:
 - __Iterate/Iteration__: Each repeat of a loop (e.g. if a while loop runs for four times, there are 4 iterations)
 - __Iterator__: A variable used to count the number of iterations in a loop
 - __Pre-test__: To perform the conditional check BEFORE running the loop (for and while)
-- __Post-test: To perform the conditional check AFTER running the loop (do-while)
+- __Post-test__: To perform the conditional check AFTER running the loop (do-while)
 
 Common errors/issues:
 - __Off-by-one Error__: When miscounting looping by one (more info [here](#http://en.wikipedia.org/wiki/Off-by-one_error)).
@@ -341,6 +341,8 @@ Common errors/issues/issues:
 - __Forgetting to define the body of a function__: Best thing to do is make it right after the prototype is declared.
 
 ## Sources:
-http://www.cplusplus.com/doc/tutorial/
-http://www.tutorialspoint.com/cplusplus/index.htm
-http://stackoverflow.com/
+http://www.cplusplus.com/doc/tutorial/ 
+
+http://www.tutorialspoint.com/cplusplus/index.htm 
+
+http://stackoverflow.com/ 
