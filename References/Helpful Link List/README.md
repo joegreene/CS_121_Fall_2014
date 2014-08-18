@@ -1,6 +1,7 @@
 # Helpful Website List
 ## Topics
   - [Intro](#intro)
+    - [Apps for Android and Apple](#apps-for-android-and-apple)
     - [Compilers and IDEs](#compilers-and-ides)
     - [Documentation Help, Techniques, and Style](#documentation-help-techniques-and-style)
     - [General FAQ](#general-faq)
@@ -13,6 +14,22 @@
 Below is a list of websites I've either found useful or have been recommended to me while taking the CPSC 121 class (and CPSC 131 class).
 
 If you know of any other websites that may benefit the class, feel free to let me know so I may add them to this list. 
+
+#### Apps for Android and Apple
+I own an Android phone and know of a few applications that might help during the semester. I don't own an iPhone or Apple products so I can't 
+help others there.
+
+NOTE: I wouldn't recommend trying to program on a phone. More of a personal preference thing, but I much prefer a physical keyboard to a touch-screen keyboard.
+
+All the applications below are free (and initially intended to be free).
+
+Android:
+- Base Converter Plus: https://play.google.com/store/apps/details?id=org.danieldam.baseconverterplus&hl=en - Helps for later level classes (and Math 270A if you need to take that)
+- C++, Java Programs & Reference (shows up as Aiuto): https://play.google.com/store/apps/details?id=in.nishitp.aiuto&hl=en - I use this a lot for reference
+- DroidEdit (free code editor): https://play.google.com/store/apps/details?id=com.aor.droidedit&hl=en - I don't use this as much because my screen is small (Samsung Galaxy S3).
+
+Apple:
+- TBD (if anyone has any recommendations, let me know please; preferably they should be free)
 
 #### Compilers and IDEs
 - http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx - Visual Studio (the main IDE used in the class; windows-only); I use this primarily
@@ -46,7 +63,7 @@ Also: Always use two to four spaces for indentation instead of tabs! Tabs only s
 
 #### Neat Websites for Fun (and CPSC 131 Prep)
 - http://opendatastructures.org/ - Great reference for the data structures class (highly recommend taking a look, even if not taking the course)
-- http://www.sorting-algorithms.com/ - Neat site for looking at how 
+- http://www.sorting-algorithms.com/ - Neat site for looking at how some sorting algorithms work
 - http://panthema.net/2013/sound-of-sorting/ - Fun program to mess around with when bored. Helps understand efficiency in sorting algorithms. Remember: Bogo-sort is the best kind of sort.
   - NOTE: The program is standalone, so no need to worry about installing it or anything. Download the win32 binary for windows computers, and linux binary for linux-based computers.
   - NOTE 2: If you don't wish to download it (you're missing out if you don't), you can see a demo of it on youtube here (WARNING: Might be loud): https://www.youtube.com/watch?v=kPRA0W1kECg
