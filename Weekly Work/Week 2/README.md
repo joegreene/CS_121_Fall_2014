@@ -1,4 +1,4 @@
-# Week 1
+# Week 2
 
 ## Contents
 - [Intro](#intro)
@@ -7,7 +7,7 @@
   - [Activity 2](#activity-2)
   
 ### Intro
-This hosts the activities we worked on during the SI class on 8/29/14.
+This hosts the activities we worked on during the SI class on 9/5/14.
 
 ### Topics
 
