@@ -30,6 +30,7 @@ Most is covered in the following topics, but here is a list of general terminolo
 - __Statement__: Individual instructions of a program, e.g. variable declarations and expressions
 - __Headers__: Libraries included into the program (e.g. "iostream" in "#include <iostream>")
 - __Delimiter__: Sequence of one or more characters to determine a boundary (e.g. '\n' in `cin.ignore(1000, '\n');`)
+- __Directory__: A specific folder (e.g. "C:\Users\Administrator\Desktop" leads to the user named Administrator's desktop on a Windows 7 computer)
 
 More will be added if recognized/noted.
 

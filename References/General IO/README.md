@@ -27,7 +27,7 @@ I won't go too in-depth with these topics, and will only include information tha
 is new (and useful).
 
 #### Console IO
-You need to know how to use `cin` and `cout`. That's non-negotiable.
+You need to know how to use `cin` and `cout`. That's non-negotiable. These require the library `iostream` (input/output stream).
 
 ##### Input: cin
 `cin`, or console input, helps read information given by the console input stream.
@@ -68,7 +68,7 @@ Note that with `ignore` you don't really need to have the `numeric_limits<int>::
 assuming the user does not type more than 1000 characters in the input stream (`numeric_limits` just ensures that you skip all input on the line 
 until you hit a new line, or `\n`).
 
-One example of applying this method:
+One example of applying this method (using a do-while loop to prove full usefulness):
 ```C++
   bool valid_input = false; //assume false at start to remove unnecessary assignments in do-while loop
   char input = '\0';        //default initialization
@@ -136,18 +136,90 @@ When I say "text file", I'm talking about files such as `.txt` and source files 
 crazy text (for instance, try opening an image using a text editing program).
 
 Working with text files is fairly easy. After including the required library or libraries, the steps are as follows:
-1. Open the file
-2. Check if it is open and if so...
-  1. Do whatever you need
-  2. Close the file
-3. If the file was not successfully opened, produce an error warning
 
-These steps can be easily translated to C++ (using a do-while loop to prove full usefulness):
+1. Open the file
+2. If file was opened successfully
+  1. Do whatever you need
+  2. Close the file (possible program hangs or corruption of file if step is skipped)
+3. Else (the file was not successfully opened), produce an error message
+
+These steps can be easily translated to C++:
 ```C++
-  TBD
+  #include <iostream> //by now you should know what this is
+  #include <fstream>  //file stream library
+  #include <string>   //library to use strings
+  
+  using namespace std;
+  
+  string read_file(string fn);                //custom function that reads files given a file name string
+  void write_to_file(string fn, string msg);  //"                  " writes to a file given a file name and message
+  
+  int main()
+  {
+    string file_name = "test.txt";            //set up file name for reading from initial file
+    string message = read_file(file_name);    //call the read_file function
+    
+    
+    if(message != "NULL")                     //if read_file didn't produce an error
+    {
+      string new_file_name = "new_test.txt";  //set up file name for outputting message
+      write_to_file(new_file_name, message);  //call the write_to_file function
+    }
+    
+    return 0;
+  }
+
+  string read_file(string fn)
+  {
+    ifstream input_file;            //input file object to be used
+    input_file.open(fn.c_str());    //open (argument is a c-string, not string (distinction will be made later)), step 1
+    
+    string message = "";            //message to write to
+    
+    if(input_file.is_open())        //if the input file was opened successfully, step 2
+    {
+      getline(input_file, message); //grab first line of input file, step 2i
+      input_file.close();           //close file, step 2ii
+    }
+    else
+    {
+      cout << "ERROR: File could not be opened to extract data.\n"; //error message (step 3)
+      message = "NULL";             //set message to NULL to skip writing to file later on
+    }
+    
+    return message; //return new message to be outputted
+  }
+  
+  void write_to_file(string fn, string msg)
+  {
+    ofstream output_file;          //output file object to be used
+    output_file.open(fn.c_str());  //open (argument is a c-string, not string (distinction will be made later)), step 1
+    
+    if(output_file.is_open())      //if the output file was successfully opened or made
+    {
+      output_file << msg;          //write string to output file
+      output_file.close();         //close file, step 2ii
+    }
+    else
+    {
+      cout << "ERROR: Issue when writing to file.\n";
+    }
+  }
 ```
 
-if you only plan on outputting (writing) to a file, use 
+If you don't understand all of the above, that's okay. The most important parts to focus on are the bodies of the two functions `read_file` and `write_to_file`. Forming them into functions 
+just makes typing the examples a lot easier for myself. It's a program that reads the first line of a text file (named "test.txt") and outputs it to another file (named "new_test.txt"), 
+all within the executable's directory.
+
+Note that, more often than not, it is not required to check if the file is open when outputting to a file. It's a good habit to have, although the only times 
+opening a file fails when outputting to a file is when there isn't enough disk space or the destination to write to is unreachable. add info asdlkf;smf
+
+For file input:
+```C++
+
+```
+
+If you only plan on outputting (writing) to a file, use the library `ofstream`, and `ifstream` if planning on reading info from a file.
 
 -------------------------------------------------------------------------------
 
