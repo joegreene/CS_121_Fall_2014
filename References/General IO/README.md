@@ -59,9 +59,9 @@ Best way to do that (if you're using the extraction operator) is by using `cin.f
 
 1. Get user input
 2. If cin.fail()
-..1. Fix the input stream (i.e. call `cin.clear()`)
-..2. Clear the buffer with `cin.ignore(std::numeric_limits<int>::max(), '\n')`)
-..3. Alert the user that an error has occurred when trying to grab their input
+⋅⋅1. Fix the input stream (i.e. call `cin.clear()`)
+⋅⋅2. Clear the buffer with `cin.ignore(std::numeric_limits<int>::max(), '\n')`)
+⋅⋅3. Alert the user that an error has occurred when trying to grab their input
 3. Else, proceed as normal (or add other conditional checks here)
 
 Note that with `ignore` you don't really need to have the `numeric_limits<int>::max()` part. A big number like `1000` works perfectly fine, 
@@ -138,8 +138,8 @@ crazy text (for instance, try opening an image using a text editing program).
 Working with text files is fairly easy. After including the required library or libraries, the steps are as follows:
 1. Open the file
 2. Check if it is open and if so...
-..1. Do whatever you need
-..2. Close the file
+⋅⋅1. Do whatever you need
+⋅⋅2. Close the file
 3. If the file was not successfully opened, produce an error warning
 
 These steps can be easily translated to C++ (using a do-while loop to prove full usefulness):
