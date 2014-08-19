@@ -27,11 +27,11 @@ Each topic provides common terminology and errors associated per topic.
 
 #### General Terminology
 Most is covered in the following topics, but here is a list of general terminology you may hear:
-- __Statement__: Individual instructions of a program, e.g. variable declarations and expressions
-- __Headers__: Libraries included into the program (e.g. "iostream" in "#include <iostream>")
 - __Delimiter__: Sequence of one or more characters to determine a boundary (e.g. '\n' in `cin.ignore(1000, '\n');`)
 - __Directory__: A specific folder (e.g. "C:\Users\Administrator\Desktop" leads to the user named Administrator's desktop on a Windows 7 computer)
-
+- __Headers__: Libraries included into the program (e.g. "iostream" in "#include <iostream>")
+- __Keywords__: Words reserved by the language (e.g. int, double, char, do, while, return)
+- __Statement__: Individual instructions of a program, e.g. variable declarations and expressions
 More will be added if recognized/noted.
 
 #### Escape Characters
@@ -77,7 +77,7 @@ Terms tied to variables:
 - __Declaration__: To create a variable
 - __Initialize__: To assign a variable a value
 - __Identifier__: Name associated with a variable
-- __Primitive Types__: Built-in data types not requiring external libraries
+- __Primitive Types__: A data type that is predefined by the language (and signified by a keyword)
 
 Common errors/issues:
 - __Case sensitivity (identifiers)__: Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)

@@ -4,7 +4,7 @@
 - [Intro](#intro)
 - [Topics](#topics)
   - [General Tips](#general-tips)
-  - [g++](#g++)
+  - [g++](#g)
     - [Console Setup](#console-setup)
   - [Visual Studio Tips](#visual-studio-tips)
     - [Change Indentation and Tab Sizes](#change-indentation-and-tab-sizes)
