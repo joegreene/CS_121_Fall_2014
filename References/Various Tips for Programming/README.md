@@ -4,19 +4,19 @@
 - [Intro](#intro)
 - [Topics](#topics)
   - [General Tips](#general-tips)
+  - [g++](#g++)
+    - [Console Setup](#console-setup)
   - [Visual Studio Tips](#visual-studio-tips)
-    -[](#)
-    -[](#)
+    - [Change Indentation and Tab Sizes](#change-indentation-and-tab-sizes)
+    - [Change the Theme and Look](#change-the-theme-and-look)
   - [Using OS-Specific Code](#using-os-specific-code)
 
 ### Intro
-This page hosts various tips I wanted to let you guys know for the class. They aren't in any necessary order, and 
-I couldn't think of where else to put these.
+This page hosts various tips I wanted to let you guys know for the class. They aren't in order, and 
+I couldn't think of where else to put these. More information will be added to this page during the semester.
 
 If any one has any ideas to add onto this page, let me know please. It'd be really handy to have someone give me information 
 on other IDEs and compilers such as XCode, Code::Blocks, and g++.
-
-One major rule to know: There are always different ways to write a program.
 
 ### Topics
 Helpful information below.
@@ -29,6 +29,22 @@ builds off of the previous topic).
 - Errors are frequent and computers are stingy. 
 - Computer science is about helping people interact with computers. Without software engineers and computer scientists, using computers would be 
 more cumbersome than useful.
+- There are many different ways to write a program and solutions to solving issues. 
+
+#### g++
+Various tips for when working with the g++ compiler. I don't have much experience with this compiler, nor will I be making it a focus of mine. That is because the school 
+primarily works with Visual Studio (therefore, I've to put most of my efforts into that).
+
+##### Console Setup
+If you're on a Linux distro: Your console output is perfect already. Be happy, and use the `apt-get` command, like [here](http://askubuntu.com/questions/348654/how-to-install-g-compiler).
+
+If you're on Mac OS X: Check [this](http://stackoverflow.com/questions/2122425/how-do-i-install-g-on-macos-x) out.
+
+If you're on a Windows-based computer: You might want to use a different console other than command prompt. Here are some recommendations:
+- Windows Powershell (nice in general and I use it occasionally)
+- Other lists: [here](http://lifehacker.com/5834755/how-can-i-make-the-windows-command-prompt-better) and [here](http://www.guidingtech.com/23974/command-prompt-alternatives/).
+
+Afterwards, check out a guide like this: http://www.cprogramming.com/g++.html
 
 #### Visual Studio Tips
 Various tips for when working with Visual Studio. This is mainly geared for 2013, but some (or all) parts may apply to previous versions.
@@ -41,13 +57,11 @@ Here's a page describing the steps: http://msdn.microsoft.com/en-us/library/ms16
 
 Here's a page with recommendations on tab/indent sizes: http://blogs.msdn.com/b/vseditor/archive/2009/03/19/how-do-you-use-tab-size-and-indent-size.aspx
 
-Personally, I work work tab and indent size 2, and block indentation as I'm most comfortable with those settings. Play around with it all you want, but 
-keep in mind that your tab and indent size should be equal.
+Personally, I work work tab and indent size 2, and block indentation as I'm most comfortable with these settings. Play around with it all you want, but 
+keep in mind that your tab and indent size should be equal (doesn't make sense otherwise).
 
-##### Change the Theme
+##### Change the Theme and Look
 Check out this link: http://msdn.microsoft.com/en-us/library/hh923906.aspx
-
-#####
 
 #### Using OS-Specific Code
 Some statements, such as `system("pause")` which calls the command prompt to pause input (gives that fancy "Press any key to continue..." prompt), are 
