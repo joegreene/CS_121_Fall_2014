@@ -37,6 +37,7 @@ It's certainly not as nice as typing a single line, but it's still an alternativ
 More info on this [here](http://www.cplusplus.com/forum/windows/55426/).
 
 If you have any worries about other pieces of code that may seem OS-specific, google search is always there to help.
+
 -------------------------------------------------------------------------------
 
 Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
