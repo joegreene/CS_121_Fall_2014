@@ -1,9 +1,9 @@
 # Basics
-
 ## Contents
 - [Intro](#intro)
 - [Topics](#topics)
   - [General Terminology](#general-terminology)
+  - [Escape Characters](#escape-characters)
   - [Variables](#variables)
   - [if, else if, else, switch](#if-else-if-else-switch)
   - [Loops](#loops)
@@ -22,17 +22,26 @@ More may be added on this page if deemed necessary. If there are any errors or i
 NOTE: I realize some of you guys might have not worked on functions in CS 120. If you have, however, 
 the resource is within the topic list. Otherwise, you may want to head over to a tutorial site for help.
 
-#### Topics
+### Topics
 Each topic provides common terminology and errors associated per topic.
 
-##### General Terminology
+#### General Terminology
 Most is covered in the following topics, but here is a list of general terminology you may hear:
 - __Statement__: Individual instructions of a program, e.g. variable declarations and expressions
 - __Headers__: Libraries included into the program (e.g. "iostream" in "#include <iostream>")
+- __Delimiter__: Sequence of one or more characters to determine a boundary (e.g. '\n' in `cin.ignore(1000, '\n');`)
 
 More will be added if recognized/noted.
 
-##### Variables
+#### Escape Characters
+Always handy to know by hand. The most commonly used ones are `\n`, `\\`, `\"`, `\'` and `\t`.
+
+Here's a list of them: http://msdn.microsoft.com/en-us/library/6aw8xdf2.aspx
+
+Keep in mind that some are OS-specific (that is, they only work on specific operating systems). I don't remember 
+where the list is located for that, but if anyone does know then please let me know so I may add it here.
+
+#### Variables
 Variables are a way to store values into memory.
 
 Form of a variable (declaration, initialization, and mixed)
@@ -70,14 +79,14 @@ Terms tied to variables:
 - __Primitive Types__: Built-in data types not requiring external libraries
 
 Common errors/issues:
-- __Case sensitivity (identifiers): Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)
+- __Case sensitivity (identifiers)__: Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)
 - __Disregarding naming schemes__: Look at [this page](http://msdn.microsoft.com/en-us/library/565w213d.aspx) for naming schemes (e.g. invalid characters for identifiers)
 - __Using an undeclared variable__: Avoid this by keeping track of what variables you need and where you place them
 - __Using an uninitialized variable__: Best way to avoid this is to assign a value to a variable as soon as it is declared
 
 For more information regarding variables, best to look at [this page](http://www.tutorialspoint.com/cplusplus/cpp_data_types.htm).
 
-##### if, else if, else, switch
+#### if, else if, else, switch
 Selection statements, or `if`, `else if`, `else`, and `switch`, help control the flow of a program. Noting that programs work top to bottom, one line at a time, selection 
 statements help jump to sections of the program if required.
 
@@ -159,7 +168,7 @@ Common errors/issues:
 - __Trying to Use `switch` Statements for Ranged Data__: `switch` statements are for specific values. If you need to work with ranges of values, 
 use if/else/else if chains instead.
 
-##### Loops
+#### Loops
 Iterative statements, or loops, help repeat a statement list. They repeat until their conditional expression returns false (or zero).
 
 There are three types we work with: `for`, `while`, and `do-while`.
@@ -202,7 +211,7 @@ Terms tied to loop structures:
 Common errors/issues:
 - __Off-by-one Error__: When miscounting looping by one (more info [here](http://en.wikipedia.org/wiki/Off-by-one_error)).
 
-##### Arrays
+#### Arrays
 Arrays help store variables of the same type. The ones we've worked with so far have a static (unchanging/fixed) size. 
 
 Examples of array declarations/initializations:
@@ -284,7 +293,7 @@ Two ways to avoid miscounting indices is to either remember to start from 0, or 
 array length be n + 1 (where n is the length). The latter is more confusing to other programmers, and is prone to both 
 errors (uninitialized index position) and a waste of space (one extra space required).
 
-##### Functions
+#### Functions
 A way to make your code look a lot nicer, possibly remove chunks of repeated code, and overall enforce 
 reusability. 
 

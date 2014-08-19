@@ -1,19 +1,22 @@
 # Helpful Website List
-## Topics
-  - [Intro](#intro)
-    - [Apps for Android and Apple](#apps-for-android-and-apple)
-    - [Compilers and IDEs](#compilers-and-ides)
-    - [Documentation Help, Techniques, and Style](#documentation-help-techniques-and-style)
-    - [General FAQ](#general-faq)
-    - [Neat Websites for Fun (and CPSC 131 Prep)](#neat-websites-for-fun-and-cpsc-131-prep)
-    - [Reference Websites](#reference-websites)
-    - [Text Document Viewers](#text-document-viewers)
-    - [Tutorial Websites](#tutorial-websites)
+## Contents
+- [Intro](#intro)
+- [Topics](#topics)
+  - [Apps for Android and Apple](#apps-for-android-and-apple)
+  - [Compilers and IDEs](#compilers-and-ides)
+  - [Documentation Help, Techniques, and Style](#documentation-help-techniques-and-style)
+  - [General FAQ](#general-faq)
+  - [Neat Websites for Fun (and CPSC 131 Prep)](#neat-websites-for-fun-and-cpsc-131-prep)
+  - [Reference Websites](#reference-websites)
+  - [Text Document Viewers](#text-document-viewers)
+  - [Tutorial Websites](#tutorial-websites)
 
 ### Intro
 Below is a list of websites I've either found useful or have been recommended to me while taking the CPSC 121 class (and CPSC 131 class).
 
 If you know of any other websites that may benefit the class, feel free to let me know so I may add them to this list. 
+
+### Topics
 
 #### Apps for Android and Apple
 I own an Android phone and know of a few applications that might help during the semester. I don't own an iPhone or Apple products so I can't 
@@ -23,12 +26,12 @@ NOTE: I wouldn't recommend trying to program on a phone. More of a personal pref
 
 All the applications below are free (and initially intended to be free).
 
-Android:
+__Android__:
 - Base Converter Plus: https://play.google.com/store/apps/details?id=org.danieldam.baseconverterplus&hl=en - Helps for later level classes (and Math 270A if you need to take that)
 - C++, Java Programs & Reference (shows up as Aiuto): https://play.google.com/store/apps/details?id=in.nishitp.aiuto&hl=en - I use this a lot for reference
 - DroidEdit (free code editor): https://play.google.com/store/apps/details?id=com.aor.droidedit&hl=en - I don't use this as much because my screen is small (Samsung Galaxy S3).
 
-Apple:
+__Apple__:
 - TBD (if anyone has any recommendations, let me know please; preferably they should be free)
 
 #### Compilers and IDEs
@@ -55,7 +58,7 @@ Although there are plenty of links to help with this: Best thing to do with code
 Normally it's a good idea to pick a few ideas from other programmers, and build your own technique from there. Stick with the most commonly used programming styles and develop 
 a consistent style from there. 
 
-Also: Always use two to four spaces for indentation instead of tabs! Tabs only serve to make your code a nightmare (that is, if you look at it in other text document viewers).
+Also: __Always__ use two to four spaces for indentation instead of tabs! Tabs only serve to make your code a nightmare (that is, if you look at it in other text editors).
 
 #### General FAQ
 - http://stackoverflow.com/ - website with plenty of helpful questions/answers
@@ -76,7 +79,7 @@ Also: Always use two to four spaces for indentation instead of tabs! Tabs only s
 #### Text Document Viewers
 If you're on a Windows-based system: Ditch notepad and wordpad. They'll only make your life worse, especially if you're editing code.
 
-Popular text viewers:
+__Popular text viewers__:
 - http://notepad-plus-plus.org/ - HIGHLY RECOMMENDED! I use this for typing all my code when I'm outside Visual Studio or any IDE. Great all-purpose text editor for Windows-based systems.
 - http://www.vim.org/download.php - Another recommended text editor. It's console-based, so it might take time getting used to, but from what I heard it pays off in the long run. Supports many operating systems.
 - http://www.gnu.org/software/emacs/ - Rivals Vim. I'm not sure if I recommend this one because it's more time-demanding than Vim, but still worth a shot (especially if you're working on a linux distro).
