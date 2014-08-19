@@ -56,11 +56,12 @@ and "cin and strings". `stringstream` is useful, although it won't be used that 
 One question a lot of people have is "How do I recover from erroneous input, such as inputting a string when there's supposed to be an integer?".
 
 Best way to do that (if you're using the extraction operator) is by using `cin.fail()`. The (typical) order of operation is as follows:
+
 1. Get user input
 2. If cin.fail()
-  a. Fix the input stream (i.e. call `cin.clear()`)
-  b. Clear the buffer with `cin.ignore(std::numeric_limits<int>::max(), '\n')`)
-  c. Alert the user that an error has occurred when trying to grab their input
+..1. Fix the input stream (i.e. call `cin.clear()`)
+..2. Clear the buffer with `cin.ignore(std::numeric_limits<int>::max(), '\n')`)
+..3. Alert the user that an error has occurred when trying to grab their input
 3. Else, proceed as normal (or add other conditional checks here)
 
 Note that with `ignore` you don't really need to have the `numeric_limits<int>::max()` part. A big number like `1000` works perfectly fine, 
@@ -79,9 +80,9 @@ One example of applying this method:
     
     if(cin.fail())                             //if there was an error, step 2
     {
-      cin.clear();                             //clear stream, step 2a
-      cin.ignore(1000, '\n');                  //ignore 1000 characters or until delimiter '\n' is reached, step 2b
-      cout << "Invalid input.\n";              //provide error message, step 2c
+      cin.clear();                             //clear stream, step 2i
+      cin.ignore(1000, '\n');                  //ignore 1000 characters or until delimiter '\n' is reached, step 2ii
+      cout << "Invalid input.\n";              //provide error message, step 2iii
     }
     else if (!isalpha(input))                  //if the input is not an alphabetical letter
     {
@@ -137,8 +138,8 @@ crazy text (for instance, try opening an image using a text editing program).
 Working with text files is fairly easy. After including the required library or libraries, the steps are as follows:
 1. Open the file
 2. Check if it is open and if so...
-  a. Do whatever you need
-  b. Close the file
+..1. Do whatever you need
+..2. Close the file
 3. If the file was not successfully opened, produce an error warning
 
 These steps can be easily translated to C++ (using a do-while loop to prove full usefulness):
