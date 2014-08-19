@@ -18,7 +18,7 @@ TBD
 TBD
 
 #### Using OS-Specific Code
-Some statements, such as `system("pause");` which calls the command prompt to pause input (gives that fancy "Press any key to continue..." prompt), are 
+Some statements, such as `system("pause")` which calls the command prompt to pause input (gives that fancy "Press any key to continue..." prompt), are 
 OS-specific. That means they only work on specific operating systems.
 
 Using OS-specific code is typically bad to do, but at times unavoidable. It's best to have your code work everywhere (unless you plan on being selfish).
@@ -32,7 +32,7 @@ For instance, an alternative to `system("pause")` is making a function like the 
   }
 ```
 
-It's certainly not as nice as typing a single line, but it's still an alternative and works for more than just a Windows operating system (from what I hear, it's quicker too).
+It's certainly not as nice as typing a single line, but it's still an alternative and works for more than just a Windows operating system. From what I hear, it's quicker too.
 
 More info on this [here](http://www.cplusplus.com/forum/windows/55426/).
 
