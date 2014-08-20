@@ -9,7 +9,7 @@
   - [Loops](#loops)
   - [Arrays](#arrays)
   - [Functions](#functions)
-- [Sources Used](#source-used)
+- [Sources Used](#sources-used)
 
 ### Intro
 This page serves as a refresher on CS 120 content. Note that this does not mean it will 
