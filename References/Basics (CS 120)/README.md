@@ -65,7 +65,7 @@ Commonly used data types:
 - `double`: Double (floating point)
 - `float`: Floating-point number
 - `int`: Integer (non floating-point)
-- `string`: Sequence of characters (NOTE: This is not a primitive type (noted by requiring the header `string`))
+- `string`: Sequence of characters (NOTE: This is not a primitive type (noted by requiring the `string` library))
 
 Byte-sizes and data ranges vary per standard. For Visual Studio (2013) you can check [here](http://msdn.microsoft.com/en-us/library/cc953fe1.aspx) for more information.
 
@@ -75,9 +75,21 @@ Terms tied to variables:
 - __Constant Variable__: A variable that does not and cannot change throughout the program (declared as `const`)
 - __Data type__: The type of variable
 - __Declaration__: To create a variable
+- __Decrement__: To decrease a variable's value (typically by one, and by either doing `var--`, `--var`, or `var-=1`)
+- __Increment__: To increase a variable's value (typically by one, and by either doing `var++`, `++var`, or `var+=1`)
 - __Initialize__: To assign a variable a value
 - __Identifier__: Name associated with a variable
+- __Post-Decrement/Increment__: To perform the decrement/increment after the variable, `var--` or `var++`
+- __Pre-Decrement/Increment__: To perform the decrement/increment before the variable, `--var` or `++var`
 - __Primitive Types__: A data type that is predefined by the language (and signified by a keyword)
+
+NOTE: "post" and "pre" decrement/increment have a __MAJOR__ difference! It will be talked about later in the course, but if you want to see now then try the following 
+lines of code in some project:
+```C++
+  int var = 5;
+  std::cout << ++var << "\n";
+  std::cout << var-- << "\n";
+```
 
 Common errors/issues:
 - __Case sensitivity (identifiers)__: Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)
@@ -152,17 +164,19 @@ Output:
 ```
 
 `switch` statements require curly braces. Note also that each line (except the last) requires `break;`, which lets the program know 
-to jump out of the switch statement at that time. 
+to jump out of the switch statement at that time. The `default` case is optional, but normally recommended (typically for error-checking).
 
 Terms tied to if, else if, else:
-- __Conditional Check__: The boolean condition to be checked if 
+- __Conditional Check__: The boolean condition to be checked (if true then the following code is ran, else the program jumps out of that section
+and onto the next)
 
 Common errors/issues:
 - Note that all integral values are `true` (e.g. -1, 12, 12714632, -44123, etc.), whereas the value `0` means `false`.
 
 Terms tied to switch statements:
 - __Case__: A single-value conditional check (e.g. `if(a == 4)` versus `switch(a) { case 4: ... }`)
-- __Falling Through__: When a `break` statement isn't assigned to a case
+- __Falling Through__: When a `break` statement isn't assigned to a case (the code "falls through" to the next line until `break;` or something 
+terminates the code.
 
 Common errors/issues:
 - __Forgetting `break` Statements__: Unless you intend falling-through, always remember to include your `break` statements.
@@ -225,7 +239,7 @@ Examples of array declarations/initializations:
 Example (parallel arrays):
 ```C++
   const int MAX_MOVIE_COUNT = 5;              //constant variable to handle the number of movies
-  int movie_count = 0;                   //counter for number of movies
+  int movie_count = 0;                        //counter for number of movies
   std::string movie_titles[MAX_MOVIE_COUNT];  //list of movie titles
   double movie_scores[MAX_MOVIE_COUNT];       //list of movie scores
   bool movie_recommend[MAX_MOVIE_COUNT];      //boolean array to say if a movie is recommended or not
