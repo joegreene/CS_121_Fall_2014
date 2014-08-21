@@ -36,13 +36,13 @@ Various tips for when working with the g++ compiler. I don't have much experienc
 primarily works with Visual Studio (therefore, I've to put most of my efforts into that).
 
 ##### Console Setup
-If you're on a Linux distro: Your console output is perfect already. Be happy, and use the `apt-get` command, like [here](http://askubuntu.com/questions/348654/how-to-install-g-compiler).
+If you're on a Linux distro: Your console output is perfect already. Be happy, and use the `apt-get` command, like [here](http://askubuntu.com/questions/348654/how-to-install-g-compiler) to install g++ (and its build libraries).
 
 If you're on Mac OS X: Check [this](http://stackoverflow.com/questions/2122425/how-do-i-install-g-on-macos-x) out.
 
 If you're on a Windows-based computer: You might want to use a different console other than command prompt. Here are some recommendations:
-- Windows Powershell (nice in general and I use it occasionally)
-- Other lists: [here](http://lifehacker.com/5834755/how-can-i-make-the-windows-command-prompt-better) and [here](http://www.guidingtech.com/23974/command-prompt-alternatives/).
+- http://lifehacker.com/5834755/how-can-i-make-the-windows-command-prompt-better
+- http://www.guidingtech.com/23974/command-prompt-alternatives
 
 Afterwards, check out a guide like this: http://www.cprogramming.com/g++.html
 
