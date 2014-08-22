@@ -10,7 +10,8 @@
 This hosts the activities we worked on during the SI class on 8/29/14.
 
 ### Topics
-
+Mostly review over CS 120 work. Same will be for next week. Third week should have 
+new material.
 
 #### Activity 1
 
