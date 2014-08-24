@@ -22,7 +22,7 @@ Mostly review over CS 120 work.
 ### Extra Notes
 If you'd like, you can head over to my previous semester's repository [here](https://github.com/joegreene/Spring-2014-CS-Lab--SI-). 
 Keep in mind that last semester was my first time working with GitHub, so the content 
-listed in there might be messy/disorganized.
+listed in there is either messy or incomplete.
 
 Alternatively, the page is accessible via the [root directory](https://github.com/joegreene/Spring-2014-CS-Lab--SI-).
 
