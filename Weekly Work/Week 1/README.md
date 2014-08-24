@@ -24,7 +24,7 @@ If you'd like, you can head over to my previous semester's repository [here](htt
 Keep in mind that last semester was my first time working with GitHub, so the content 
 listed in there is either messy or incomplete.
 
-Alternatively, the page is accessible via the [root directory](https://github.com/joegreene/Spring-2014-CS-Lab--SI-).
+Alternatively, the page is accessible via the [root directory](https://github.com/joegreene).
 
 -------------------------------------------------------------------------------
 
