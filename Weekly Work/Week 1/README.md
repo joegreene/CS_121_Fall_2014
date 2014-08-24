@@ -5,6 +5,7 @@
 - [Topics](#topics)
   - [Activity 1](#activity-1)
   - [Activity 2](#activity-2)
+- [Extra Notes](#extra-notes)
   
 ### Intro
 This hosts the activities we worked on during the SI class on 8/29/14.
@@ -17,6 +18,13 @@ Mostly review over CS 120 work.
 
 #### Activity 2
 
+
+### Extra Notes
+If you'd like, you can head over to my previous semester's repository [here](https://github.com/joegreene/Spring-2014-CS-Lab--SI-). 
+Keep in mind that last semester was my first time working with GitHub, so the content 
+listed in there might be messy/disorganized.
+
+Alternatively, the page is accessible via the [root directory](https://github.com/joegreene/Spring-2014-CS-Lab--SI-).
 
 -------------------------------------------------------------------------------
 
