@@ -9,7 +9,7 @@ Meeting Times:
 when it is provided to me.
 
 If you need to contact me for whatever reason, my email is located at the bottom of this page
-(and all other pages in this repository). I regularly attend lecture (not lab), and of course you 
+(and all other pages in this repository). I regularly attend lecture (I do not go to lab), and of course you 
 can talk to me during the SI session.
 
 I look forward to working with you guys this semester!
