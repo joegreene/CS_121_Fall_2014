@@ -32,6 +32,7 @@ Most is covered in the following topics, but here is a list of general terminolo
 - __Headers__: Libraries included into the program (e.g. "iostream" in "#include <iostream>")
 - __Keywords__: Words reserved by the language (e.g. int, double, char, do, while, return)
 - __Statement__: Individual instructions of a program, e.g. variable declarations and expressions
+
 More will be added if recognized/noted.
 
 #### Escape Characters
@@ -60,7 +61,7 @@ Examples:
   const double TAX_RATE = 8.75; //constant variable with declaration and intialization
 ```
 
-Commonly used data types:
+__Commonly used data types:__
 - `char`: Character (single letter)
 - `double`: Double (floating point)
 - `float`: Floating-point number
@@ -71,7 +72,7 @@ Byte-sizes and data ranges vary per standard. For Visual Studio (2013) you can c
 
 For a better distinction on `double` and `float`, click [here](http://stackoverflow.com/questions/2386772/difference-between-float-and-double).
 
-Terms tied to variables:
+__Terms tied to variables:__
 - __Constant Variable__: A variable that does not and cannot change throughout the program (declared as `const`)
 - __Data type__: The type of variable
 - __Declaration__: To create a variable
@@ -91,7 +92,7 @@ lines of code in some project:
   std::cout << var-- << "\n";
 ```
 
-Common errors/issues:
+__Common errors/issues:__
 - __Case sensitivity (identifiers)__: Remember that C++ is a case-sensitive programming language (e.g. identifier `ident` is NOT EQUAL to identifier `Ident`)
 - __Disregarding naming schemes__: Look at [this page](http://msdn.microsoft.com/en-us/library/565w213d.aspx) for naming schemes (e.g. invalid characters for identifiers)
 - __Using an undeclared variable__: Avoid this by keeping track of what variables you need and where you place them
@@ -124,7 +125,8 @@ the others.
 
 If there is a single statement under the `if` check, then you may omit the curly braces. Same goes for the others.
 
-The lesser-used `switch` statement takes in a single integral value, and (depending on the value). 
+The lesser-used `switch` statement takes in a single integral value, and (depending on the value), goes to a case. If the case is not present, the `switch` 
+jumps to the `default` case (or skips it entirely if not present).
 ```
   switch(integral_type)
   {
@@ -150,7 +152,7 @@ Example of a `switch` statement:
       std::cout << "some_int is 5";
       break;
     case 4: 
-    case 42: //follow through
+    case 42: //falling through
       std::cout << "some_int is either 4 or 42";
       break;
     default:
@@ -166,21 +168,22 @@ Output:
 `switch` statements require curly braces. Note also that each line (except the last) requires `break;`, which lets the program know 
 to jump out of the switch statement at that time. The `default` case is optional, but normally recommended (typically for error-checking).
 
-Terms tied to if, else if, else:
+__Terms tied to if, else if, else:__
 - __Conditional Check__: The boolean condition to be checked (if true then the following code is ran, else the program jumps out of that section
 and onto the next)
 
-Common errors/issues:
-- Note that all integral values are `true` (e.g. -1, 12, 12714632, -44123, etc.), whereas the value `0` means `false`.
+__Common errors/issues:__
+- Note that all integral values are `true` (e.g. -1, 12, 12714632, -44123, etc.), whereas the value `0` returns `false`. Best way to remember this 
+is by remember that "an integral value returns `true` if and only if it is not zero".
 
-Terms tied to switch statements:
+__Terms tied to switch statements:__
 - __Case__: A single-value conditional check (e.g. `if(a == 4)` versus `switch(a) { case 4: ... }`)
-- __Falling Through__: When a `break` statement isn't assigned to a case (the code "falls through" to the next line until `break;` or something 
-terminates the code.
+- __Falling Through__: When a `break` statement isn't assigned to a case the code "falls through" until `break;` or some line exits out 
+of the switch body.
 
-Common errors/issues:
-- __Forgetting `break` Statements__: Unless you intend falling-through, always remember to include your `break` statements.
-- __Trying to Use `switch` Statements for Ranged Data__: `switch` statements are for specific values. If you need to work with ranges of values, 
+__Common errors/issues:__
+- __Forgetting `break` Statements__: Unless you intend falling-through, always remember to include your `break` statements. `default` doesn't require it.
+- __Trying to Use `switch` Statements for Ranged Data__: `switch` statements are for specific values. If you need to work with ranges of values (e.g. `int x` where `x >= 12`), 
 use if/else/else if chains instead.
 
 #### Loops
@@ -215,15 +218,15 @@ Structure of a `do-while` loop:
 Use a `for` loop when you know how many times to loop, `while` loop when you want to loop zero to an indefinite amount of times, and `do-while` to loop 
 at least once to an indefinite amount of times.
 
-NOTE: Curly braces are optional for `for` and `while` loops if you only have one line in them, whereas they are always required in `do-while` loops.
+__NOTE:__ Curly braces are optional for `for` and `while` loops if you only have one line in them, whereas they are always required in `do-while` loops.
 
-Terms tied to loop structures:
+__Terms tied to loop structures:__
 - __Iterate/Iteration__: Each repeat of a loop (e.g. if a while loop runs for four times, there are 4 iterations)
 - __Iterator__: A variable used to count the number of iterations in a loop
 - __Pre-test__: To perform the conditional check BEFORE running the loop (for and while)
 - __Post-test__: To perform the conditional check AFTER running the loop (do-while)
 
-Common errors/issues:
+__Common errors/issues:__
 - __Off-by-one Error__: When miscounting looping by one (more info [here](http://en.wikipedia.org/wiki/Off-by-one_error)).
 
 #### Arrays
@@ -296,13 +299,13 @@ Another way to compact the loop is by means of the [conditional operator](http:/
 
 It might look more confusing at first and it's there if you want to use it. Helps best with small statements.
 
-Terms tied to arrays:
+__Terms tied to arrays:__
 - __Index__: Position in the array (started from 0 and goes to n-1, where n is the length of the array)
 - __Length__: Size of the array (i.e. number of locations it takes up in RAM)
 - __Partially-Initialized Array__: When an array has some of its contents initialized (not all)
 - __Parallel Arrays__: Separate arrays that have corresponding index positions
 
-Common errors/issues:
+__Common errors/issues:__
 - __Miscounting Indices__: Array index position starts from 0, and ends at n - 1 (where n is the array length). 
 Two ways to avoid miscounting indices is to either remember to start from 0, or start from 1 and have your 
 array length be n + 1 (where n is the length). The latter is more confusing to other programmers, and is prone to both 
@@ -353,7 +356,7 @@ Output
   Your integer is: 55
 ```
 
-Terms tied to functions:
+__Terms tied to functions:__
 - __Body of a function__: The statements inside the curly braces of a function
 - __Function__: Group of statements that is given a name, and which can be called from some point of the program.
 - __Function Call__: Expression that passes arguments (if any exist) to a function to perform an operation
@@ -363,14 +366,14 @@ Terms tied to functions:
 - __Parameter(s)__: Variable(s) part of the function's declaration
 - __Argument(s)__: Variable(s) or values passed when calling a function
 
-Common errors/issues/issues:
+__Common errors/issues/issues:__
 - __Creating functions never used__: Delete unnecessary functions whenever needed or possible
 - __Forgetting to define the body of a function__: Best thing to do is make it right after the prototype is declared.
 
 #### Sources Used
 - http://www.cplusplus.com/doc/tutorial/ 
 - http://www.tutorialspoint.com/cplusplus/index.htm 
-- http://stackoverflow.com/ 
+- http://stackoverflow.com/ (various question topics)
 
 -------------------------------------------------------------------------------
 

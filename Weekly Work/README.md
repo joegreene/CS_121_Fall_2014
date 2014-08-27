@@ -1,7 +1,9 @@
 Weekly Work
 ===========
 
-This is the main directory for all the activities that we have gone over 
+This is the main directory for all the activities that we have gone over . I fill 
+out the "activity" parts after the SI session has occurred, primarily because I 
+won't know what we actually covered until the session is finished.
 
 For some weeks I may choose to upload practice projects, that is, if we either 
 worked on some during the SI session or I felt generous. Either way, they aren't 
