@@ -4,7 +4,7 @@ CS_121_Fall_2014
 Work used during the SI portion of the Fall 2014 CPSC 121 Class, Section 07-08, MoWe 5:30 - 6:20PM
 
 Meeting Times: 
-- Fridays @ 12 - 1PM, CS 110B
+- Fridays @ 12 - 12:50PM, CS 110B
 - Another session is planned to be added but has yet to be disclosed. I will post its time here
 when it is provided to me.
 
