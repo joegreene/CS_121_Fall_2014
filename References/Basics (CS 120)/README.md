@@ -17,7 +17,8 @@ teach you the material, so if you need to learn the material then it's best to h
 to a website such as [here](http://www.cplusplus.com/doc/tutorial/) or 
 [here](http://www.tutorialspoint.com/cplusplus/).
 
-More may be added on this page if deemed necessary. If there are any errors or issues just let me know.
+More may be added on this page if deemed necessary. If there are any errors or issues just let me know either via email, during 
+lecture, or during the SI session.
 
 NOTE: I realize some of you guys might have not worked on functions in CS 120. If you have, however, 
 the resource is within the topic list. Otherwise, you may want to head over to a tutorial site for help.
@@ -36,7 +37,7 @@ Most is covered in the following topics, but here is a list of general terminolo
 More will be added if recognized/noted.
 
 #### Escape Characters
-Always handy to know by hand. The most commonly used ones are `\n`, `\\`, `\"`, `\'` and `\t`.
+Always handy to know off-hand. The most commonly used ones are `\n`, `\\`, `\"`, `\'` and `\t`.
 
 Here's a list of them: http://msdn.microsoft.com/en-us/library/6aw8xdf2.aspx
 
@@ -344,10 +345,10 @@ Examples:
     return 0;
   }
   
-  void print_int(int stuff) //function 
+  void print_int(int stuff) //function with defined body
   {
     std::cout << "Your integer is: " << stuff;
-    return; //optional return statement here
+    return; //optional return statement here (returns nothing)
   }
 ```
 
@@ -357,6 +358,7 @@ Output
 ```
 
 __Terms tied to functions:__
+- __Argument(s)__: Variable(s) or values passed when calling a function
 - __Body of a function__: The statements inside the curly braces of a function
 - __Function__: Group of statements that is given a name, and which can be called from some point of the program.
 - __Function Call__: Expression that passes arguments (if any exist) to a function to perform an operation
@@ -364,7 +366,6 @@ __Terms tied to functions:__
 - __Function Name/Identifier__: Name associated with the function (used for when calling a function)
 - __Function Prototypes__: To declare a function without creating its body (must be made later on however)
 - __Parameter(s)__: Variable(s) part of the function's declaration
-- __Argument(s)__: Variable(s) or values passed when calling a function
 
 __Common errors/issues/issues:__
 - __Creating functions never used__: Delete unnecessary functions whenever needed or possible

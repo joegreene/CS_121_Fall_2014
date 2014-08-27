@@ -17,12 +17,14 @@ Below is a list of websites I've either found useful or have been recommended to
 If you know of any other websites that may benefit the class, feel free to let me know so I may add them to this list. 
 
 ### Topics
+Various topics regarding helpful links.
 
 #### Apps for Android and Apple
 I own an Android phone and know of a few applications that might help during the semester. I don't own an iPhone or Apple products so I can't 
 help others there.
 
-NOTE: I wouldn't recommend trying to program on a phone. More of a personal preference thing, but I much prefer a physical keyboard to a touch-screen keyboard.
+NOTE: I wouldn't recommend trying to program on a phone. More of a personal preference, but I much prefer a physical keyboard to a touch-screen keyboard. It's doable, but 
+not advisable.
 
 All the applications below are free (and initially intended to be free).
 
@@ -88,7 +90,7 @@ __Popular text viewers__:
 Also as a side note: When I say Emacs rivals Vim, [I mean it](http://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim).
 
 #### Tutorial Websites
-- http://www.cprogramming.com/tutorial/c++-tutorial.html - I don't use this as much as the others, but still helps
+- http://www.cprogramming.com/tutorial/c++-tutorial.html - I don't use this as much as the others, but still helpful
 - http://www.tutorialspoint.com/cplusplus/ - Might be a bit technical at some parts, but helpful
 - http://www.cplusplus.com/doc/tutorial/ - Also a bit technical, but it helps nonetheless
 

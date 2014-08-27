@@ -129,7 +129,7 @@ These pages can help too if you prefer using another site:
 ##### Binary File IO
 This isn't heavily focused on in CPSC 121 (or 131 for that matter), but still interesting to learn. Pay more attention to the text file IO section.
 
-When working with binary files, TBD
+I'll include this section later (TBD).
 
 ##### Text File IO
 When I say "text file", I'm talking about files such as `.txt` and source files like `.cpp`. They're files you can open in notepad without issues of seeing 
