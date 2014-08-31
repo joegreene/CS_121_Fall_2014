@@ -176,13 +176,13 @@ Example of `switch` replacing `if/else if/else` (assume `grade` is an integer an
 ```
 
 You can see how it would be annoying to use `switch` statements for ranged checks. They're handy when you 
-have to test things like a grade letter (note that 'A' translates to an integral value, i.e. `case 'A':` equals 
+have to test things like a grade letter (note that the character `A` translates to an integral value, i.e. `case 'A':` equals 
 `case 65:` due to the [ASCII table](http://www.ascii-code.com/)).
 
 #### Question 3
 Some concepts (not all as there could be more but these are the main ones that come to my mind):
 - Arrays
-- If/else if/else chains
+- if/else if/else chains
 - Loops (user input, menus, etc.)
 - Variables (general)
 - Functions (for each action needed in the program, like adding to the list or editing individual players) 
@@ -201,6 +201,7 @@ Example syntax (can be done multiple ways, although this is most common):
 ```
 
 NOTE: using `time(NULL))` in `srand(time(NULL));` requires `#include <time.h>`. 
+
 NOTE 2: Per line, what you mod by is the range, and the added number is the lower limit (e.g. first has 1 through 100, one hundred numbers, and lowest value in range is 1). It might be 
 tricky to understand at first, and if you have any questions about this don't hesitate to ask me, fellow students, or the teacher.
 
