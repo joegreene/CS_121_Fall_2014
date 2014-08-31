@@ -1,17 +1,18 @@
 # Week 1 Solutions
 
 ## Sections
-- [Concept & Syntax Questions](#concept-syntax-questions)
-  - [Question 1](question-1)
-  - [Question 2](question-2)
-  - [Question 3](question-3)
-  - [Question 4](question-4)
-  - [Question 5](question-5)
-  - [Question 6](question-6)
+- [Concept & Syntax Questions](#concept--syntax-questions)
+  - [Question 1](#question-1)
+  - [Question 2](#question-2)
+  - [Question 3](#question-3)
+  - [Question 4](#question-4)
+  - [Question 5](#question-5)
+  - [Question 6](#question-6)
 - [Practice Projects](#practice-projects)
 
 
-### Concept & Syntax Questions:
+### Concept & Syntax Questions
+Below are the concept & syntax solutions from the worksheet.
 
 #### Question 1
 Three types are: `for`, `while`, and `do-while`
