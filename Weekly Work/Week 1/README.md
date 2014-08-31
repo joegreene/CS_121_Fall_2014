@@ -9,6 +9,9 @@
 ### Intro
 This hosts the activities we worked on during the SI class on 8/29/14. If there are any errors, please let me know (I'm only human).
 
+NOTE: To open the worksheet, click on the Resources folder and click "CS121 Day One.doc". From there, click "View Raw" and that should let you save/open
+the worksheet.
+
 ### Topics
 
 #### Activity 1
