@@ -116,29 +116,29 @@ like making menus or user input (as shown above).
 - `switch` is only for testing a single integral variable's value. It's handy when you're working with a small set of integer-based values.
 
 __BONUS__: 
-- `if/else if/else` chains can replace `switch`. You just have to check for single values (e.g. `if(a == 1)`).
+- `if/else if/else` chains can replace `switch`. You just have to check for single values (e.g. `if(a == 1)` is equivalent to `switch(a){...case 1:`...}).
 - `switch` can only replace `if/else if/else` chains when testing integral types. Ranges can be checked, although only by tedious typing or fall-through.
 
-Example of `switch` replacing `if/else if/else` (assume `grade` is an integer received from console and is within 0 to 100):
+Example of `switch` replacing `if/else if/else` (assume `grade` is an integer and is within 0 to 100):
 ```C++
   //initial if/else if/else chains
-  if(grade >= 0 && grade < 60)
+  if(grade >= 0 && grade < 60)       //between 0 and 59
   {
     cout << "You received a F.\n";
   }
-  else if(grade >= 60 && grade < 70)
+  else if(grade >= 60 && grade < 70) //between 60 and 69
   {
     cout << "You received a D.\n";
   }
-  else if(grade >= 70 && grade < 80)
+  else if(grade >= 70 && grade < 80) //between 70 and 79
   {
     cout << "You received a C.\n";
   }
-  else if(grade >= 80 && grade < 90)
+  else if(grade >= 80 && grade < 90) //between 80 and 89
   {
     cout << "You received a B.\n";
   }
-  else
+  else                               //assuming value is between 90 and 100
   {
     cout << "You received an A.\n";
   }
@@ -170,14 +170,14 @@ Example of `switch` replacing `if/else if/else` (assume `grade` is an integer re
     case 89:
       cout << "You received a B.\n";
       break;
-    default:
+    default: //similar to else in this case
       cout << "You received an A.\n";
   }
 ```
 
 You can see how it would be annoying to use `switch` statements for ranged checks. They're handy when you 
 have to test things like a grade letter (note that 'A' translates to an integral value, i.e. `case 'A':` equals 
-`65` due to the [ASCII table](http://www.ascii-code.com/)).
+`case 65:` due to the [ASCII table](http://www.ascii-code.com/)).
 
 #### Question 3
 Some concepts (not all as there could be more but these are the main ones that come to my mind):
@@ -213,7 +213,7 @@ Couple reasons (there are more):
 - Readability (so others understand your code; `s` versus `num_students`)
 - Easier to type (`num_oranges` versus `number_of_oranges`)
 - Size of source file (.cpp or .h), although it's not much of an issue nowadays (less characters in a file means less of a file size)
-  - For an example of this: Create an empty text document. Check its file size. type some words into the file, save, then check the size again.
+  - For an example of this: Create an empty text document. Check its file size. Type some words into the file, save, then check the size again.
   
 More reasons can be found via Google on sites such as [here](http://www.wellho.net/solutions/general-what-makes-a-good-variable-name.html). It's also good to maintain a consistent (and good) programming 
 style.
@@ -231,7 +231,7 @@ Output (in order):
 
 __BONUS__: No. If you were to remove "using namespace std;" you would require each `cout` and `endl` to be `std::cout` and `std::endl` respectively. That's 
 because each belongs to the namespace `std` (standard namespace). Alternatively, if you'd like to avoid having `using namespace std;` and typing `std::` for each, 
-use `using std::cout;` and `using std::endl;` (where `using namespace std;` was). There is example usage of this in the references folder.
+use `using std::cout;` and `using std::endl;` (where `using namespace std;` was). There is example usage of this replacement in the references folder.
 
 ### Practice Projects
 I'm going to postpone posting these for now. I need to check up things with the professor to make sure she doesn't want these to be lab or homework assignments.

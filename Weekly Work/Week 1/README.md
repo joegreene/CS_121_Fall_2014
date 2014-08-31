@@ -7,7 +7,7 @@
 - [Extra Notes](#extra-notes)
   
 ### Intro
-This hosts the activities we worked on during the SI class on 8/29/14.
+This hosts the activities we worked on during the SI class on 8/29/14. If there are any errors, please let me know (I'm only human).
 
 ### Topics
 
