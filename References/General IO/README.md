@@ -98,7 +98,7 @@ One example of applying this method (using a do-while loop to prove full usefuln
 
 Note that the above example does not check for cases such as "g 1231hjvk55dzg". It checks only the first string of characters until it hits a new space.
 
-More information here: http://www.cplusplus.com/forum/beginner/2957/
+More information [here](http://www.cplusplus.com/forum/beginner/2957/) and [here](http://stackoverflow.com/questions/5131647/why-would-we-call-cin-clear-and-cin-ignore-after-reading-input).
 
 ##### Output: cout
 `cout`, or console output, helps output information to the console via the console output stream.
