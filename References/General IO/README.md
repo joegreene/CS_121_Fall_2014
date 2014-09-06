@@ -215,8 +215,6 @@ just makes typing the examples a lot easier for myself.
 Note that, more often than not, it is not required to check if the file is open when outputting to a file. It's a good habit to have, although the only times 
 opening a file fails when outputting to a file is when there isn't enough disk space or the destination to write to is unreachable.
 
-If you only plan on outputting (writing) to a file, use the library `ofstream`, and `ifstream` if planning on reading info from a file.
-
 -------------------------------------------------------------------------------
 
 Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
