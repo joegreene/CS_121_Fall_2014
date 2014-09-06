@@ -119,7 +119,7 @@ For instance, an alternative to `system("pause")` is making a function like the 
 
 It's certainly not as nice as typing a single line, but it's still an alternative and works for more than just a Windows operating system. From what I hear, it's quicker too.
 
-More info on `cin.ignore(1000, '\n')`: http://www.cplusplus.com/forum/articles/6046/
+More info on `cin.ignore(1000, '\n')` [here](http://www.cplusplus.com/reference/istream/istream/ignore/) and [here](http://www.cplusplus.com/forum/beginner/9148/).
 
 More info on this [here](http://www.cplusplus.com/forum/windows/55426/).
 
