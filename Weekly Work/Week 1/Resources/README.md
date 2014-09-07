@@ -6,7 +6,7 @@
   - [Question 2](#question-2)
   - [Question 3](#question-3)
   - [Question 4](#question-4)
-    - [Explanation on Question 4](#more-explanation-on-question-4)
+    - [Explanation and Notes on Question 4](#explanation-and-notes-on-question-4)
   - [Question 5](#question-5)
   - [Question 6](#question-6)
 - [Practice Projects](#practice-projects)
@@ -203,7 +203,7 @@ Example syntax (can be done multiple ways, although this is most common):
 
 __BONUS__: `#include <cstdlib>` (c-standard library)
 
-##### Explanation on Question 4
+##### Explanation and Notes on Question 4
 NOTE: using `time(NULL))` in `srand(time(NULL));` requires `#include <time.h>`. 
 
 NOTE 2: `rand()` will return a value between 0 and `RAND_MAX`, in which `RAND_MAX` is some value defined by the standard library.
@@ -250,7 +250,7 @@ To explain how the equation works, let's use a small example (1 to 5) and get to
       int num = rand() % range + starting_value;
 ```
 
-It might be tricky to understand at first, and if you have any questions about this don't hesitate to ask me, fellow students, or the teacher.
+It might be tricky to understand at first, and if you have any questions about this don't hesitate to ask me, fellow peers, or the teacher.
 
 For more help with this, check [here](http://www.cplusplus.com/reference/cstdlib/rand/) or [here](http://en.cppreference.com/w/cpp/numeric/random/rand).
 
