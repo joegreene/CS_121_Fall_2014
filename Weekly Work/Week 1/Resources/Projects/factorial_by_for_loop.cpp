@@ -27,7 +27,7 @@ int main()
   
   if(n >= 0) //if the n-value is greater than or equal to zero
   {
-    int fact = 1; //the actual computed factorial value
+    int fact = 1; //the actual computed factorial value; this also covers cases n=1 and n=0
     
     //Compute the factorial
     for(int i = n; i > 1; --i)
