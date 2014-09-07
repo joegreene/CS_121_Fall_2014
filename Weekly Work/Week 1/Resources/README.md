@@ -6,6 +6,7 @@
   - [Question 2](#question-2)
   - [Question 3](#question-3)
   - [Question 4](#question-4)
+    - [Explanation on Question 4](#more-explanation-on-question-4)
   - [Question 5](#question-5)
   - [Question 6](#question-6)
 - [Practice Projects](#practice-projects)
@@ -196,18 +197,62 @@ Example syntax (can be done multiple ways, although this is most common):
   
   int rand1 = rand() % 100 + 1;    //1 through 100
   int rand2 = rand() % 17 + 4;     //4 through 20
-  int rand3 = rand() % 114 + 1900; //1900 and 2014
+  int rand3 = rand() % 115 + 1900; //1900 and 2014
   
 ```
 
+__BONUS__: `#include <cstdlib>` (c-standard library)
+
+##### Explanation on Question 4
 NOTE: using `time(NULL))` in `srand(time(NULL));` requires `#include <time.h>`. 
 
-NOTE 2: Per line, what you mod by is the range, and the added number is the lower limit (e.g. first has 1 through 100, one hundred numbers, and lowest value in range is 1). It might be 
-tricky to understand at first, and if you have any questions about this don't hesitate to ask me, fellow students, or the teacher.
+NOTE 2: `rand()` will return a value between 0 and `RAND_MAX`, in which `RAND_MAX` is some value defined by the standard library.
+- In Visual Studio, `RAND_MAX` equals "0x7fff" in hexadecimal, which is "32767" in decimal. More information [here](http://msdn.microsoft.com/en-us/library/2dfe3bzd.aspx).
+
+NOTE 3: Per line, what you mod by is the range, and the added number is the lower limit, i.e.:
+```
+  int num = rand() % range + starting_number;
+```
+
+The range (the number of values in the list) can be found by doing the following:
+```
+  range = largest_value - starting_value + 1
+```
+
+The "+ 1" accounts for including the starting value (think of counting numbers).
+
+To explain how the equation works, let's use a small example (1 to 5) and get to a general equation from there:
+```
+  The C++ statement for that is: 
+    int num = rand() % 5 + 1;
+    
+  Let's say rand() gives us the value 2344 (we don't really know when compiling however)
+  Therefore, our C++ statement becomes:
+    int num = 2344 % 5 + 1;
+  Evaluating this, we have:
+    2344 % 5 = 4 (2344/5 is 468 Remainder 4)
+    Add one and we get 5 as our "random" number.
+    
+  If rand() gave us "4850", then we would have the following:
+    int num = 4850 % 5 + 1;
+    4850 % 5 = 0
+    Add one and we get 1 as our "random" number.
+    
+  To make it a little more general:
+    "rand() % 5" will always give us a value between 0 to 4 (you can say 0 to 5-1 as well)
+    If we add one to that, we get 1 to 5 (which is what we need)
+    For the next part, it might help to think starting_value = 1, and largest_value = 5
+  
+  And lastly, to be completely general about it:
+    "rand() % range" will always give a value between 0 to range - 1
+    If we add the starting value to that, we get starting_value to largest_value (which is what we want)
+    Therefore, the C++ statement to generate a random value in C++ is:
+      int num = rand() % range + starting_value;
+```
+
+It might be tricky to understand at first, and if you have any questions about this don't hesitate to ask me, fellow students, or the teacher.
 
 For more help with this, check [here](http://www.cplusplus.com/reference/cstdlib/rand/) or [here](http://en.cppreference.com/w/cpp/numeric/random/rand).
-
-__BONUS__: `#include <cstdlib>` (c-standard library)
 
 #### Question 5
 Couple reasons (there are more):
