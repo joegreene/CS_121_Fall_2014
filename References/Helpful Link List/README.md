@@ -20,11 +20,11 @@ If you know of any other websites that may benefit the class, feel free to let m
 Various topics regarding helpful links.
 
 #### Apps for Android and Apple
-I own an Android phone and know of a few applications that might help during the semester. I don't own an iPhone or Apple products so I can't 
+I own an Android phone and know of a few applications that might help during the semester. I don't own an iPhone or any Apple products so I can't 
 help others there.
 
 NOTE: I wouldn't recommend trying to program on a phone. More of a personal preference, but I much prefer a physical keyboard to a touch-screen keyboard. It's doable, but 
-not advisable.
+not advised.
 
 All the applications below are free (and initially intended to be free).
 
@@ -37,10 +37,20 @@ __Apple__:
 - TBD (if anyone has any recommendations, let me know please; preferably they should be free)
 
 #### Compilers and IDEs
+I should make this distinction now before any questions arise:
+- __IDE__: Integrated Development Environment, which pretty much means it's a piece of software with a bunch of tools to help someone program (e.g. Visual Studio, 
+where it has a text editor, compiler, debugger, etc.)
+- __Compiler__: A piece of software that converts one programming language to another (in our case, C++ to Assembly or some other low level 
+language); IDEs have compilers as a part of them
+
+Also, the main IDE we will be using is Microsoft Visual Express C++ 2010. 2012 works well too, and I alternate between 2010 and 2012 when making 
+C++ projects (projects made in either are compatible with one another).
+
+__List:__
 - http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx - Visual Studio (the main IDE used in the class; windows-only); I use this primarily
 as it's what is used during the CS 301 test (and all professors expect you to work with this IDE for projects in the class).
   - NOTE: Express versions are just as good as professional and ultimate. If you don't have a DreamSpark account with the school or a means 
-of easily getting the professional version, just stick with an express version. If asked, go for the visual studio express C++ version.
+of easily getting the professional version, just stick with an express version. If asked, go for the visual studio express C++ version (2010, although 2012 works too).
   - NOTE 2: I don't know about the school computers, but if you use this at home and wish to change the color scheme check 
 this out: http://msdn.microsoft.com/en-us/library/hh923906.aspx . Visual Studio 2012/2013's theme jump from 2010 makes it look disgusting.
 - http://ideone.com/ - Online compiler (great for testing small code on-the-go). I use this to test most of the activity code we work with.
@@ -74,7 +84,7 @@ Also: __Always__ use two to four spaces for indentation instead of tabs! Tabs on
   - NOTE 2: If you don't wish to download it (you're missing out if you don't), you can see a demo of it on youtube here (WARNING: Might be loud): https://www.youtube.com/watch?v=kPRA0W1kECg
 
 #### Reference Websites:
-- http://www.cplusplus.com/reference/ - I use this a lot when rummaging around the STL (standard library)
+- http://www.cplusplus.com/reference/ - I use this a lot when rummaging around the C++ STL (standard library)
 - http://en.cppreference.com/w/ - Another website I use for reference
 - http://msdn.microsoft.com/en-us/library/vstudio/60k1461a.aspx - I don't use this as much as the others, but helps nonetheless (WARNING: Very technical)
 

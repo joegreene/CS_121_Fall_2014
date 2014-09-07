@@ -235,4 +235,4 @@ because each belongs to the namespace `std` (standard namespace). Alternatively,
 use `using std::cout;` and `using std::endl;` (where `using namespace std;` was). There is example usage of this replacement in the references folder.
 
 ### Practice Projects
-I'm going to postpone posting these for now. I need to check up things with the professor to make sure she doesn't want these to be lab or homework assignments.
+Located under each .cpp file in the Projects folder.
