@@ -59,19 +59,19 @@ Best way to do that (if you're using the extraction operator) is by using `cin.f
 
 1. Get user input
 2. If cin.fail()
-  1. Fix the input stream (i.e. call `cin.clear()`)
-  2. Clear the buffer with either `cin.ignore(1000,'\n')` or `cin.ignore(std::numeric_limits<streamsize>::max(), '\n')`)
+  1. Fix the input stream (i.e. call `cin.clear();`)
+  2. Clear the buffer with either `cin.ignore(1000,'\n');` or `cin.ignore(std::numeric_limits<streamsize>::max(), '\n');`)
   3. Alert the user that an error has occurred when trying to grab their input
 3. Else, proceed as normal (or add other conditional checks here)
 
 Note that with `ignore` you really only need a big number like `1000` to have it work perfectly fine. If you use `1000`, you're assuming 
-the user pressed ENTER (note the '\n') before typing 1000 bad characters in the stream. Using `numeric_limits<streamsize>::max()` just 
+the user pressed ENTER (note the `'\n'`) before typing 1000 bad characters in the stream. Using `numeric_limits<streamsize>::max()` just 
 makes sure that the user's bad input is completely taken care of and is ignored.
 
 One example of applying this method (using a do-while loop to prove full usefulness):
 ```C++
   bool valid_input = false; //assume false at start to remove unnecessary assignments in do-while loop
-  char input = '\0';        //default initialization
+  char input = '\0';        //default initialization; can be anything (shouldn't be a letter)
   
   do
   {
@@ -97,6 +97,8 @@ One example of applying this method (using a do-while loop to prove full usefuln
 ```
 
 Note that the above example does not check for cases such as "g 1231hjvk55dzg". It checks only the first string of characters until it hits a new space.
+To ignore the rest you can use `ignore` again to ignore the extra input or use `noskipws`, which means `cin` won't skip whitespace when extracting input from the input stream
+(which should toggle `cin.fail();` as true if we try to put the string into the char).
 
 More information [here](http://www.cplusplus.com/forum/beginner/2957/) and [here](http://stackoverflow.com/questions/5131647/why-would-we-call-cin-clear-and-cin-ignore-after-reading-input).
 
