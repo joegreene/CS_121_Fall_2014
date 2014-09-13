@@ -66,7 +66,7 @@ int main()
   const int ITEM_NAME_WIDTH = 10; //this includes the item name length and the spaces between ITEMS and PRICES
   const int PRICE_WIDTH = 7;      //how long we think the prices will be at maximum
   
-  //Print the header; NOTE: setfill is ' ' on default and make sure to make it left-justified (sets everything else as left)
+  //Print the header; NOTE: setfill is ' ' on default and make sure the output (from now on) is left-justified
   cout << left << setw(ITEM_NAME_WIDTH) << "ITEMS" << "PRICES" << endl; //the number is just a guess on 
   
   //NOTE: setw doesn't work unless you print a character. I chose '-' and subtracted a dash from setw to compensate
@@ -83,7 +83,7 @@ int main()
   }
 
   //Similar to "system("pause");" except the following code works on more systems than just Windows
-  cout << "\nPress ENTER to continue...";
+  cout << "\nPress ENTER to exit program...";
   cin.ignore();
 
   return 0;
