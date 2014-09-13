@@ -282,3 +282,9 @@ use `using std::cout;` and `using std::endl;` (where `using namespace std;` was)
 ### Practice Projects
 Located under each .cpp file in the Projects folder. I tried my best to put in comments and thorough explanations, but if it's difficult 
 to interpret then email me and I'll explain the program.
+
+-------------------------------------------------------------------------------
+
+Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
+Released under [The MIT License] (http://opensource.org/licenses/MIT)  
+Project located at <https://github.com/joegreene/CS_121_Fall_2014>
