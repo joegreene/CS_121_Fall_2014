@@ -3,20 +3,79 @@
 ## Contents
 - [Intro](#intro)
 - [Topics](#topics)
-  - [Activity 1](#activity-1)
-  - [Activity 2](#activity-2)
+  - [Wednesday](#wednesday)
+  - [Friday](#friday)
   
 ### Intro
-This hosts the activities we worked on during the SI class on 9/12/14.
+This hosts the activities we worked on during the SI class on 9/10/14 and 9/12/14.
 
 ### Topics
+This week the second session (Wednesday from 4-5PM at the ULC) was introduced, so the topics are slightly different.
 
+#### Wednesday
+Passed out worksheet 3 and worked a bit on it. Also answered a general question about skipping characters in the input stream using `cin.ignore`, 
+and grabbing characters using `cin.get`.
 
-#### Activity 1
+#### Friday
+Before reading the below: I made a mistake when talking about `numeric_limits`. It should be `numeric_limits<streamsize>::max()`, not 
+`numeric_limits<int>::max()`. `streamsize` is more specific to the actual size of the input stream.
 
+Went a little bit over each worksheet (there weren't many questions asked) and mostly went over how to design a proper 
+error-checking do-while loop. It was explained in detail. Below is the gist of it:
 
-#### Activity 2
+An example of properly grabbing an integer from the input stream:
+```C++
+  int input;
+  bool valid = false; //assume false on start to avoid adding "valid = false" in "if(cin.fail())"
+  
+  do
+  {
+    cout << "Enter a number: ";
+    cin >> input;
+    
+    if(cin.fail()) //if there was an error when grabbing input from the input stream
+    {
+      cout << "Invalid input!\n"; //let the user know an error occurred
+      cin.clear();                //clear any error flags that exist, e.g. cin.fail() being true at the moment
+      cin.ignore(1000, '\n');     //skip 1000 characters in input stream or until a newline is seen (e.g. when user pressed ENTER)
+    }
+    else
+    {
+      valid = true; //user input was a number, therefore was valid
+    }
+  }while(!valid); //while the input is not valid, loop the above body
+```
 
+To better understand this code go and test it out in visual studio. It can be placed either under main or some function.
+
+Major components of the above algorithm (not discussed in lecture yet) that may seem confusing:
+- `cin.fail()`: Returns true if there was an issue when grabbing data from the input stream
+- `cin.clear()`: Resets any error flags to their default values when called (in our case, we reset `cin.fail()` to `false`.
+- `cin.ignore(1000,'\n')`: Ignores either 1000 characters in the input stream or until ENTER was pressed (before the 1000 characters)
+
+__NOTE__: If we did not call "cin.clear()" and "cin.fail()" at some point became true, then any input grabbed afterwards will be considered "invalid". This is because, on 
+default, `cin.fail()` is false. To better understand this, try tracing the program with the following input: `abc` and afterwards `12`. A good way to check how this works 
+is by having the line `cout << cin.fail() << endl;` after `cin.clear()`, one time including and another time removing `cin.clear()` from the code.
+
+We use `1000` in `cin.ignore` because it is a large number. We do not expect users to type in that long of an invalid input, so the number is adequate. 
+
+If you want to write this out "professionally", use `numeric_limits<streamsize>::max()`, which is under the `limits` library.
+
+An example of the above:
+```C++
+  //other includes
+  #include <limits>
+  
+  //...code...
+  
+  cin.ignore(std::numeric_limits<streamsize>::max(), '\n'); //skips either 2^31 - 1 characters or until the input stream hits a newline
+  
+  //...code...
+```
+
+More information about `numeric_limits` [here](http://www.cplusplus.com/reference/limits/numeric_limits/) and [here](http://stackoverflow.com/questions/10938363/using-cin-ignore-not-sure-how-to-make-it-work).
+
+__TRIVIA__: Remember, `\n` in this case is called a __delimiter__.
 
 -------------------------------------------------------------------------------
 
