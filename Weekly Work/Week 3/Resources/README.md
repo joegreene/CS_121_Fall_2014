@@ -67,11 +67,13 @@ about the solution there. Focus on the `static_cast` portion.
 
 #### Question 2
 There might be other reasons, but the typical two are:
+
 1. It's easier to notice what is a constant variable versus what is a typical (dynamic and otherwise able to change) variable. 
 2. It's the standard way of making constant variables, and going away from the standard makes your code harder for others to read
 
 #### Question 3
 Three reasons:
+
 1. If you plan on looking at it later, you'll be able to understand what you typed
 2. If others plan on helping you out or are reviewing it, they'll have a better chance of understanding what you typed
 3. Typing out variables and specific statements (e.g. if/else or switch) will be easier to work with and trace logically
