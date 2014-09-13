@@ -20,7 +20,7 @@ If we have `ITEM_CAP` amount of items, the code to print all contents of the arr
   const int PRICE_WIDTH = 7;      //how long we think the prices will be at maximum
   
   //Print the header; NOTE: setfill is ' ' on default and make sure to make it left-justified (sets everything else as left)
-  cout << left << setw(ITEM_NAME_WIDTH) << "ITEMS" << "PRICES" << endl; //the number is just a guess on 
+  cout << left << setw(ITEM_NAME_WIDTH) << "ITEMS" << "PRICES" << endl;
   
   //NOTE: setw doesn't work unless you print a character. I chose '-' and subtracted a dash from setw to compensate
   cout << setfill('-') << setw(ITEM_NAME_WIDTH + PRICE_WIDTH - 1) << "-" << endl; //set the dashes length to cover both item names and prices

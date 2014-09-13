@@ -82,7 +82,9 @@ int main()
     cout << setw(ITEM_NAME_WIDTH) << name_list[i] << "$" << price_list[i] << endl;
   }
 
-  system("pause");
+  //Similar to "system("pause");" except the following code works on more systems than just Windows
+  cout << "\nPress ENTER to continue...";
+  cin.ignore();
 
   return 0;
 }
