@@ -60,13 +60,13 @@ Best way to do that (if you're using the extraction operator) is by using `cin.f
 1. Get user input
 2. If cin.fail()
   1. Fix the input stream (i.e. call `cin.clear()`)
-  2. Clear the buffer with `cin.ignore(std::numeric_limits<int>::max(), '\n')`)
+  2. Clear the buffer with either `cin.ignore(1000,'\n')` or `cin.ignore(std::numeric_limits<streamsize>::max(), '\n')`)
   3. Alert the user that an error has occurred when trying to grab their input
 3. Else, proceed as normal (or add other conditional checks here)
 
-Note that with `ignore` you don't really need to have the `numeric_limits<int>::max()` part. A big number like `1000` works perfectly fine, 
-assuming the user does not type more than 1000 characters in the input stream (`numeric_limits` just ensures that you skip all input on the line 
-until you hit a new line, or `\n`).
+Note that with `ignore` you really only need a big number like `1000` to have it work perfectly fine. If you use `1000`, you're assuming 
+the user pressed ENTER (note the '\n') before typing 1000 bad characters in the stream. Using `numeric_limits<streamsize>::max()` just 
+makes sure that the user's bad input is completely taken care of and is ignored.
 
 One example of applying this method (using a do-while loop to prove full usefulness):
 ```C++
