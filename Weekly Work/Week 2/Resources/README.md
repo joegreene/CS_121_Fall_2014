@@ -9,7 +9,6 @@
   - [Question 5](#question-5)
   - [Question 6](#question-6)
   - [Question 7](#question-7)
-- [Practice Projects](#practice-projects)
 
 
 ### Concept & Syntax Questions
@@ -187,6 +186,7 @@ of leap years are 2000 and 1504, and examples of non-leap years are 1900 and 199
 
 More information on modulus [here](http://www.cprogramming.com/tutorial/modulus.html) and [here](http://stackoverflow.com/questions/12556946/how-does-the-modulus-operator-work).
 Also, more information on that leap-year rule [here](http://www.timeanddate.com/date/leapyear.html).
+
 -------------------------------------------------------------------------------
 
 Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  

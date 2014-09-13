@@ -10,7 +10,7 @@
 This hosts the activities we worked on during the SI class on 9/10/14 and 9/12/14.
 
 ### Topics
-This week the second session (Wednesday from 4-5PM at the ULC) was introduced, so the topics are slightly different. The worksheet and solutions 
+This week the second session (Wednesday from 4-5PM at the ULC) was introduced, so the topic format is slightly different. The worksheet and solutions 
 to the Week 3 worksheet are located in the "Resources" folder, using the same format as the previous weeks.
 
 #### Wednesday
@@ -18,8 +18,8 @@ Passed out worksheet 3 and worked a bit on it. Also answered a general question 
 and grabbing characters using `cin.get`.
 
 #### Friday
-Before reading the below: I made a mistake when talking about `numeric_limits`. It should be `numeric_limits<streamsize>::max()`, not 
-`numeric_limits<int>::max()`. `streamsize` is more specific to the actual size of the input stream.
+Before reading the below: I made a mistake during the session while talking about `numeric_limits`. It should be `numeric_limits<streamsize>::max()`, not 
+`numeric_limits<int>::max()` inside of `cin.ignore`. `streamsize` is more specific to the actual size of the input stream.
 
 Went a little bit over each worksheet (there weren't many questions asked) and mostly went over how to design a proper 
 error-checking do-while loop. It was explained in detail. Below is the gist of it:
