@@ -143,74 +143,84 @@ Working with text files is fairly easy. After including the required library or 
   2. Close the file (possible program hangs or corruption of file if step is skipped)
 3. Else (the file was not successfully opened), produce an error message
 
-These steps can be easily translated to C++ in the program below:
+These steps can be easily translated to C++ in the example program below:
 ```C++
-  #include <iostream> //by now you should know what this is
-  #include <fstream>  //file stream library
-  #include <string>   //library to use strings
-  
-  using namespace std;
-  
-  string read_file(string fn);                //custom function that reads files given a file name string
-  void write_to_file(string fn, string msg);  //"                  " writes to a file given a file name and message
-  
-  int main()
+#include <iostream> //by now you should know what this is
+#include <fstream>  //file stream library
+#include <string>   //library to use strings
+
+using namespace std;
+
+//Function Prototypes
+string read_file(string fn);                //custom function that reads files given a file name string
+void write_to_file(string fn, string msg);  //"                  " writes to a file given a file name and message
+
+int main()
+{
+  string file_name = "input_test.txt";         //set up file name for reading from initial file
+  string message = read_file(file_name);       //call the read_file function
+
+  if(message != "NULL")                        //if read_file didn't produce an error
   {
-    string file_name = "test.txt";            //set up file name for reading from initial file
-    string message = read_file(file_name);    //call the read_file function
-    
-    if(message != "NULL")                     //if read_file didn't produce an error
-    {
-      string new_file_name = "new_test.txt";  //set up file name for outputting message
-      write_to_file(new_file_name, message);  //call the write_to_file function
-    }
-    
-    return 0;
+    string new_file_name = "output_test.txt";  //set up file name for outputting message
+    write_to_file(new_file_name, message);     //call the write_to_file function
   }
 
-  string read_file(string fn)
+  //Custom "system("pause");" function that works for more than just Windows
+  cout << "Press ENTER to exit program...";
+  cin.ignore();
+
+  return 0;
+}
+
+string read_file(string fn)
+{
+  ifstream input_file;            //input file object to be used
+  input_file.open(fn.c_str());    //open (argument is a c-string, not string (distinction will be made later)), step 1
+
+  string message = "";            //message to write to
+
+  if(input_file.is_open())        //if the input file was opened successfully, step 2
   {
-    ifstream input_file;            //input file object to be used
-    input_file.open(fn.c_str());    //open (argument is a c-string, not string (distinction will be made later)), step 1
-    
-    string message = "";            //message to write to
-    
-    if(input_file.is_open())        //if the input file was opened successfully, step 2
-    {
-      getline(input_file, message); //grab first line of input file, step 2i
-      input_file.close();           //close file, step 2ii
-    }
-    else
-    {
-      cout << "ERROR: File could not be opened to extract data.\n"; //error message, step 3
-      message = "NULL";             //set message to NULL to skip writing to file later on
-    }
-    
-    return message; //return new message to be outputted
+    getline(input_file, message); //grab first line of input file, step 2i
+    input_file.close();           //close file, step 2ii
+    cout << "Read input file successfully.\n"; //optional message (for debug)
   }
-  
-  void write_to_file(string fn, string msg)
+  else
   {
-    ofstream output_file;          //output file object to be used
-    output_file.open(fn.c_str());  //open (argument is a c-string, not string (distinction will be made later)), step 1
-    
-    if(output_file.is_open())      //if the output file was successfully opened (or made), step 2
-    {
-      output_file << msg;          //write string to output file, step 2i
-      output_file.close();         //close file, step 2ii
-    }
-    else
-    {
-      cout << "ERROR: Issue when writing to file.\n"; //error message, step 3
-    }
+    cout << "ERROR: File could not be opened to extract data.\n"; //error message, step 3
+    message = "NULL";             //set message to NULL to skip writing to file later on
   }
+
+  return message; //return new message to be outputted
+}
+
+void write_to_file(string fn, string msg)
+{
+  ofstream output_file;          //output file object to be used
+  output_file.open(fn.c_str());  //open (argument is a c-string, not string (distinction will be made later)), step 1
+
+  if(output_file.is_open())      //if the output file was successfully opened (or made), step 2
+  {
+    output_file << msg;          //write string to output file, step 2i
+    output_file.close();         //close file, step 2ii
+    cout << "Wrote to output file successfully.\n"; //optional message (for debug)
+  }
+  else
+  {
+    cout << "ERROR: Issue when writing to file.\n"; //error message, step 3
+  }
+}
 ```
 
 The above is a program that reads the first line of a text file (named "test.txt") and outputs it to another file (named "new_test.txt"), 
 all within the executable's directory. On default, if "new_test.txt" does not exist then `ofstream` creates it (otherwise, it overwrites the existing file).
 
+A testable example of this program is located in the Resources folder on this page. It's packaged into a .zip archive, and includes 
+"input_test.txt", "text_file_io_practice.cpp", and an image showing an example of where everything should go.
+
 If you don't understand all of the above, that's okay. The most important parts to focus on are the bodies of the two functions `read_file` and `write_to_file`. Forming them into functions 
-just makes typing the examples a lot easier for myself. 
+just makes typing the examples a lot easier for myself.
 
 Note that, more often than not, it is not required to check if the file is open when outputting to a file. It's a good habit to have, although the only times 
 opening a file fails when outputting to a file is when there isn't enough disk space or the destination to write to is unreachable.
