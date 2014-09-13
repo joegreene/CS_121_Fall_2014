@@ -10,7 +10,8 @@
 This hosts the activities we worked on during the SI class on 9/10/14 and 9/12/14.
 
 ### Topics
-This week the second session (Wednesday from 4-5PM at the ULC) was introduced, so the topics are slightly different.
+This week the second session (Wednesday from 4-5PM at the ULC) was introduced, so the topics are slightly different. The worksheet and solutions 
+to the Week 3 worksheet are located in the "Resources" folder, using the same format as the previous weeks.
 
 #### Wednesday
 Passed out worksheet 3 and worked a bit on it. Also answered a general question about skipping characters in the input stream using `cin.ignore`, 
@@ -53,9 +54,44 @@ Major components of the above algorithm (not discussed in lecture yet) that may 
 - `cin.clear()`: Resets any error flags to their default values when called (in our case, we reset `cin.fail()` to `false`.
 - `cin.ignore(1000,'\n')`: Ignores either 1000 characters in the input stream or until ENTER was pressed (before the 1000 characters)
 
-__NOTE__: If we did not call "cin.clear()" and "cin.fail()" at some point became true, then any input grabbed afterwards will be considered "invalid". This is because, on 
-default, `cin.fail()` is false. To better understand this, try tracing the program with the following input: `abc` and afterwards `12`. A good way to check how this works 
-is by having the line `cout << cin.fail() << endl;` after `cin.clear()`, one time including and another time removing `cin.clear()` from the code.
+__NOTE__: On default, `cin.fail()` is false. If `cin.fail()` is not false when we loop a second time (i.e. if invalid input was read 
+beforehand), then all input after is "invalid". This happens when `cin.clear()` is not called after invalid input occurs.
+
+A way to better understand the above note (each is a step): 
+1. Have the line `cout << cin.fail() << endl;` after the if/else, one time including and another time removing `cin.clear()` from the code.
+2. Try invalid input, then valid input afterwards (e.g. enter `abc` first then `12`).
+
+(For #2) Including `cin.clear()`:
+```C++
+  if(cin.fail())
+  {
+    cout << "Invalid input!\n";
+    cin.clear();
+    cin.ignore(1000,'\n');
+  }
+  else
+  {
+    valid = true;
+  }
+  cout << cin.fail() << endl; //should be 0 in this case; which is good as that's cin.fail()'s default value
+```
+
+(For #2) Removing/commenting-out `cin.clear()`:
+```C++
+  if(cin.fail())
+  {
+    cout << "Invalid input!\n";
+    //cin.clear();
+    cin.ignore(1000,'\n');
+  }
+  else
+  {
+    valid = true;
+  }
+  cout << cin.fail() << endl; //should be 1 in this case, which is bad if we loop through a second time
+```
+
+Make sure that, in the above code, you type invalid input first (e.g. 'abc') then valid input afterwards (e.g. '12').
 
 We use `1000` in `cin.ignore` because it is a large number. We do not expect users to type in that long of an invalid input, so the number is adequate. 
 
