@@ -99,7 +99,10 @@ of the sentence is).
 __TIP__: Normally, spaces, endlines (`\n`), `$`, tabs (`\t`), and `|` (pipe key, and `SHIFT + \` are used as delimiters when working with input data (in files and console input).
 
 #### Question 4
-Output:
+__NOTE__: I just realized that I made a typo on the second worksheet. The second line needs an extra "<", to be `cout << sizeof(short) << endl`. I made the edit 
+in the uploaded version of the worksheet.
+
+Anyways, if it was typed correctly then this would be the following output:
 ```
   4
   2
@@ -113,11 +116,11 @@ be in RAM).
 __NOTE__: I specifically asked about the output in Visual Studio because different compilers may or may not have different standards on each type's byte-size. For a chart 
 on the byte-sizes, check [this](http://msdn.microsoft.com/en-us/library/cc953fe1%28v=vs.100%29.aspx) and [this](http://msdn.microsoft.com/en-us/library/s3f49ktz%28v=vs.100%29.aspx) out.
 
-A last note regarding byte-sizes:
+A last note regarding byte-sizes (to better understand what they actually mean to us):
 ```
   Let's say we have a 1-byte datatype. From this information, we know the following:
     - Each byte is 8 bits long
-    - Each bit is a 0 or 1 value, meaning there are two possible values for each bit
+    - Each bit is a 0 or 1 value, meaning there are two possible values (2^1) for each bit
     - Using a bit of algebra, we then have:
         2^1 * 2^1 * 2^1 * 2^1 * 2^1 * 2^1 * 2^1 * 2^1 = 2^8 = number of possible combinations of 0's and 1's we can make in a byte
   
@@ -126,14 +129,14 @@ A last note regarding byte-sizes:
   If we take this to something like an unsigned integer (in C++):
     - unsigned integers are 4 bytes, or 4 bytes * 8 bits per byte = 32 bits in total
     - Using the same algebra as before:
-      2 * 2 * 2 * ... * 2 = 2^32 total unique values in 4 bytes of data.
+      2^1 * 2^1 * 2^1 * ... * 2^1 = 2^32 total unique values in 4 bytes of data.
   
   The data range for an unsigned integer is 0 to 2^32 - 1. We subtract 1 to account for using 0 as well.
   
   For (signed) integers it's a bit funkier, but nonetheless the same method:
     - 4 bytes, meaning 2^32 unique values
     - The data range for a (signed) integer is:
-      -2^31 to 2^31 - 1 (we take one bit for the sign, 32 -> 31, and subtract one to account for 0)
+      -2^31 to 2^31 - 1 (we take one bit for the sign, 2^32 turns into 2^31, and subtract one to account for 0)
     The above is called two's compliment, noted about here: http://www.cs.uwm.edu/~cs151/Bacon/Lecture/HTML/ch03s09.html
 ```
 
@@ -147,7 +150,8 @@ For use when writing identifiers, examples are below:
 ```
 
 Neither is better than the other, and is solely preferential on the programmer. Just make sure to stick with one, or at least some programming 
-style standard, or else your code will look wonky and readers will have trouble understanding what you type.
+style standard, or else your code will look wonky and readers will have trouble understanding what you type. For my opinion though, I like 
+using underscores for variables and functions identifiers and, when we deal with objects and classes later (in october), camel case.
 
 Here's a page with a little more description on it: http://programmers.stackexchange.com/questions/27264/naming-conventions-camelcase-versus-underscore-case-what-are-your-thoughts-ab
 
@@ -180,7 +184,7 @@ The modulus operator (`%`) returns the remainder of two integers (and integers o
 
 Although it's useful for many reasons, here are just a few for now:
 - When working with `rand()` (a question like this popped up in worksheet 1)
-- Determining odd/even numbers (e.g. `num%2 == 0` is true when `num` is even)
+- Determining odd/even integers (e.g. `num%2 == 0` is true when `num` is even)
 - Checking to see when the current year is NOT a leap year. We have leap years when the year is divisible by 4, and not a leap year if divisible by 100 and not 400). Examples 
 of leap years are 2000 and 1504, and examples of non-leap years are 1900 and 1997.
 
