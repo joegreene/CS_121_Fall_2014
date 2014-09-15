@@ -50,16 +50,17 @@ An example of properly grabbing an integer from the input stream:
 To better understand this code go and test it out in visual studio. It can be placed either under main or some function.
 
 Major components of the above algorithm (not discussed in lecture yet) that may seem confusing:
-- `cin.fail()`: Returns true if there was an issue when grabbing data from the input stream
-- `cin.clear()`: Resets any error flags to their default values when called (in our case, we reset `cin.fail()` to `false`.
-- `cin.ignore(1000,'\n')`: Ignores either 1000 characters in the input stream or until ENTER was pressed (before the 1000 characters)
+- `cin.fail()`: Returns true if there was an issue when grabbing data from the input stream.
+- `cin.clear()`: Resets any `cin` flags to their default values when called (in our case, we reset `cin.fail()` to `false`).
+- `cin.ignore(1000,'\n')`: Ignores either 1000 characters in the input stream or until ENTER was pressed (before the 1000 characters).
 
-__NOTE__: On default, `cin.fail()` is false. If `cin.fail()` is not false when we loop a second time (i.e. if invalid input was read 
-beforehand), then all input after is "invalid". This happens when `cin.clear()` is not called after invalid input occurs.
+__NOTE__: On default, `cin.fail()` is false. If `cin.fail()` is not false (true) when we loop a second time (i.e. if invalid input was read 
+beforehand), then all input after is ignored until `cin.fail()` (causing an infinite loop) is reset to false. Namely, this happens when 
+`cin.clear()` is not called after invalid input occurs (i.e. when `cin.fail()` is toggled true).
 
 A way to better understand the above note (each is a step): 
 1. Have the line `cout << cin.fail() << endl;` after the if/else, one time including and another time removing `cin.clear()` from the code.
-2. Try invalid input, then valid input afterwards (e.g. enter `abc` first then `12`).
+2. Try invalid input (e.g. enter `abc`).
 
 (For #2) Including `cin.clear()`:
 ```C++
@@ -91,7 +92,7 @@ A way to better understand the above note (each is a step):
   cout << cin.fail() << endl; //should be 1 in this case, which is bad if we loop through a second time
 ```
 
-Make sure that, in the above code, you type invalid input first (e.g. 'abc') then valid input afterwards (e.g. '12').
+Make sure that, in the above code, you type invalid input (e.g. 'abc').
 
 We use `1000` in `cin.ignore` because it is a large number. We do not expect users to type in that long of an invalid input, so the number is adequate. 
 

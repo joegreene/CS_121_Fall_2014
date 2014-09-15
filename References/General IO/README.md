@@ -96,11 +96,14 @@ One example of applying this method (using a do-while loop to prove full usefuln
   }while(!valid_input);                        //while valid_input is false. Same as "valid_input != true"
 ```
 
-Note that the above example does not check for cases such as "g 1231hjvk55dzg". It checks only the first string of characters until it hits a new space.
-To ignore the rest you can use `ignore` again to ignore the extra input or use `noskipws`, which means `cin` won't skip whitespace when extracting input from the input stream
-(which should toggle `cin.fail();` as true if we try to put the string into the char).
+Note that the above example does not check for cases such as "g 1231hjvk55dzg". It only checks to see that the first character it finds 
+is of type `char` (so even `dsfafasf` is considered "valid"). There are a couple ways to fix this, such as:
+- Grab a string instead, see if its length is one, and if the first position is a char. If so, insert it into the char. Else, it's bad input.
+- Grab the character as normal. If you can grab more afterwards, it was bad input.
 
-More information [here](http://www.cplusplus.com/forum/beginner/2957/) and [here](http://stackoverflow.com/questions/5131647/why-would-we-call-cin-clear-and-cin-ignore-after-reading-input).
+More information [here](http://www.cplusplus.com/forum/beginner/2957/), [here](http://stackoverflow.com/questions/5131647/why-would-we-call-cin-clear-and-cin-ignore-after-reading-input), 
+and [here](http://www.augustcouncil.com/~tgibson/tutorial/iotips.html#directly). The last link has a lot more information (scroll up to the 
+top of the page for a topic listing).
 
 ##### Output: cout
 `cout`, or console output, helps output information to the console via the console output stream.
