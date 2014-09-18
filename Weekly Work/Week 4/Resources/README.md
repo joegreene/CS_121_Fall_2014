@@ -1,17 +1,23 @@
 # Week 4 Solutions
 
 ## Sections
+- [Intro](#intro)
 - [Questions](#questions)
-  - [Question 1](#question-1)
-  - [Question 2](#question-2)
-  - [Question 3](#question-3)
-  - [Question 4](#question-4)
+  - [Nested For Loops](#nested-for-loops)
+    - [](#)
 
+### Intro
+As usual, the worksheet is the .docx file located near the top of this page. If you need it in another format (i.e. you do not 
+have Microsoft Word or a suitable viewer for the file), send me an email or ask someone for a printout.
+
+The worksheet might seem beefy, however that's because majority of it is explaining concepts.
 
 ### Questions
-TBD
+I didn't really label questions throughout the sheet, however there were sections required to plug in information.
+There are many possible answers for most of the sections, however later on I will include what I believe are easy-to-read 
+solutions.
 
-#### Question 1
+#### Nested For Loops
 TBD
 
 -------------------------------------------------------------------------------
