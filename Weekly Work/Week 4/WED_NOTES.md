@@ -64,8 +64,8 @@ We came up with the following C++ to psuedo-code translation below:
   Create a constant integer, LENGTH
   Create an integer array, list, of size LENGTH
   
-  For each position in the array
-    Print out each element in the array to console
+  For each position in list
+    Print out each element in list to console
     
   //Section 2: switch cases
   Create an integer, x
