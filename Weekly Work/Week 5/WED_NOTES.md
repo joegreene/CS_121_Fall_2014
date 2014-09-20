@@ -5,7 +5,7 @@
   - [Notes](#notes)
   
 ### Intro
-TBD
+TBDBelow are the notes from the Wednesday (9/24) SI session.
 
 #### Notes
 TBD
