@@ -85,8 +85,8 @@ location as your source files (.cpp files)
 mind that the purpose of the identifier is to help you (and others) know what you're 
 using the variable for. Example: `ofstream outfile` can be `ofstream infile` if you really 
 want, but using `infile` for an `ofstream` object makes no sense.
-- Check [here](../joegreene/CS_121_Fall_2014/tree/master/References/General IO#text-file-io) for 
-minor help with text file IO as well. Also [here](../joegreene/Spring-2014-CS-Lab--SI-/blob/master/Week%2013/file_io_new.md) 
+- Check [here](https://www.github.com/joegreene/CS_121_Fall_2014/tree/master/References/General IO#text-file-io) for 
+minor help with text file IO as well. Also [here](https://www.github.com/joegreene/Spring-2014-CS-Lab--SI-/blob/master/Week%2013/file_io_new.md) 
 for my previous semester notes, which are more extensive than the other link.
 
 __Post Versus Pre Increment/Decrement__:
