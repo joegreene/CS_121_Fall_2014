@@ -80,11 +80,6 @@ We came up with the following C++ to psuedo-code translation below:
 The above isn't the "only way" to write the psuedo-code. It's just what we all agreed 
 seemed clear enough to describe what we were programming.
 
--------------------------------------------------------------------------------
-
-Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
-Released under [The MIT License] (http://opensource.org/licenses/MIT)  
-Project located at <https://github.com/joegreene/CS_121_Fall_2014>
 For cascading/falling-through switch cases, we tested the following code:
 ```C++
   char grade = 'b';
@@ -181,3 +176,9 @@ to include support for partially-filled arrays (i.e. if we did not have at least
 of lines in our text file). Having this kind of support is especially important when dealing with 
 file input. We do not always know how much data is within the files we read in (which implies that 
 a `while` loop works better than a `for` loop in most cases).
+
+-------------------------------------------------------------------------------
+
+Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
+Released under [The MIT License] (http://opensource.org/licenses/MIT)  
+Project located at <https://github.com/joegreene/CS_121_Fall_2014>
