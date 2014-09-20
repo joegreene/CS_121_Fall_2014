@@ -9,12 +9,12 @@ Below are the notes from the Friday (9/19) SI session.
 
 (Copied and pasted from Week 4 main page)
 Most of the session was spent discussing questions about the topics listed below:
-- File IO (namely, how to set up file IO and how it relates to `cout`/`cin`)
+- Text File Input/Output (namely, how to set up text file IO and how it relates to `cout`/`cin`)
 - Post versus Pre Increment/Decrement
 - Array Access (using streams to initialize/output elements in an array)
 
 #### Notes
-__File IO__: 
+__Text File IO__: 
 Although this was talked with the array access part, below is close to what we worked with:
 ```C++
   const int LENGTH = 4;
@@ -85,6 +85,9 @@ location as your source files (.cpp files)
 mind that the purpose of the identifier is to help you (and others) know what you're 
 using the variable for. Example: `ofstream outfile` can be `ofstream infile` if you really 
 want, but using `infile` for an `ofstream` object makes no sense.
+- Check [here](../joegreene/CS_121_Fall_2014/tree/master/References/General IO#text-file-io) for 
+minor help with text file IO as well. Also [here](../joegreene/Spring-2014-CS-Lab--SI-/blob/master/Week%2013/file_io_new.md) 
+for my previous semester notes, which are more extensive than the other link.
 
 __Post Versus Pre Increment/Decrement__:
 

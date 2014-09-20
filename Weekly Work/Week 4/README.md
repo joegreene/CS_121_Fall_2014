@@ -35,7 +35,7 @@ apologize for the mistake. Also I meant to say to output to console, however to 
 I uploaded the revised worksheet.
 
 Other than that: Most of the session was spent discussing questions about the topics listed below:
-- File IO (namely, how to set up file IO and how it relates to `cout`/`cin`)
+- Text File Input/Output (namely, how to set up text file IO and how it relates to `cout`/`cin`)
 - Post versus Pre Increment/Decrement
 - Array Access (using streams to initialize/output elements in an array)
 
