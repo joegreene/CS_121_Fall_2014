@@ -29,7 +29,18 @@ For notes on what we did during the session, click [here](WED_NOTES.md) or click
 above (near the Resources folder area).
 
 #### Friday
-TBA
+__REVISION__: I made an error in the original worksheet about the equilateral triangle print and the last section (2d array with File IO). 
+Instead of "absolute value version" it should have been "two for loop" version. I was copying and pasting old work and I 
+apologize for the mistake. Also I meant to say to output to console, however to make up for my error I will give both solutions.
+I uploaded the revised worksheet.
+
+Other than that: Most of the session was spent discussing questions about the topics listed below:
+- File IO (namely, how to set up file IO and how it relates to `cout`/`cin`)
+- Post versus Pre Increment/Decrement
+- Array Access (using streams to initialize/output elements in an array)
+
+For notes from the session, click [here](FRI_NOTES.md) or click on `FRI_NOTES.md`
+above (near the Resources folder area).
 
 -------------------------------------------------------------------------------
 

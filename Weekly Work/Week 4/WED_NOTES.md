@@ -80,6 +80,11 @@ We came up with the following C++ to psuedo-code translation below:
 The above isn't the "only way" to write the psuedo-code. It's just what we all agreed 
 seemed clear enough to describe what we were programming.
 
+-------------------------------------------------------------------------------
+
+Copyright &copy; 2014 Joseph Greene <joeisgreene@csu.fullerton.edu>  
+Released under [The MIT License] (http://opensource.org/licenses/MIT)  
+Project located at <https://github.com/joegreene/CS_121_Fall_2014>
 For cascading/falling-through switch cases, we tested the following code:
 ```C++
   char grade = 'b';
