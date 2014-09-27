@@ -176,22 +176,19 @@ Above code fixed:
   int str_count = 0; //initially we have 0 elements in the array
   
   str_list[0] = "First element.";
-  str_count++; //increment counter each time we add one to the array
+  str_count++; //increment counter each time we add an element to the array
   str_list[1] = "Second element.";
   str_count++; //same as last
   
-  for(int i = 0; i < str_list; ++i)
+  for(int i = 0; i < str_count; ++i)
   {
     cout << str_list[i] << endl;
   }
 ```
 
-Now 
+Now the code will work as intended: It prints out every element __initialized__ in `str_list`.
 
-__NOTE__: The above is called a [logic error](http://en.wikipedia.org/wiki/Logic_error),that is, the code runs perfectly fine however is not what was intended by the programmer (or at least 
-I hope that it was not intended).
-
-__NOTE 2__: With the array initialization section, we could optionally do:
+__NOTE__: With the array initialization section, we could optionally do:
 ```C++
   str_list[str_count++] = "First element.";
   str_list[str_count++] = "Second element.";
