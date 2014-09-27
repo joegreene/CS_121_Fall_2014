@@ -1,10 +1,10 @@
 CS_121_Fall_2014
 ================
 
+Work used during the SI portion of the Fall 2014 CPSC 121 Class, Section 07-08, MoWe 5:30 - 6:20PM
+
 __NOTE__: Most (if not all) updates to this repository are done between Friday evening and Saturday morning. If you've come 
 to check for updates on the weekly work, best time to check it out is on Saturday.
-
-Work used during the SI portion of the Fall 2014 CPSC 121 Class, Section 07-08, MoWe 5:30 - 6:20PM
 
 Meeting Times: 
 - Wednesdays @ 4 - 5:00PM, ULC* (University Learning Center; Second Floor Pollak Library where the tutoring tables are)
