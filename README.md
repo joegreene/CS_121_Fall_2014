@@ -15,6 +15,9 @@ If you need to contact me for whatever reason, my email is located at the bottom
 (and all other pages in this repository). I regularly attend lecture, I go to the lab for the first half hour or so, and 
 of course you can talk to me during the SI session.
 
+__NOTE__: Most (if not all) updates to this repository are done between Friday evening and Saturday morning. If you've come 
+to check for updates on the weekly work, best time to check it out is on Saturday.
+
 I look forward to working with you guys this semester!
 
 -------------------------------------------------------------------------------
