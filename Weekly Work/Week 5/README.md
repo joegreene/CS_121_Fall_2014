@@ -10,13 +10,22 @@
 This hosts the activities we worked on during the SI class on 9/24/14 and 9/26/14.
 
 ### Topics
-TBD
+Below is a directory for the Wednesday and Friday notes from this week.
 
 #### Wednesday
-TBD
+Head to the Wednesday notes page above (WED_NOTES.md) or click [here](WED_NOTES.md) to 
+read what happened.
 
 #### Friday
-TBD
+Topics discussed during the session (no particular order):
+- Getting the maximum and minimum of an array of integers
+- Boolean flags
+- Structure of psuedo-code
+- Define an array Ssze by constant integer
+- Array size versus number of items in an array
+
+Head to the Friday notes page above (FRI_NOTES.md) or click [here](FRI_NOTES.md) to read 
+what happened.
 
 -------------------------------------------------------------------------------
 

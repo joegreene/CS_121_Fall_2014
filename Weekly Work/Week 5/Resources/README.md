@@ -5,7 +5,9 @@
 - [Questions](#questions)
 
 ### Intro
-TBD
+This page hosts the solutions to the psuedo-code work (week 5 worksheet).
+
+This will be filled out after next Wednesday (continuing the worksheet then).
 
 ### Questions
 TBD

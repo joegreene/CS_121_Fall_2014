@@ -5,10 +5,13 @@
   - [Notes](#notes)
   
 ### Intro
-TBDBelow are the notes from the Wednesday (9/24) SI session.
+Below are the notes from the Wednesday (9/24) SI session.
 
 #### Notes
-TBD
+To prevent possible stress and clear people's minds, instead of having a 
+worksheet or problems to work on, all we did was go over questions anyone 
+who went to the SI session had. Majority of it consisted with switch cases, 
+accessing arrays, and opening files with ifstream and ofstream objects.
 
 -------------------------------------------------------------------------------
 
