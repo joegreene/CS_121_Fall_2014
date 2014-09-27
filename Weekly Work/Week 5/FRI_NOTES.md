@@ -121,7 +121,9 @@ For a C++ example:
   }
 ```
 
-__NOTE__: Remember that the middle part of a `for` loop is a conditional statement. We can add whatever we want to it (as long as it can return a true/false value).
+__NOTE__: Remember that the middle part of a `for` loop is a conditional statement. We can add whatever we want to it (as long as it can return a true/false value). 
+
+__TRIVIA__: `for` loops are a shorthand version of `while` loops.
 
 __NOTE 2__: If you want to print which position you found the match in, keep track of the index (e.g. have an integer to track what `i` is when a match was found).
 
