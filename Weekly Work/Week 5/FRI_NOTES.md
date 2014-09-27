@@ -217,7 +217,7 @@ Without a constant integer:
   {
     for (int c = 0; c < 3; ++c)
     {
-      cout << grid[r][c] << endl;
+      cout << grid[r][c] << " ";
     }
     cout << endl;
   }
@@ -241,19 +241,22 @@ With constant integer:
   {
     for (int c = 0; c < COL_SIZE; ++c)
     {
-      cout << grid[r][c] << endl;
+      cout << grid[r][c] << " ";
     }
     cout << endl;
   }
 ```
 
-Alright, the above might not be that hard to realize but think of it like this: Assume we have to change the row and column size of `grid`. Without constant integers, we will 
-have to make 6 changes. With constant integers we only need to make two edits. When working with even bigger programs and more instances of `ROW_SIZE` and `COL_SIZE`, 
-the amount of edits we will need to make increase with the number of instances of `ROW_SIZE` and `COL_SIZE` (which is bad). With constant integers we will always 
-only need to make two edits (or, at least equal to the amount of constant integers we need to change).
+Alright, the above might not be that hard to realize but think of it like this: 
+- Assume we have to change the row and column size of `grid`. Without constant integers, we will have to make 6 changes. 
+- With constant integers we only need to make two edits. 
 
-Although it's true that we are using four bytes to store a constant integer, the trade-off is next to nothing. We live in a time where memory is abundant, 
-so don't worry about that.
+Generally speaking: The amount of edits increases with the number of instances of `ROW_SIZE` and `COL_SIZE` you choose to replace them with integer 
+literals (e.g. `4` versus `ROW_SIZE`). If working with constant integers, you only need to make as many edits as the number of constant integers you have 
+(in the above example, that would be two edits).
+
+__TRIVIA__: Although it's true that we are using four bytes to store a constant integer, the trade-off is next to nothing. We live in a time where memory is abundant, 
+so there's no need to worry about that. If we did need to worry about that, you'd be using `float` as opposed to `double`.
 
 If you want to know why we syntactically have to use a constant integer to define an array's size (as opposed to an 
 unsigned integer): The compiler requires a positive integer value that's both constant at compile time to work. Statically-made arrays 
