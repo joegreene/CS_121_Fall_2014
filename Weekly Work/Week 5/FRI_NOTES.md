@@ -157,7 +157,10 @@ num_list = [ "First element" ][ "Second element" ][ \0 ][ \0 ]
 ```
 
 The first and second element we initialized, and `\0` is the NULL character. You might remember it from the powerpoint notes about c-strings, and is meant 
-to note the end of a c-string. C++ has it as the default value for empty positions in a string array.
+to note the end of a c-string. C++ has it as the default value for empty positions in a string array. A similar effect happens with integer arrays (except they 
+are set to equal 0 and __SHOULD NOT__ be relied on). From my experience, this is a Microsoft Visual Studio-specific thing (i.e. it might not happen in x-code, eclipse, or another IDE). 
+
+__Moral of the story__: Don't rely on default initialization.
 
 __NOTE__: The above is called a [logic error](http://en.wikipedia.org/wiki/Logic_error),that is, the code runs perfectly fine however is not what was intended by the programmer (or at least 
 I hope that it was not intended).
