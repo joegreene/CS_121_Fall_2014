@@ -150,11 +150,10 @@ If you don't notice it immediately: Try tracing the program by hand. How many it
 
 __A__: This is because we're trying to print every element (including uninitialized ones) in a __partially filled__ array.
 Visually, before the code is ran, our array looks like the following:
-
-num_list = 
-[ "First element" ][ "Second element" ][ \0 ][ \0 ]
-
-         0                   1            2     3
+```
+num_list = [ "First element" ][ "Second element" ][ \0 ][ \0 ]
+                    0                   1            2     3
+```
 
 The first and second element we initialized, and `\0` is the NULL character. You might remember it from the powerpoint notes about c-strings, and is meant 
 to note the end of a c-string. C++ has it as the default value for empty positions in a string array.
@@ -247,7 +246,7 @@ With constant integer:
   }
 ```
 
-Alright, the above might not be that hard to realize but think of it like this: 
+Alright, the above might not be that hard to realize the above code's purpose, however it might be helpful to think of it like this: 
 - Assume we have to change the row and column size of `grid`. Without constant integers, we will have to make 6 changes. 
 - With constant integers we only need to make two edits. 
 
