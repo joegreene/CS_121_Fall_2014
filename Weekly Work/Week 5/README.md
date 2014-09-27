@@ -21,7 +21,7 @@ Topics discussed during the session (no particular order):
 - Getting the maximum and minimum of an array of integers
 - Boolean flags
 - Structure of psuedo-code
-- Define an array Ssze by constant integer
+- Define array size by constant integer
 - Array size versus number of items in an array
 
 Head to the Friday notes page above (FRI_NOTES.md) or click [here](FRI_NOTES.md) to read 

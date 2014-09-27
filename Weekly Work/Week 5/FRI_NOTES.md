@@ -13,14 +13,14 @@
 Below are the notes from the Friday (9/26) SI session.
 
 #### Notes
-Half of the session was spent working on questions SI participants had, the other 
+Half of the session was spent working on questions SI participants had, and the other 
 half was spent working on the psuedo-code worksheet supplied above.
 
 A few topics discussed during the session (no particular order):
 - Getting the maximum and minimum of an array of integers
 - Boolean flags
 - Structure of psuedo-code
-- Define an array Ssze by constant integer
+- Define array size by constant integer
 - Array size versus number of items in an array
 
 I was lazy with the order so feel free to jump around to different sections.
@@ -149,6 +149,7 @@ __Q__: Why is the following code going to give erroneous results?
 If you don't notice it immediately: Try tracing the program by hand. How many items are in `str_list`? What will the output of the code segment be?
 
 __A__: This is because we're trying to print every element (including uninitialized ones) in a __partially filled__ array.
+
 Visually, before the code is ran, our array looks like the following:
 ```
 num_list = [ "First element" ][ "Second element" ][ \0 ][ \0 ]
