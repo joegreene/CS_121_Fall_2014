@@ -2,14 +2,29 @@
 
 ## Sections
 - [Intro](#intro)
-- [Questions](#questions)
+- [Worksheet 1](#worksheet-1)
+  - [Questions](#questions)
+- [Worksheet 2](#worksheet-2)
+  - [Questions](#questions)
 
 ### Intro
-This page hosts the solutions to the psuedo-code work (week 6 worksheet).
+This page hosts the solutions to the questions in both 
+worksheet 1 and 2 for this week.
 
+Worksheet 1's solutions will be posted on Friday afternoon, 
+and worksheet 2's solutions will be posted Wednesday afternoon
+(next week).
+
+### Worksheet 1
 TBD
 
-### Questions
+#### Questions
+TBD
+
+### Worksheet 2
+TBD
+
+#### Questions
 TBD
 
 -------------------------------------------------------------------------------

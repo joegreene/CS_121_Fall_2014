@@ -9,7 +9,7 @@ For some weeks I may choose to upload practice projects, that is, if we either
 worked on some during the SI session or I felt generous. Either way, they aren't 
 mandatory in any way and only serve to help hone your C++ programming skills.
 
-Remember: If you have any ideas or questions that you would like to work on during the SI 
+__Remember__: If you have any ideas or questions that you would like to work on during the SI 
 sessions, please let me know either via email, during the class time, or during the SI 
 session. If I'm not told anything I'll just make worksheets/mini-projects based mainly 
 off of lecture or what I consider something that needs to be practiced.

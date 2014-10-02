@@ -16,6 +16,7 @@ prior to the session.
 **There is another SI session (specifically for CS 120) that goes on before ours. If you arrive early, just wait outside of the room 
 until it's 12PM. Chances are I'll be outside waiting as well.
 
+__Extra Information__:
 If you would like review on CS 120 topics, take a look at the References folder above. It covers most (if not all) 
 possible review of the material you've worked on in CS 120 (that is, if you took that class at CSUF). The Weekly Work 
 folder includes all the work done at each SI session each week throughout the Fall 2014 semester.
