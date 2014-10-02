@@ -3,8 +3,8 @@
 ## Sections
 - [Intro](#intro)
   - [Notes](#notes)
-    - [Vectors (Basics)](#vectors-(basics))
-    - [Using CPlusPlus.com](#using-cplusplus.com)
+    - [Vectors (Basics)](#vectors-basics)
+    - [Using CPlusPlus.com](#using-cpluspluscom)
     - [Comparing Arrays and Vectors](#comparing-arrays-and-vectors)
   
 ### Intro
@@ -14,7 +14,7 @@ Below are the notes from the Wednesday (10/01) SI session.
 We worked (did not finish) the Week 6 worksheet. We did, however, 
 discuss the following topics (which pertain to the worksheet):
 
-Topics covered:
+Topics discussed during the session (no particular order):
 - Vectors (Basics)
 - Using CPlusPlus.com
 - Comparing Arrays and Vectors
@@ -29,7 +29,8 @@ topic.
 
 ##### Using CPlusPlus.com
 I'm pretty sure a good amount of you already know about this website, but disregarding that 
-this website is a lifesaver when it comes to remembering thing about C++.
+this website is a lifesaver when it comes to remembering thing about C++ (I'm specifically 
+talking about the references section, __NOT__ the forums).
 
 For practice, we went to the [cplusplus.com reference page for vectors](http://www.cplusplus.com/reference/vector/vector/), 
 and looked at the pages for the following (grabbed from CH 8-3 PPT, p3):

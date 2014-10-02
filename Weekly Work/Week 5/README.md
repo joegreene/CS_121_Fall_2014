@@ -13,7 +13,7 @@ This hosts the activities we worked on during the SI class on 9/24/14 and 9/26/1
 Below is a directory for the Wednesday and Friday notes from this week.
 
 #### Wednesday
-Head to the Wednesday notes page above (WED_NOTES.md) or click [here](WED_NOTES.md) to 
+Head to the Wednesday notes page above or click [here](WED_NOTES.md) to 
 read what happened.
 
 #### Friday
@@ -24,7 +24,7 @@ Topics discussed during the session (no particular order):
 - Define array size by constant integer
 - Array size versus number of items in an array
 
-Head to the Friday notes page above (FRI_NOTES.md) or click [here](FRI_NOTES.md) to read 
+Head to the Friday notes page above or click [here](FRI_NOTES.md) to read 
 what happened.
 
 -------------------------------------------------------------------------------

@@ -28,7 +28,7 @@ Explains the logic and process of the code in English.
 I apologize in advance if I have made any errors. If I did, or something seems confusing, please 
 let me know.
 
-Program 1:
+__Program 1__:
 ```
   Libraries used:
   - fstream
@@ -53,7 +53,7 @@ Program 1:
   4. If the file could not be opened, print that "num_list.txt" could not be opened/read.
 ```
 
-Program 2 (this one can get rather messy, solely due to the palindrome part):
+__Program 2__ (this one can get rather messy, solely due to the palindrome part):
 ```
   Libraries used:
   - fstream
@@ -76,7 +76,7 @@ Program 2 (this one can get rather messy, solely due to the palindrome part):
   4. If the file could not be opened, print that "word_list.txt" could not be opened/read
 ```
 
-Palindrome Algorithm:
+__Palindrome Algorithm__:
 ```
   1. Declare the following variables:
           - boolean is_palindrome; Flag for whether or not a phrase is a palindrome (initialize as true)

@@ -13,7 +13,13 @@ This hosts the activities we worked on during the SI class on 10/01/14 and 10/03
 Below is a directory for the Wednesday and Friday notes from this week.
 
 #### Wednesday
-TBD
+Topics discussed during the session (no particular order):
+- Vectors (Basics)
+- Using CPlusPlus.com
+- Comparing Arrays and Vectors
+
+Head to the Wednesday notes page above or click [here](WED_NOTES.md) to read 
+what happened.
 
 #### Friday
 TBD
