@@ -17,11 +17,10 @@ prior to the session.
 until it's 12PM. Chances are I'll be outside waiting as well.
 
 __Extra Information__:
-If you would like review on CS 120 topics, take a look at the References folder above. It covers most (if not all) 
+- If you would like review on CS 120 topics, take a look at the References folder above. It covers most (if not all) 
 possible review of the material you've worked on in CS 120 (that is, if you took that class at CSUF). The Weekly Work 
 folder includes all the work done at each SI session each week throughout the Fall 2014 semester.
-
-If you need to contact me for whatever reason, my email is located at the bottom of this page
+- If you need to contact me for whatever reason, my email is located at the bottom of this page
 (and all other pages in this repository). I regularly attend lecture, I go to the lab for the first half hour or so, and 
 of course you can talk to me during the SI session.
 
