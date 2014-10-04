@@ -7,8 +7,10 @@
     - [Syntax Practice](#syntax-practice)
     - [General Concept](#general-concept)
 - [Worksheet 2](#worksheet-2)
-  - [Questions](#questions)
-
+  - [Questions](#questions-1)
+    - [Syntax Practice](#syntax-practice)
+    - [Functions Section](#functions-section)
+    
 ### Intro
 This page hosts the solutions to the questions in both worksheet 1 and 2 for this week.
 
@@ -31,7 +33,7 @@ Problems revised (edits already made in uploaded .docx):
 - Syntax Practice: #4, #9
 
 ##### Syntax Practice
-1. Answers may vary.
+1) Answers may vary.
 
 One possible solution (adds 0, 15, 30, 45, 60 to list):
 ```C++
@@ -41,7 +43,7 @@ One possible solution (adds 0, 15, 30, 45, 60 to list):
   ]
 ```
 
-2. Focus mainly on how "size()" is used in this:
+2) Focus mainly on how "size()" is used in this:
 ```C++
   for(int i = 0; i < dyn_scores.size(); ++i)
   {
@@ -58,7 +60,7 @@ Output (using my example numbers):
   Score 5: 60
 ```
 
-3. For loop:
+3) For loop:
 ```C++
   for(int i = 0; i < dyn_scores.size(); ++i)
   {
@@ -71,7 +73,7 @@ Single line:
   dyn_scores.clear();
 ```
 
-4. I made a weird mistake with this (should say "push_back" only)
+4) I made a weird mistake with this (should say "push_back" only)
 ```C++
   for(int i = 0; i < STUDENT_SIZE; ++i)
   {
@@ -103,12 +105,12 @@ This means there is only one item and, recalling back to static arrays, if we ac
 (i.e. if the index we attempt to call is equal to the list's size), we will get an out-of-bounds error. 
 The range is `0 to n-1` where n is the list's size. This pattern occurs each iteration.
 
-5. Single line:
+5) Single line:
 ```C++
   dyn_scores = more_scores;
 ```
 
-6. Using `double mean` for this:
+6) Using `double mean` for this:
 ```C++
   double mean = 0;
   
@@ -122,7 +124,7 @@ The range is `0 to n-1` where n is the list's size. This pattern occurs each ite
   
 ```
 
-7. 
+7) 
 `dyn_scores` (similar to `more_scores`):
 ```C++
   for(int i = 0; i < dyn_scores.size(); ++i)
@@ -149,7 +151,7 @@ Check [this](http://www.cplusplus.com/reference/vector/vector/resize/) page out 
   }
 ```
 
-8. Empty check:
+8) Empty check:
 ```C++
   if(dyn_scores.empty() && more_scores.empty())
   {
@@ -157,7 +159,7 @@ Check [this](http://www.cplusplus.com/reference/vector/vector/resize/) page out 
   }
 ```
 
-9. Six ways (three each; can be done to dyn_scores too):
+9) Six ways (three each; can be done to dyn_scores too):
 ```C++
   //Front
   more_scores.front();
@@ -174,15 +176,15 @@ __NOTE__: Sorry if it was unclear on what I was asking of you. I meant "two ways
 (in a sense) equates to four total lines.
 
 ##### General Concept
-1. Nope. Say we had a vector called "vect". If we want its size, we call "vect.size();". There's no 
+1) Nope. Say we had a vector called "vect". If we want its size, we call "vect.size();". There's no 
 need to worry about how many elements we have because ".size()" marks how many elements we have. 
 A vector's size is dynamic, and we won't be dealing with partially-filled vectors.
 
-2. A vector is not a primitive type. This is because we have to include a library (i.e. `#include <vector>`) 
+2) A vector is not a primitive type. This is because we have to include a library (i.e. `#include <vector>`) 
 in order to use it. Examples of primitive data types are `int`, `bool`, `char`, `double` and so on that don't need 
 any external dependencies (like adding in libraries).
 
-3. Refer to the chapter 8, section 8-3 powerpoint notes for this. It covers most information regarding this
+3) Refer to the chapter 8, section 8-3 powerpoint notes for this. It covers most information regarding this
 question.
 
 ### Worksheet 2
@@ -195,6 +197,12 @@ __NOTE__: On Monday the notes will cover why, in class, why I made the revision 
 
 #### Questions
 Will be filled out next week Wednesday.
+
+##### Syntax Practice
+TBD
+
+##### Functions Section
+TBD
 
 -------------------------------------------------------------------------------
 
