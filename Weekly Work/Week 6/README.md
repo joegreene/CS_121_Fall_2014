@@ -22,7 +22,11 @@ Head to the Wednesday notes page above or click [here](WED_NOTES.md) to read
 what happened.
 
 #### Friday
-TBD
+Topics talked about today:
+- Vector Functions
+
+Head to the Friday notes page above or click [here](FRI_NOTES.md) to read 
+what happened.
 
 -------------------------------------------------------------------------------
 
