@@ -8,7 +8,7 @@
     - [General Concept](#general-concept)
 - [Worksheet 2](#worksheet-2)
   - [Questions](#questions-1)
-    - [Syntax Practice](#syntax-practice)
+    - [Syntax Practice](#syntax-practice-1)
     - [Functions Section](#functions-section)
     
 ### Intro
