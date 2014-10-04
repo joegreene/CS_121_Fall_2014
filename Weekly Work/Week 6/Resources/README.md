@@ -10,8 +10,7 @@
   - [Questions](#questions)
 
 ### Intro
-This page hosts the solutions to the questions in both 
-worksheet 1 and 2 for this week.
+This page hosts the solutions to the questions in both worksheet 1 and 2 for this week.
 
 Worksheet 1's solutions will be posted on Friday afternoon, 
 and worksheet 2's solutions will be posted Wednesday afternoon
@@ -19,17 +18,17 @@ and worksheet 2's solutions will be posted Wednesday afternoon
 
 __NOTE__: I have made revisions to the following problems. Explanations are 
 with each corresponding solution and the problems are noted in the "Questions" section.
+
 ### Worksheet 1
 Above with file name "CS 121 Week 6 - Vectors Worksheet.docx".
 
-Check [this](http://www.cplusplus.com/reference/vector/vector/) page out for A LOT of 
+Check [this](http://www.cplusplus.com/reference/vector/vector/) page out for __A LOT__ of 
 information regarding vectors. Follow the instructions from the worksheet to understand how 
 to use the website.
 
 #### Questions
 Problems revised (edits already made in uploaded .docx):
 - Syntax Practice: #4, #9
-- 
 
 ##### Syntax Practice
 1. Answers may vary.
@@ -180,7 +179,7 @@ need to worry about how many elements we have because ".size()" marks how many e
 A vector's size is dynamic, and we won't be dealing with partially-filled vectors.
 
 2. A vector is not a primitive type. This is because we have to include a library (i.e. `#include <vector>`) 
-in order to use it. Examples of primitive data types are `int, bool, char, double` and so on that don't need 
+in order to use it. Examples of primitive data types are `int`, `bool`, `char`, `double` and so on that don't need 
 any external dependencies (like adding in libraries).
 
 3. Refer to the chapter 8, section 8-3 powerpoint notes for this. It covers most information regarding this
@@ -190,12 +189,12 @@ question.
 Above with file name: "CS 121 Week 6 - Vectors, Delimiters, and Functions.docx".
 
 Revisions made (already fixed in uploaded .docx files):
-- Last problem (second section)
+- Last problem (second section); will be explained later.
 
-__NOTE__: On Monday we'll cover why, in class, why I made the revision to the last problem.
+__NOTE__: On Monday the notes will cover why, in class, why I made the revision to the last problem.
 
 #### Questions
-Will be filled out next week.
+Will be filled out next week Wednesday.
 
 -------------------------------------------------------------------------------
 
