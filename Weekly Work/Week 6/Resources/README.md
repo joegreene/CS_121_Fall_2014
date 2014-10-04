@@ -123,7 +123,7 @@ The range is `0 to n-1` where n is the list's size. This pattern occurs each ite
 ```
 
 7. 
-1) `dyn_scores` (similar to `more_scores`):
+`dyn_scores` (similar to `more_scores`):
 ```C++
   for(int i = 0; i < dyn_scores.size(); ++i)
   {
@@ -141,7 +141,7 @@ handy:
 
 Check [this](http://www.cplusplus.com/reference/vector/vector/resize/) page out for information regarding the `resize` function.
 
-2) `grades`
+`grades`
 ```C++
   for(int i = 0; i < STUDENT_SIZE; ++i)
   {
