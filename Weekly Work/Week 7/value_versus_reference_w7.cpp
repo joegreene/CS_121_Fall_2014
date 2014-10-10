@@ -10,8 +10,9 @@ void new_num(int& value);        //normally you don't want to use by-reference t
                                  //an example.
 
 void swap(int& a, int& b);       //Because it's a great example
-bool ret_fact(int& fact, int n); //referring to one of my previous examples; returns factorial
-                                 //and if it was computed or not (true = computed, false = not)
+bool ret_fact(int& fact, int n); //referring to one of my notes for concept question #2; 
+                                 //returns factorial and if it was computed or not 
+                                 //(true == computed, false == not computed)
 
 int main()
 {

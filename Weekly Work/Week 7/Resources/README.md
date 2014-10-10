@@ -16,7 +16,7 @@ Above with file name "CS 121 Week 7 Worksheet.docx".
 I made a small bit of revisions in the notes section. Other than a few grammar changes, I added the 
 following note under the "Notes/Definitions" section:
 ```
-  •	Arguments are what sent into the function (i.e. what is used in the function call), 
+  Arguments are sent into the function (i.e. what is used in the function call), 
   whereas parameters are what the function is defined with (i.e. in the function header).
 ```
 
@@ -27,7 +27,8 @@ all the time.
 Below are the solutions for this week's worksheet.
 
 ##### Syntax Practice
-1. Function Prototype Problems
+ 1. Function Prototype Problems
+
 1) Prototype:
 ```C++
   bool init_student(int& id, double& grade, string& name);
@@ -72,7 +73,7 @@ Information:
            destination/source as the console (cout).
 ```
 
-2. Possible code:
+ 2. Possible code:
 ```C++
   void print_sq(int num); //either define here or below
   int main()
@@ -87,7 +88,7 @@ Information:
   }
 ```
 
-3. Swap function:
+ 3. Swap function:
 ```C++
   void swap_doubles(double& first, double& second)
   {
@@ -109,7 +110,7 @@ Information:
   }
 ```
 
-4. Fixed code (total of 14 amount of errors (15 if including each curly brace):
+ 4. Fixed code (total of 14 amount of errors (15 if including each curly brace):
 ```C++
   #include <iostream> //error one with "iostrea"
 
@@ -120,24 +121,24 @@ Information:
 
 	int main()
 	{
-	  double bp = 12.00; //$12.00 is the base price before tax
-	  double actual_cost = get_cost(bp);
+    double bp = 12.00; //$12.00 is the base price before tax
+    double actual_cost = get_cost(bp);
 
-	  cout << "Before tax: $" << bp << endl;                     //error four in "end"
-	  cout << "Tax rate: "  << (TAX_RATE*100) << "%" << endl;    //errors five (<< between string literal and TAX_RATE), six with output issue
-                                                               //should print a percentage, not dollars) and seven (with "end")
-	  cout <<  "After applying tax: $"  << actual_cost << endl;  //errors eight (<< between cout and string literal), nine (string literal 
-                                                               //requires ending quotation"), ten (underscore in actual_cost), and eleven (in "end")
-	  cout << "Same thing as before: $" << get_cost(bp) << endl;
+    cout << "Before tax: $" << bp << endl;                   //error four in "end"
+    cout << "Tax rate: "  << (TAX_RATE*100) << "%" << endl;  //errors five (<< between string literal and TAX_RATE), six with output issue
+                                                             //should print a percentage, not dollars) and seven (with "end")
+    cout << "After applying tax: $" << actual_cost << endl;  //errors eight (<< between cout and string literal), nine (string literal 
+                                                             //requires ending quotation"), ten (underscore in actual_cost), and eleven (in "end")
+    cout << "Same thing as before: $" << get_cost(bp) << endl;
 
-	  system("pause"); //error twelve (requires quotation marks on "pause")
+    system("pause"); //error twelve (requires quotation marks on "pause")
 
-	  return 0;
+    return 0;
 	}
 
-	double get_cost(double base) //error thirteen (need identifier "base" in parameter list) and fourteen (curly braces are required)
+  double get_cost(double base) //error thirteen (need identifier "base" in parameter list) and fourteen (curly braces are required)
   {
-	  return (base + (TAX_RATE * base));
+    return (base + (TAX_RATE * base));
   }
 ```
 
@@ -162,7 +163,7 @@ as a function argument or want to return more than one variable in a function (l
 __NOTE__: If you want to send a value that's considered big but don't want to change its contents in a function, call it by const reference. Examples:
 ```C++
   void print_vect(const vector<string>& str_list);
-  int ret_sum(const int num_list[], 
+  int ret_sum(const int num_list[], int SIZE); //note that arrays are always passed by reference (don't use '&' on statically-made arrays)
 ```
 
 __NOTE 2__: You cannot (and it would not make sense to) pass a literal by reference. For instance, the following is syntactically incorrect:
@@ -173,7 +174,7 @@ __NOTE 2__: You cannot (and it would not make sense to) pass a literal by refere
   int main()
   {
     //...code...
-    bool got_fact = get_fact(5); //invalid
+    bool got_fact = get_fact(5, 1); //invalid
     //...code...
   }
 ```
@@ -196,6 +197,7 @@ initialization is only called once.
 
 4. Although I hardly ever use static variables, they still can be handy at times. Below are a few instances where 
 you may want to consider making a static variable:
+
 - Debugging (to see how many times a function was accessed)
 - Avoiding redeclaring variables in functions that should only pertain to one function (e.g. `const static int months[] = {0,1,2,3,4,5,6,7,8,9,10,11}` 
   to have a list of month indices in a function called `get_month_index()`).
