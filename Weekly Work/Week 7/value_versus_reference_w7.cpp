@@ -39,6 +39,8 @@ int main()
   }
 
   system("pause");
+  
+  return 0;
 }
 
 void no_change(int value)
