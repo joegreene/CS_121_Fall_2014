@@ -204,7 +204,7 @@ __NOTE__: On Monday the notes will cover why, in class, why I made the revision 
 Located below.
 
 ##### Syntax Practice
-1. Possible solution:
+1) Possible solution:
 ```C++
   double num = 0;
   vector<double> num_list;
@@ -235,7 +235,7 @@ the while statement. For instance, if we want to stop at 50 numbers then we can 
   }
 ```
 
-2. One solution:
+2) One solution:
 ```C++
   ifstream infile("novel.txt");
 
@@ -271,9 +271,9 @@ the while statement. For instance, if we want to stop at 50 numbers then we can 
 ```
 
 __NOTE__: I've included the full program of the above so you can try it out yourself, or you can simply do the following:
-1) Type out the above in a visual studio project
-2) Create a file named "novel.txt" with a bunch of words for the program to read from
-3) Compile the program (and fiddle around with the code to see different outputs).
+1. Type out the above in a visual studio project
+2. Create a file named "novel.txt" with a bunch of words for the program to read from
+3. Compile the program (and fiddle around with the code to see different outputs).
 
 The file is named "syntax_prob2_ws2_wk6.cpp" and is located under the "Programs" folder of this page. 
 
@@ -282,7 +282,7 @@ characters. To understand what I'm talking about, try replacing `infile >> cur_s
 (to skip spaces). You'll get an unexpected amount of words because `\n` will be counted as a string.
 
 ##### Functions Section
-1. One possible solution:
+1) One possible solution:
 ```C++
   void print_str(string user_str, int times)
   {
@@ -293,7 +293,7 @@ characters. To understand what I'm talking about, try replacing `infile >> cur_s
   }
 ```
 
-2. One possible solution:
+2) One possible solution:
 ```C++
   bool did_print(int num_list[], int SIZE)
   {
@@ -319,7 +319,7 @@ characters. To understand what I'm talking about, try replacing `infile >> cur_s
   }
 ```
 
-3. The solution is located in the "Programs" folder load up the file "funct_prob3_ws2_wk6.cpp".
+3) The solution is located in the "Programs" folder load up the file "funct_prob3_ws2_wk6.cpp".
 
 -------------------------------------------------------------------------------
 
