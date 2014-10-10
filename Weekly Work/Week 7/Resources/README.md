@@ -10,6 +10,13 @@
 ### Intro
 This page hosts the solutions to the questions in the worksheet for this week.
 
+Markdown (what I use to type all these notes down) is being finicky with the numbering, so some parts 
+might be confusing to read. I tried my best to remedy this by following the scheme below:
+
+- Bolded all question numbers
+- Changed all "#." to "#)" and all "#)" to "#a". For instance, "1." on the worksheet is "1)" on this page, 
+and "2)" on the worksheet is "2a" on this page.
+
 ### Worksheet
 Above with file name "CS 121 Week 7 Worksheet.docx".
 
@@ -27,9 +34,9 @@ all the time.
 Below are the solutions for this week's worksheet.
 
 ##### Syntax Practice
-1) Function Prototype Problems
+__1)__ Function Prototype Problems
 
-1a Prototype:
+__1a__ Prototype:
 ```C++
   bool init_student(int& id, double& grade, string& name);
 ```
@@ -43,7 +50,7 @@ Information:
   Purpose: To initialize a student. Return true if initialized successfully (and false if not)
 ```
 
-2a Prototype:
+__2a__ Prototype:
 ```C++
   double conv_temp(double temp, bool is_cels = true);
 ```
@@ -57,7 +64,7 @@ Information:
   Purpose: To convert (and return) a converted temperature. A celsius temperature is assumed on default.
 ```
 
-3a Prototype:
+__3a__ Prototype:
 ```C++
   void output_char(char ch, int amount = 20, ostream& out_source = cout);
 ```
@@ -73,7 +80,7 @@ Information:
            destination/source as the console (cout).
 ```
 
-2) Possible code:
+__2)__ Possible code:
 ```C++
   void print_sq(int num); //either define here or below
   int main()
@@ -88,7 +95,7 @@ Information:
   }
 ```
 
-3) Swap function:
+__3)__ Swap function:
 ```C++
   void swap_doubles(double& first, double& second)
   {
@@ -110,7 +117,7 @@ Information:
   }
 ```
 
-4) Fixed code (total of 14 amount of errors (15 if including each curly brace):
+__4)__ Fixed code (total of 14 amount of errors (15 if including each curly brace):
 ```C++
   #include <iostream> //error one with "iostrea"
 
@@ -152,12 +159,14 @@ The output should be:
 ```
 
 ##### Concept Questions
-1) Global variables produce confusion if they are not labelled constant. If they are not constant, they could be accessed by any 
+__1)__ Global variables produce confusion if they are not labelled constant. If they are not constant, they could be accessed by any 
 function at any time, change its value, thus making it difficult to keep track of. You can check out [this](http://stackoverflow.com/questions/484635/are-global-variables-bad) 
 post for more information on this.
 
-2) Pass by value when you have small variables/values (primitive types) that you wish to not change when used in a function argument. This would include using a custom 
-print function (e.g. `void print_num(int num)`) or something along those lines. Pass by reference when you're dealing with bigger variables that you want to send into 
+__2)__ Use pass by value when you have small variables/values (primitive types) that you wish to not change when used in a function argument. One example of this would be a custom 
+print function (e.g. `void print_num(int num)`). 
+
+Use pass by reference when you're dealing with bigger variables that you want to send into 
 as a function argument or want to return more than one variable in a function (like the swap function we had in class and on this worksheet). 
 
 __NOTE__: If you want to send a value that's considered big but don't want to change its contents in a function, call it by const reference. Examples:
@@ -181,7 +190,7 @@ __NOTE 2__: You cannot (and it would not make sense to) pass a literal by refere
 
 You cannot edit "1" above to its factorial. You have to use a variable, such as `int n` to compute that.
 
-3) Output (note that the initialization, `static int num = 0;` is only called __ONCE__):
+__3)__ Output (note that the initialization, `static int num = 0;` is only called __ONCE__):
 ```C++
   Value of num: 1
   Value of num: 2
@@ -195,7 +204,7 @@ The above might be difficult to understand. Best thing to do is fiddle around wi
 `static` means the variable will not lose its value when the program leaves the function. A static variable's 
 initialization is only called once.
 
-4) Although I hardly ever use static variables, they still can be handy at times. Below are a few instances where 
+__4)__ Although I hardly ever use static variables, they still can be handy at times. Below are a few instances where 
 you may want to consider making a static variable:
 
 - Debugging (to see how many times a function was accessed)
@@ -204,16 +213,16 @@ you may want to consider making a static variable:
 - Having unique IDs for class objects (these may or may not be discussed later in lecture/lab, but if anyone asks I can either explain this or 
 you can visit [here](http://www.learncpp.com/cpp-tutorial/811-static-member-variables/))
 
-5) Default parameters provide a quick and easy way to assume what a parameter might equal when the function is called. This allows for less 
+__5)__ Default parameters provide a quick and easy way to assume what a parameter might equal when the function is called. This allows for less 
 typing, given that we are okay with what the function has on default.
 
-Two scenarios:
+Two scenarios (when default parameters are useful):
 - Making a print function print something to a source. The source, on default, can be the console (cout).
-- The C++-standard functions `getline`, `ignore`, and  all have default parameters in them. `getline` has a default parameter for its third parameter
-(the delimiter), otherwise `'\n'`. `ignore` has default parameters
+- The C++-standard function `ignore` has default parameters in it. It's for both the number count and the delimiter. 
+You can find out the default parameters for ignore [here](http://www.cplusplus.com/reference/istream/istream/ignore/).
 
 More information on default parameters can be found in your notes, or on an online resource such as [here](http://www.tutorialspoint.com/cplusplus/cpp_functions.htm) 
-(you can ignore the pointer stuff it talks about).
+(you can ignore the pointer stuff on the page for now).
 
 -------------------------------------------------------------------------------
 
