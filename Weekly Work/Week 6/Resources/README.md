@@ -21,6 +21,9 @@ and worksheet 2's solutions will be posted Wednesday afternoon
 __NOTE__: I have made revisions to the following problems. Explanations are 
 with each corresponding solution and the problems are noted in the "Questions" section.
 
+__NOTE 2__: I've included sample programs for two problems of worksheet two in a folder on this page 
+(under the "Programs" folder).
+
 ### Worksheet 1
 Above with file name "CS 121 Week 6 - Vectors Worksheet.docx".
 
@@ -190,19 +193,133 @@ question.
 ### Worksheet 2
 Above with file name: "CS 121 Week 6 - Vectors, Delimiters, and Functions.docx".
 
+"Programs" folder above contains two programs you can test out from this worksheet.
+
 Revisions made (already fixed in uploaded .docx files):
 - Last problem (second section); will be explained later.
 
 __NOTE__: On Monday the notes will cover why, in class, why I made the revision to the last problem.
 
 #### Questions
-Will be filled out next week Wednesday.
+Located below.
 
 ##### Syntax Practice
-TBD
+1. Possible solution:
+```C++
+  double num = 0;
+  vector<double> num_list;
+  
+  //While there still grabbable input on the line
+  while(cin >> num)
+  {
+    num_list.push_back(num);
+    cin.ignore(1,'|'); //we could use "cin.ignore(1)", 
+                       //"cin.ignore(1231,"|");"
+                       //or the line above. 
+  }
+```
+
+__NOTE__: The above will infinitely keep asking for more numbers. We can remedy this by changing 
+the while statement. For instance, if we want to stop at 50 numbers then we can do the following:
+```C++
+  double num = 0;
+  vector<double> num_list;
+  
+  //While there still grabbable input on the line AND we haven't exceeded 50 numbers in the list
+  while(cin >> num && num_list.size() < 50)
+  {
+    num_list.push_back(num);
+    cin.ignore(1,'|'); //we could use "cin.ignore(1)", 
+                       //"cin.ignore(1231,"|");"
+                       //or the line above. 
+  }
+```
+
+2. One solution:
+```C++
+  ifstream infile("novel.txt");
+
+  string cur_str;           //current string
+  vector<string> word_list; //vector of string type to hold all the words
+
+  if(infile.is_open())
+  {
+    //While we can still grab data AND we have less than 500 words in the list
+    while(infile >> cur_str && word_list.size() < 500)
+    {
+      word_list.push_back(cur_str);
+    }
+
+    infile.close(); //close file we're working with
+
+    int num_char = 0; //set up character count variable
+
+    for(int i = 0; i < word_list.size(); ++i)
+    {
+      //num_char equals num_char plus the ith element in word_list's length
+      num_char+=word_list[i].length();
+    }
+
+    cout << "Total number of characters in the " << word_list.size() << " words"
+         << " grabbed from novel.txt: " << num_char << endl;
+  }
+  else
+  {
+    cout << "File could not be opened. Make sure that the filename and extension match the   following: "
+         << "\"novel.txt\"\n";
+  }
+```
+
+__NOTE__: I've included the full program of the above so you can try it out yourself, or you can simply do the following:
+1) Type out the above in a visual studio project
+2) Create a file named "novel.txt" with a bunch of words for the program to read from
+3) Compile the program (and fiddle around with the code to see different outputs).
+
+The file is named "syntax_prob2_ws2_wk6.cpp" and is located under the "Programs" folder of this page. 
+
+__NOTE 2__: I mentioned not to use "getline" because it would become troublesome to skip both spaces and newline (`\n`) 
+characters. To understand what I'm talking about, try replacing `infile >> cur_str` with `getline(infile, cur_str, ' ')`
+(to skip spaces). You'll get an unexpected amount of words because `\n` will be counted as a string.
 
 ##### Functions Section
-TBD
+1. One possible solution:
+```C++
+  void print_str(string user_str, int times)
+  {
+    for(int i = 0; i < times; ++i)
+    {
+      cout << user_str << endl;
+    ]
+  }
+```
+
+2. One possible solution:
+```C++
+  bool did_print(int num_list[], int SIZE)
+  {
+    ofstream outfile("num_output.txt");
+    
+    if(outfile.is_open())
+    {
+      for(int k = 0; k < SIZE; ++k)
+      {
+        outfile << num_list[i] << endl;
+      }
+    }
+    else
+    {
+      cout << "Error when attempting to open \"num_output.txt\"\n";
+      
+      //Unsuccessful print (return false)
+      return false;
+    }
+    
+    //Never reached "else" statement therefore print was successful
+    return true;
+  }
+```
+
+3. The solution is located in the "Programs" folder load up the file "funct_prob3_ws2_wk6.cpp".
 
 -------------------------------------------------------------------------------
 
