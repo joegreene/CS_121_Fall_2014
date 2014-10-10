@@ -10,8 +10,8 @@
 ### Intro
 This page hosts the solutions to the questions in the worksheet for this week.
 
-Markdown (what I use to type all these notes down) is being finicky with the numbering, so some parts 
-might be confusing to read. I tried my best to remedy this by following the scheme below:
+__IMPORTANT__: Markdown (what I use to type all these notes down) is being finicky with the numbering, so some parts 
+might be confusing to read here. I tried my best to remedy this by following the scheme below:
 
 - Bolded all question numbers
 - Changed all "#." to "#)" and all "#)" to "#a". For instance, "1." on the worksheet is "1)" on this page, 
@@ -19,6 +19,8 @@ and "2)" on the worksheet is "2a" on this page.
 
 ### Worksheet
 Above with file name "CS 121 Week 7 Worksheet.docx".
+
+The first section of the worksheet consists of notes that may prove useful to you. The rest contains practice questions.
 
 I made a small bit of revisions in the notes section. Other than a few grammar changes, I added the 
 following note under the "Notes/Definitions" section:
@@ -117,11 +119,11 @@ __3)__ Swap function:
   }
 ```
 
-__4)__ Fixed code (total of 14 amount of errors (15 if including each curly brace):
+__4)__ Fixed code (total of 14 amount of errors, 15 if including each curly brace):
 ```C++
   #include <iostream> //error one with "iostrea"
 
-	using namespace std; //error two with "using"
+	using namespace std; //error two with "sing"
 
 	const double TAX_RATE = .81;
 	double get_cost(double); //error three in identifier
