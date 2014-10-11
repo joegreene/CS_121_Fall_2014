@@ -5,7 +5,7 @@
   - [Notes](#notes)
     - [Passing By Reference vs. Passing By Value](#passing-by-reference-vs-passing-by-value)
     - [Static Variables](#static-variables)
-    - [Passing by const-reference](#passing-by-const--reference)
+    - [Passing by const-reference](#passing-by-const-reference)
     
 ### Intro
 Below are the notes from the Friday (10/10) SI session.
@@ -14,7 +14,6 @@ Topics discussed:
 - Passing By Reference vs. Passing By Value
 - Static Variables
 - Passing by const-reference
-
 
 #### Notes
 Below are the notes, split into topics.
@@ -27,7 +26,7 @@ than one value from a function. If you're moving a large variable but don't want
 
 If you'd like to see the difference between the two, the best thing you can to for yourself is try it out in Visual Studio. 
 If you go back to the main page for Week 7, go to the top (where the file listing is) and click on 
-"value_versus_reference_w7.cpp". Run the code in here through Visual Studio.
+`value_versus_reference_w7.cpp`. Run the code in here through Visual Studio.
 
 ##### Static Variables
 Although hardly ever used in practice (or at least I never need them), to set a variable as `static` means to have the variable not 
@@ -58,7 +57,6 @@ Output:
   Current value of num_calls: 2
   Current value of num_calls: 3
   Current value of num_calls: 4
-  ...
 ```
 
 Run the program above in a visual studio project to compare my output with yours.
@@ -71,7 +69,7 @@ So the concept of `static` might be easy to understand, however the most funky p
 You might be thinking "Doesn't `num_calls` get reset to 0 each time?" Short answer: __No__. Why? Because that's how 
 C++ works with `static` variables. It might be hard to comprehend, however just remind yourself the following:
 ```
-  The initialization statement of a static variable is only ever called once.
+  The initialization statement of a static variable is only called once and is ignored afterwards.
 ```
 
 So yeah. There aren't many situations that static variables are necessary, but there still exist some. If you're stuck on that 
@@ -106,10 +104,19 @@ variables that aren't primitive (e.g. not `char`, `int`, `int`, etc.) by referen
 
 __NOTE__: You'll learn about it later, but the reason why arrays are automatically called by reference is because they are specialized pointers. 
 For instance, know how you get a funky value if you print the identifier of a static array instead of each element? That's because you're printing 
-out the address of the first position of the array (a concept tied to pointers).
+out the address of the first position of the array (a concept tied to pointers). A similar effect occurs when you call a variable by reference like as 
+follows:
+```C++
+  int a = 0;
+  cout << &a << endl;
+```
+
+The above will print the address location of the variable `a` (located in the stack). The stack is a difficult concept to explain in short 
+words at this point in our class, so if you want to learn more about that you can check [this page](http://www.learncpp.com/cpp-tutorial/79-the-stack-and-the-heap/) 
+out. It might fly over your head, but (for now) that's okay.
 
 I won't go over how arrays are special pointers until we do so in lecture, but if you want a head-start read it in your book or check out an online 
-resource such as [here](http://www.cplusplus.com/doc/tutorial/pointers/).
+resource such as [here](http://www.cplusplus.com/doc/tutorial/pointers/) or [here](http://www.cprogramming.com/tutorial/lesson6.html).
 
 -------------------------------------------------------------------------------
 
