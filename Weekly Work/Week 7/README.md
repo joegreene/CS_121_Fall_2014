@@ -21,7 +21,13 @@ Head to the Wednesday notes page above or click [here](WED_NOTES.md) to read
 what happened.
 
 #### Friday
-TBD
+Topics discussed:
+- By-reference vs by-value
+- Static variables
+- Passing by const-reference
+
+Head to the Friday notes page above or click [here](FRI_NOTES.md) to read 
+what happened.
 
 -------------------------------------------------------------------------------
 

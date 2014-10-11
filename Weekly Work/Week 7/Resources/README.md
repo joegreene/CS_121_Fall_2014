@@ -165,6 +165,25 @@ __1)__ Global variables produce confusion if they are not labelled constant. If 
 function at any time, change its value, thus making it difficult to keep track of. You can check out [this](http://stackoverflow.com/questions/484635/are-global-variables-bad) 
 post for more information on this.
 
+One good example on why global variables are considered bad (if not constant) is the following:
+```C++
+  #include <iostream>
+  using namespace std;
+  int a = 4; //global variable
+  
+  int main()
+  {
+    int a = 44;
+    a = 17; //which 'a' gets assigned the value 17?
+    return 0;
+  }
+```
+
+__ANSWER__: The assignment statement refers to the closest one (due to how C++ deals with scoping). Like how C++ deals with the 
+[dangling-else problem](http://www.mathcs.emory.edu/~cheung/Courses/561/Syllabus/2-C/dangling-else.html), this is one of the  
+[scoping rules](http://www.tutorialspoint.com/cplusplus/cpp_variable_scope.htm) C++ defines. To make things easier for yourself and to not have to remember a rule like this, it's 
+actually best to just avoid using global variables in general.
+
 __2)__ Use pass by value when you have small variables/values (primitive types) that you wish to not change when used in a function argument. One example of this would be a custom 
 print function (e.g. `void print_num(int num)`). 
 
