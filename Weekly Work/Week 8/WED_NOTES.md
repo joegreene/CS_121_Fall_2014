@@ -71,8 +71,8 @@ either define `SIZE` globally (i.e. not inside of a function) or, more securely,
   }
 ```
 
-Pretty much: Pretend that the function itself has no idea what's going on with other function of the program. Note that you do not 
-require to pass the size of the vector (nor keep track of that) when passing a vector through a function (because you can get the 
+Pretty much: Pretend that the function itself has no idea what's going on with other functions of the program. Note that you do not 
+need to pass the size of the vector (nor keep track of that) when passing a vector through a function. This is because you can get the 
 size of the vector by calling `.size()`.
 
 -------------------------------------------------------------------------------
