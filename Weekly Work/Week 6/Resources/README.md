@@ -96,12 +96,12 @@ we'll be accessing the nth position every time (which is an out-of-bounds error)
 
 For example, in the first iteration (of the for loop) we have the following:
 ```C++
-  more_scores.size() = 0; //we have no elements in the list
+  more_scores.size() == 0 //this is true since we have no elements in the list
 ```
 
 This means that there are no indexes available to access. In the second iteration:
 ```C++
-  more_scores.size() = 1; //we have one element in the list
+  more_scores.size() == 1 //this is true since we now have one element in the list
 ```
 
 This means there is only one item and, recalling back to static arrays, if we access the nth position 
