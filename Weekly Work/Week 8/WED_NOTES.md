@@ -33,11 +33,12 @@ Spoke about the general rules regarding passing vectors and arrays through funct
 
 __Cases__:
 
-1. If we want to pass the vector/array through __without__ changing it, call it by constant reference.
+__1)__ If we want to pass the vector/array through __without__ changing it, call it by __const reference__.
 - Example scenarios: Printing the vector/array, getting the sum of the values of a vector/array, finding 
 a value inside of the vector/array
 
-2. If we want to pass the vector/array through __and__ change it, call it by reference.
+__2)__ If we want to pass the vector through __and__ change it, call it by __reference__. Arrays are called by 
+reference __automatically__ so it does not (and should not) have an `&` with it.
 - Example scenarios: Swapping numbers in a vector/array, sorting the elements in a vector/array, performing an 
 arithmetic operation on all values in the vector/array (such as multiplying all integer values in an int vector/array 
 by 4)
