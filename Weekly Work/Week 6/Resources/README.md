@@ -96,7 +96,7 @@ we'll be accessing the nth position every time (which is an out-of-bounds error)
 
 For example, in the first iteration (of the for loop) we have the following:
 ```C++
-  more_scores.size() == 0 //this is true since we have no elements in the list
+  more_scores.size() == 0 //this is true since we currently have no elements in the list
 ```
 
 This means that there are no indexes available to access. In the second iteration:
@@ -146,7 +146,7 @@ handy:
 
 Check [this](http://www.cplusplus.com/reference/vector/vector/resize/) page out for information regarding the `resize` function.
 
-`grades`
+`grades`:
 ```C++
   for(int i = 0; i < STUDENT_SIZE; ++i)
   {
@@ -154,7 +154,7 @@ Check [this](http://www.cplusplus.com/reference/vector/vector/resize/) page out 
   }
 ```
 
-__8)__ Empty check:
+__8)__ Empty check (if __BOTH__ `dyn_scores` and `more_scores` are empty):
 ```C++
   if(dyn_scores.empty() && more_scores.empty())
   {
@@ -162,7 +162,7 @@ __8)__ Empty check:
   }
 ```
 
-__9)__ Six ways (three each; can be done to dyn_scores too):
+__9)__ Six ways (showing three ways each because I'm an overachiever; these can be done to dyn_scores too):
 ```C++
   //Front
   more_scores.front();
