@@ -29,7 +29,12 @@ Head to the Wednesday notes page above or click [here](WED_NOTES.md) to read
 what happened.
 
 #### Friday
-TBD
+Topics we covered:
+- Structs Layout
+- Structs vs Classes
+
+Head to the Friday notes page above or click [here](FRI_NOTES.md) to read about what 
+happened.
 
 -------------------------------------------------------------------------------
 

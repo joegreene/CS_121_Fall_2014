@@ -68,6 +68,7 @@ Syntax:
 ```
 
 __Custom Object__: (I couldn't think of anything more creative than a Circle)
+
 Possible characteristics:
 ```
   - Radius
@@ -123,7 +124,8 @@ Function call:
 
 __4)__ Code Segment to Create/Initialize a Vector/Array of Another struct (I chose to do it from console, but using file I/O is similar):
 
-__NOTE__: The below examples use `ignore` because of [this](http://stackoverflow.com/questions/6649852/getline-not-working-properly-what-could-be-the-reasons).
+__NOTE__: The below examples use `ignore` because of [this](http://stackoverflow.com/questions/6649852/getline-not-working-properly-what-could-be-the-reasons) 
+(check out the top reply).
 
 Array:
 ```C++
