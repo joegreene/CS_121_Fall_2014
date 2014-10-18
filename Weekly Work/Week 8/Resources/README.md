@@ -23,8 +23,7 @@ some questions more clear. These edits are also already included in the uploaded
 #### Questions
 __1)__ Conversion of real-life objects to structures.
  
-Car:
-----
+__Car__:
 Possible characteristics:
 ```
   - Color of the car
@@ -46,8 +45,7 @@ Syntax:
   };
 ```
 
-Movie:
-------
+__Movie__:
 Possible characteristics:
 ```
   - Title of movie
@@ -69,8 +67,7 @@ Syntax:
   };
 ```
 
-Custom Object (in my case I used a Circle since I can't think of anything at the moment):
------------------------------------
+__Custom Object__: (I couldn't think of anything more creative than a Circle)
 Possible characteristics:
 ```
   - Radius
