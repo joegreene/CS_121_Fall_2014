@@ -30,7 +30,7 @@ If you would like to learn more on what classes are (and how they differ from st
 - http://www.tutorialspoint.com/cplusplus/cpp_object_oriented.htm (classes and basic principles of OOP*)
 - http://www.cplusplus.com/doc/tutorial/classes/ (classes again)
 - https://www.doc.ic.ac.uk/lab/cplus/c++.rules/chap7.html (classes once more)
--  (struct/class difference)
+- http://stackoverflow.com/questions/4791883/c-struct-vs-class (struct/class difference)
 
 *It won't help much if you don't have a background on the keypoints of object-oriented programming (OOP), so I suggest 
 going to the top link first before the others.
