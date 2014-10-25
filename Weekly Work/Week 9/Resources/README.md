@@ -5,7 +5,7 @@
 - [Worksheet](#worksheet)
   - [Questions](#questions)
     - [Syntax Work](#syntax-work)
-    - [Questions (True/False)](#questions-true-false)
+    - [Questions (True/False)](#questions-truefalse)
     - [Concept Questions](#concept-questions)
     
 ### Intro
