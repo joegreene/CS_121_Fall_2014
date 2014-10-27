@@ -27,9 +27,9 @@ Simply put: The above is __invalid__ syntax. The reason for this is because, if 
   print_char(50);
 ```
 
-The compiler will be confused. This is because of the following:
-1. The compiler expects you to input a character in the first position (which makes the call bad to begin with)
-2. If we plug in  
+The compiler will be confused. This is because the compiler expects you to input a character in the first position.
+
+Note that if we call something like `print_char('c', 50);` we've defeated the purpose of having the default parameter.
 
 The valid way to making the above function (and any function with default parameters) is to have __default parameters in the 
 back__ and __parameters that require input towards the front__. This means the above will need to be rewritten as:
@@ -37,15 +37,15 @@ back__ and __parameters that require input towards the front__. This means the a
   print_char(int num, char ch = 'c'); //valid
 ```
 
-The same goes for parameters with consecutively identical data types:
+The same goes for parameters with consecutive identical data types:
 ```C++
-  string concat_str1(string s1 = "bad", string s2, string s3 = "three");          //invalid
+  string concat_str1(string s1 = "hello", string s2, string s3 = "!");            //invalid
   
-  string concat_str2(string s1 = "bad", string s2, string s3);                    //invalid
+  string concat_str2(string s1 = "hello", string s2, string s3);                  //invalid
   
-  string concat_str3(string s1, string s2 = "second", string s3 = "three");       //valid
+  string concat_str3(string s1, string s2 = " world", string s3 = "!");           //valid
   
-  string concat_str4(string s1, string s2, string s3 = "three");                  //valid
+  string concat_str4(string s1, string s2, string s3 = "!");                      //valid
   
   string concat_str4(string s1 = "hello", string s2 = " world", string s3 = "!"); //valid
 ```
