@@ -7,7 +7,7 @@
     - [Different Types of Constructors](#different-types-of-constructors)
   
 ### Intro
-Below are the notes from the Wednesday (10/21) SI session.
+Below are the notes from the Wednesday (10/22) SI session.
 
 #### Notes
 We worked on both the worksheet and some questions peers had about the project due this Friday (the pizza project).

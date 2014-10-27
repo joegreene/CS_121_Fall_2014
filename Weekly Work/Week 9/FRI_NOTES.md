@@ -9,7 +9,7 @@
 Below are the notes from the Friday (10/24) SI session.
 
 #### Notes
-We worked on the worksheet and general questions about implementing classes in .
+We worked on the worksheet and general questions about implementing classes in two files.
 
 Topics discussed during the session:
 - Defining and Implementing Classes in Two Files
