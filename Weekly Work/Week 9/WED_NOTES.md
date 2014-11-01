@@ -5,7 +5,7 @@
   - [Notes](#notes)
     - [Order of Default Parameters](#order-of-default-parameters)
     - [Different Types of Constructors](#different-types-of-constructors)
-  
+    
 ### Intro
 Below are the notes from the Wednesday (10/22) SI session.
 

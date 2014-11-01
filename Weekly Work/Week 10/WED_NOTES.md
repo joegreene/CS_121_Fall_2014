@@ -5,6 +5,7 @@
   - [Notes](#notes)
     - [Defining Classes in Two Files](#defining-classes-in-two-files)
     - [Scope Operator](#scope-operator)
+
 ### Intro
 Below are the notes from the Wednesday (10/29) SI session.
 

@@ -4,7 +4,7 @@
 - [Intro](#intro)
   - [Notes](#notes)
     - [Defining and Implementing Classes in Two Files](#defining-and-implementing-classes-in-two-files)
-  
+
 ### Intro
 Below are the notes from the Friday (10/24) SI session.
 
