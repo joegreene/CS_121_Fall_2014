@@ -18,14 +18,15 @@ Below is a directory for the Wednesday and Friday notes from this week.
 
 #### Wednesday
 Topics discussed during the session:
-- TBD
+- Defining Classes in Two Files
+- Scope Operator
 
 Head to the Wednesday notes page above or click [here](WED_NOTES.md) to read 
 what happened.
 
 #### Friday
 Topics discussed during the session:
-- TBD
+- Variable Scoping
 
 Head to the Friday notes page above or click [here](FRI_NOTES.md) to read about what 
 happened.

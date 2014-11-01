@@ -3,15 +3,47 @@
 ## Sections
 - [Intro](#intro)
   - [Notes](#notes)
+    - [Variable Scoping](#variable-scoping)
   
 ### Intro
 Below are the notes from the Friday (10/31) SI session.
 
 #### Notes
-We worked on the worksheet and general questions about implementing classes in.
+We continued working on last week's worksheet, topics from last week, and 
+reviewed variable scoping.
 
 Topics discussed during the session:
-- TBD
+- Variable Scoping
+
+We also made a recap about last session's (10/29) notes on the scope operator. I 
+chose not to include it in this file as it was almost the same talk as last 
+time.
+
+##### Variable Scoping
+If you were to run the following program, what would its output be?
+```C++
+  #include <iostream>
+  using namespace std;
+  
+  int i = 44;
+  int main()
+  {
+    int i = 7;
+    ++i;
+    
+    if(i != 0)
+    {
+      int i = 4;
+      ++i;
+    }
+    
+    cout << i << endl;
+    
+    return 0;
+  }
+```
+
+If your answer was not 8, you should review your notes on how scoping works.
 
 -------------------------------------------------------------------------------
 
