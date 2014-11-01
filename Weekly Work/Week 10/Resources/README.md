@@ -12,7 +12,8 @@ This page hosts the solutions to the questions for this week's worksheet.
 Below is the worksheet solutions for this week.
 
 #### Questions
-TBD
+I'll be posting the solutions later today (Saturday) after I finish my homework. Should be here 
+for sure on Sunday.
 
 -------------------------------------------------------------------------------
 
