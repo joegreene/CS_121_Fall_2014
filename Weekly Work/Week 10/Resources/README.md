@@ -13,7 +13,7 @@ Below is the worksheet solutions for this week.
 
 #### Questions
 I'll be posting the solutions later today (Saturday) after I finish my homework. Should be here 
-for sure on Sunday.
+for sure by Sunday.
 
 -------------------------------------------------------------------------------
 
