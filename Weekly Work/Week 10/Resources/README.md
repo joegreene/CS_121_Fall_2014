@@ -20,7 +20,7 @@ and `question_six_wk10` [here](question_six_wk10.jpg] for their respective table
 __NOTE 2__: Since I can't display images directly into this page, I've taken screen shots of 
 my work on problems #4 through #6 (in pointer practice).
 
-Make sure to Right Click -> View Image to see each image in its full resolution. Also, to help 
+Make sure to `Right Click -> View Image` to see each image in its full resolution. Also, to help 
 understand the process, I numbered each step made in problems #4 through #6 in each image.
 
 ### Worksheet
