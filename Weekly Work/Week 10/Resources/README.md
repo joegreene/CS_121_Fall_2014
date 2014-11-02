@@ -55,6 +55,7 @@ Possible methods and member variables for `Classroom`:
 
 Example blueprints (assume other parts exist):
 ```C++
+  #include <vector>    //To use a vector for the student list in Classroom
   #include "Teacher.h" //so Classroom sees that "Teacher" exists
   #include "Student.h" //so Classroom sees that "Student" exists
 

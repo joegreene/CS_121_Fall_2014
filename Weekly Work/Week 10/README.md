@@ -27,6 +27,7 @@ what happened.
 #### Friday
 Topics discussed during the session:
 - Variable Scoping
+- Including Files By < > versus " "
 
 Head to the Friday notes page above or click [here](FRI_NOTES.md) to read about what 
 happened.
