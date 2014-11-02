@@ -110,17 +110,17 @@ Where the four different ways would be (using index 3, a.k.a. position 4, in `li
   double john = 44, jacob = 33;
   double &jingle = john;
   john = 41;                                             //sets jingle and john to 41
- 	cout << john << ":" << jacob << ":" << jingle << endl; //41:33:41
- 	jacob = jingle;                                        //sets jacob to 41
+  cout << john << ":" << jacob << ":" << jingle << endl; //41:33:41
+  jacob = jingle;                                        //sets jacob to 41
   jingle = 12;                                           //sets jingle and john to 12
   cout << john << ":" << jacob << ":" << jingle << endl; //12:41:12
 ```
 
-4) Check the image labelled "question_four_wk10.jpg", or click [here](question_four_wk10.jpg).
+4) Check the image labelled `question_four_wk10.jpg`, or click [here](question_four_wk10.jpg).
 
-5) Check the image labelled "question_five_wk10.jpg", or click [here](question_five_wk10.jpg).
+5) Check the image labelled `question_five_wk10.jpg`, or click [here](question_five_wk10.jpg).
 
-6) Check the image labelled "question_six_wk10.jpg", or click [here](question_six_wk10.jpg).
+6) Check the image labelled `question_six_wk10.jpg`, or click [here](question_six_wk10.jpg).
 
 7) Explanations:
 ```C++
@@ -132,13 +132,14 @@ Where the four different ways would be (using index 3, a.k.a. position 4, in `li
 
 8) Converted program:
 ```C++
-  void GetEmployeeInfo(string* name, double* salary);
+  void GetEmployeeInfo(string* name, double* salary); //pass by-pointer
 
 	int main()
 	{
   	  string employeeName;
   	  double pay;
-  	  GetEmployeeInfo(&employeeName, &pay);
+  	  GetEmployeeInfo(&employeeName, &pay); //send the addresses of employeeName 
+                                            //and pay through the function
 
   	  cout << "Employee name: " << employeeName << endl;
       cout << "Salary: " << pay << endl;
@@ -149,7 +150,8 @@ Where the four different ways would be (using index 3, a.k.a. position 4, in `li
 
 	void GetEmployeeInfo(string* name, double* salary)
 	{
-  	  cin >> *name >> *salary; //assume user entered "Bob 45003.33"
+  	  cin >> *name >> *salary; //send value (grabbed by cin) to dereferenced 
+                               //pointers "name" and "value"
 	}
 
 ```
