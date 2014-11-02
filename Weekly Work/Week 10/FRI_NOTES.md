@@ -51,11 +51,12 @@ In general, you want to avoid having same-name variables (limit it the best you 
 less ambiguous in the long run.
 
 ##### Including Files By < > versus " "
-If you really want to, you can say `#include "iostream"` or `#include <Date.h>` if you want. There are special rules 
-(such as the post by Jack Klein [here](http://bytes.com/topic/c/answers/138207-include-file-vs-include-file), but all you 
-should worry yourself about is the following:
+If you really want to, you can say `#include "iostream"` or `#include <Date.h>` if you want. 
+
+Although there are special rules (such as the post by Jack Klein [here](http://bytes.com/topic/c/answers/138207-include-file-vs-include-file)), 
+you only need to work with the following rule of thumb:
 - If the file is predefined (such as `iostream` and `string`), use angled brackets (`< >`)
-- If the file is custom (like `Date.h` or `FCylinder.h`), use quotation marks (`" "`).
+- If the file is custom (like `Date.h` or `FCylinder.h`), use quotation marks (`" "`)
 
 -------------------------------------------------------------------------------
 

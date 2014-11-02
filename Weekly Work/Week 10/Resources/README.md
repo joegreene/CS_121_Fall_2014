@@ -15,7 +15,7 @@ The worksheet itself is located in its usual place (in the file listing above).
 __NOTE 1__: I couldn't get the tables to show up properly in the document, so I've 
 taken photos of how they should be laid out in images. Check out `question_four_wk10.jpg` 
 [here](question_four_wk10.jpg), `question_five_wk10.jpg` [here](question_five_wk10.jpg), 
-and `question_six_wk10` [here](question_six_wk10.jpg] for their respective tables.
+and `question_six_wk10` [here](question_six_wk10.jpg) for their respective tables.
 
 __NOTE 2__: Since I can't display images directly into this page, I've taken screen shots of 
 my work on problems #4 through #6 (in pointer practice).
