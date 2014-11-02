@@ -12,10 +12,13 @@ This page hosts the solutions to the questions for this week's worksheet.
 
 The worksheet itself is located in its usual place (in the file listing above).
 
-__NOTE__: Since I can't add images directly into this page, I've taken screen shots of 
-my work on problems #4 through #6 (in pointer practice). I purposefully made them high-
-resolution (so everything is legible), but if there are issues please let me know and I'll 
-see what I can do to fix it.
+__NOTE 1__: I couldn't get the tables to show up properly in the document, so I've 
+taken photos of how they should be laid out in images. Check out `question_four_wk10.jpg` 
+[here](question_four_wk10.jpg), `question_five_wk10.jpg` [here](question_five_wk10.jpg), 
+and `question_six_wk10` [here](question_six_wk10.jpg] for their respective tables.
+
+__NOTE 2__: Since I can't display images directly into this page, I've taken screen shots of 
+my work on problems #4 through #6 (in pointer practice).
 
 Make sure to Right Click -> View Image to see each image in its full resolution. Also, to help 
 understand the process, I numbered each step made in problems #4 through #6 in each image.
@@ -24,6 +27,7 @@ understand the process, I numbered each step made in problems #4 through #6 in e
 Below is the worksheet solutions for this week.
 
 #### Questions
+Remember to refer to the images in the file listing for questions #4 through #6 in the pointers section.
 
 ##### Classes Practice
 Object Analysis phase:
@@ -118,11 +122,11 @@ Where the four different ways would be (using index 3, a.k.a. position 4, in `li
   cout << john << ":" << jacob << ":" << jingle << endl; //12:41:12
 ```
 
-4) Check the image labelled `question_four_wk10.jpg`, or click [here](question_four_wk10.jpg).
+4) Check the image labelled `solution_four_wk10.jpg`, or click [here](solution_four_wk10.jpg).
 
-5) Check the image labelled `question_five_wk10.jpg`, or click [here](question_five_wk10.jpg).
+5) Check the image labelled `solution_five_wk10.jpg`, or click [here](solution_five_wk10.jpg).
 
-6) Check the image labelled `question_six_wk10.jpg`, or click [here](question_six_wk10.jpg).
+6) Check the image labelled `solution_six_wk10.jpg`, or click [here](solution_six_wk10.jpg).
 
 7) Explanations:
 ```C++

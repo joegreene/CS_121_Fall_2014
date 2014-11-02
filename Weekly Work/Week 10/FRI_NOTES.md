@@ -4,7 +4,7 @@
 - [Intro](#intro)
   - [Notes](#notes)
     - [Variable Scoping](#variable-scoping)
-    - [Including Files By < > versus " "](#including-files-by-<->-versus-"-")
+    - [Including Files By < > versus " "](#including-files-by---versus--)
   
 ### Intro
 Below are the notes from the Friday (10/31) SI session.
