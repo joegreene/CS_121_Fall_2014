@@ -51,7 +51,8 @@ In general, you want to avoid having same-name variables (limit it the best you 
 less ambiguous in the long run.
 
 ##### Including Files By < > versus " "
-If you really want to, you can say `#include "iostream"` or `#include <Date.h>` if you want. 
+If you really want to you can say `#include "iostream"` or `#include <Date.h>` instead of the usual 
+`#include <iostream>` and `#include "Date.h".
 
 Although there are special rules (such as the post by Jack Klein [here](http://bytes.com/topic/c/answers/138207-include-file-vs-include-file)), 
 you only need to work with the following rule of thumb:
