@@ -17,7 +17,8 @@ my work on problems #4 through #6 (in pointer practice). I purposefully made the
 resolution (so everything is legible), but if there are issues please let me know and I'll 
 see what I can do to fix it.
 
-To help understand the process, I numbered each step made in problems #4 through #6 in the images.
+Make sure to Right Click -> View Image to see each image in its full resolution. Also, to help 
+understand the process, I numbered each step made in problems #4 through #6 in each image.
 
 ### Worksheet
 Below is the worksheet solutions for this week.
