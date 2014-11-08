@@ -26,7 +26,7 @@ To `dereference` a pointer means to get the value/data located at the address th
 Code excerpt example:
 ```C++
   double euler = 2.718;
-  double * e_ptr = &euler;
+  double* e_ptr = &euler;
   
   cout << "Euler: " << euler << endl
        << "Euler Address: " << &euler << endl
@@ -43,9 +43,10 @@ Assuming that euler's address is equal to 2000 (this is extremely unlikely), the
 ```
 
 If you compile the above code in Visual Studio or XCode, you'll see similar results (the only difference being the 
-address of `euler` and the value of `e_ptr` won't be 2000, but they will still be equal to eachother). 
+address of `euler` and the value of `e_ptr` won't be 2000, but they will still be equal to each other). 
 
-From this point on, if we wanted to change the value of `euler`, we can do it two different ways:
+If you want to change the value of `euler` from this point on you can do it two different ways:
+
 1) Directly change the value of `euler` by using the assignment operator `=`:
 ```C++
   euler = 3.14;
@@ -62,7 +63,7 @@ __WARNING__: Note the distinction between the two lines of code below:
   cout << &e_ptr << endl;
 ```
 
-__First line__: `e_ptr` is a pointer, so the value of `e_ptr` is an address that `e_ptr` is pointing it. 
+__First line__: `e_ptr` is a pointer, so the value of `e_ptr` is an address that it is pointing at. 
 
 __Second line__: `&e_ptr` is the address where `e_ptr` is located at. `e_ptr` has an address itself because it 
 is a variable.
@@ -70,7 +71,7 @@ is a variable.
 ##### Converting Referenced Parameters to Pointer Parameters
 In the following swap-function example:
 ```C++
-  void swap(int &a, int &b);
+  void swap(int& a, int& b);
   
   int main()
   {
@@ -150,7 +151,7 @@ pointers (and pointers hold addresses in them), we send the address of `num1` an
 
 The resulting code:
 ```C++
-  void swap(int *a, int *b);
+  void swap(int* a, int* b);
   
   int main()
   {
