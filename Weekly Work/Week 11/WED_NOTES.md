@@ -125,10 +125,11 @@ operator in the front of the pointer's variable name (identifier):
 
 The above works the same as the by-reference example. Keep in mind that we are __NOT__ changing where 
 `a` and `b` point to, we are "indirectly" changing the values located at the addresses `a` and `b` point to. 
-It is an indirect change because we are not using `num1` and `num2` to swap `num1` and `num2`, but instead 
-we are changing `*a` and `*b` to swap `num1` and `num2`.
 
-Note that we do not need to make `temp` a pointer. This is because `temp` is just some temporary integer we're 
+We say that this is an indirect change because we are not using `num1` and `num2` to swap `num1` and `num2`. Instead, 
+we are using `*a` and `*b` to swap `num1` and `num2`.
+
+Note also that we do not need to make `temp` a pointer. This is because `temp` is just some temporary integer we're 
 working with. No need to complicate things more than they currently are.
 
 Lastly, edit `main` to reflect the changes we made:
