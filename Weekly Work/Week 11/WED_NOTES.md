@@ -118,15 +118,18 @@ Next, edit the body of `swap` to reflect our function heading's edit
 To change the values pointers "point" at we `dereference` them. This is denoted by using the `*` 
 operator in the front of the pointer's variable name (identifier):
 ```C++
-  int temp = *a; //this is just like before except we set temp equal to the dereferenced value at a
+  int temp = *a; //just like before except we now set temp equal to the dereferenced value at a
   *a = *b;       //set the dereferenced value at a equal to the dereferenced value at b
   *b = temp;     //set the dereferenced value at b equal to temp
 ```
 
-The above works the same as the by-reference example.
+The above works the same as the by-reference example. Keep in mind that we are __NOT__ changing where 
+`a` and `b` point to, we are "indirectly" changing the values located at the addresses `a` and `b` point to. 
+It is an indirect change because we are not using `num1` and `num2` to swap `num1` and `num2`, but instead 
+we are changing `*a` and `*b` to swap `num1` and `num2`.
 
-Note that we do not need to make `temp` a pointer. This is because it's just some temporary integer we're working with. No need 
-to complicate things more than they currently are.
+Note that we do not need to make `temp` a pointer. This is because `temp` is just some temporary integer we're 
+working with. No need to complicate things more than they currently are.
 
 Lastly, edit `main` to reflect the changes we made:
 ```C++
