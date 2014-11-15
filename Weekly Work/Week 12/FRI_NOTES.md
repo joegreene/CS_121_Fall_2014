@@ -21,17 +21,19 @@ A review on how objects should be passed through functions.
 
 Typically you want to pass objects by reference (when you plan to edit them inside 
 a function) or `const` reference (when you do not plan to edit them inside a function).
+By-reference to change the object, and `const` reference so we don't have to lag our 
+program by making a copy of the object (when passing it as an argument by-value).
 
 Remember that, if you plan on editing an object, it must be passed through a function 
 by-reference. If you pass by-value, you are sending a copy of the object (and thus not 
 editing the original object you want to edit).
 
-An example function of where we plan on editing an object argument:
+An example function for an object reference parameter of where we plan on editing an object argument:
 ```C++
   void increase_width(Square& s, int w);  //adds w to the square's current width
 ```
 
-An example function for `const` reference parameters, where inside this function 
+An example function for an object `const` reference parameter, where inside this function 
 all we're doing is returning the average of the values in a `double` vector (which is an object):
 ```C++
   double print_avg(const vector<double>& list);  //recall that the type of 'list' is 'vector<double>'
