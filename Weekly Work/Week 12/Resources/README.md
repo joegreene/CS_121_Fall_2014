@@ -15,6 +15,10 @@ __NOTE__: The solutions for questions 2, 3, 4, and 6 are in the file directory o
 this page. They are high-resolution, so if something seems blurry chances are zooming-in 
 will fix that for you. If they are unclear, please let me know.
 
+__NOTE 2__: There are dots on some of the problems to show where each step is occurring. 
+Also, I named the list in question 6 as `arr` to better explain my steps. `arr` is 
+written on the side of the diagram in my solution.
+
 ### Worksheet
 Below is the worksheet solutions for this week.
 
