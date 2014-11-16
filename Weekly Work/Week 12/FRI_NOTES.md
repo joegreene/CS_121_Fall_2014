@@ -3,7 +3,7 @@
 ## Sections
 - [Intro](#intro)
   - [Notes](#notes)
-    - [Objects as Arguments (Review)](#objects-as-arguments-(review))
+    - [Objects as Arguments (Review)](#objects-as-arguments-review)
     - [More on Algorithm Analysis](#more-on-algorithm-analysis)
   
 ### Intro

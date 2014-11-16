@@ -11,9 +11,6 @@ This page hosts the solutions to the questions for this week's worksheet.
 
 The worksheet itself is located in its usual place (in the file listing above).
 
-__NOTE__: I've been busy getting work completed for my own classes, so the solutions 
-will be up by either by Saturday night or Sunday morning.
-
 ### Worksheet
 Below is the worksheet solutions for this week.
 
@@ -21,17 +18,63 @@ Below is the worksheet solutions for this week.
 Grab the questions from the worksheet document.
 
 ##### Algorithm Analysis Practice
-1) Check the image labelled TBD
+1) Answers below (keep in mind that Big-O notation generalizes the step-count):
+`main`:
+```
+  We treat function calls, assignments, declarations as basic steps.
+  Therefore, treat main as an O(1) (constant time) function.
+```
 
-2) Check the image labelled TBD
+`init_num_list`:
+```
+  Although assignments are considered basic steps, the number of steps taken 
+  is proportional to the length of the array passed through the function.
+  
+  Therefore, we treat init_num_list as an O(n) (linear time) function.
+```
 
-3) Check the image labelled TBD
+`print_list`:
+```
+  The for-loop runs proportionally to the size of the list.
+  
+  Therefore, we treat `print_list` as an O(n) (linear time) function.
+```
 
-4) Check the image labelled TBD
+`ascend_bubble_sort`:
+```
+  Working with the inside first:
+  1. For each iteration of the inside loop, in the worst possible case we would 
+  have to call the if-statement and its body: 3 basic steps per iteration
+  2. The inside loop runs n-1 times (where n is the size of the list): n-1 steps 
+  to run the inside (which generalizes to n steps)
+  3. We now can say that the inner loop runs O(3n) which generalizes to O(n) (linear time)
+  
+  Outer loop:
+  1. Worst case is to loop through the entire list, so we run the inner loop `n` amount of 
+  times (meaning n * n)
+  
+  
+  Therefore, we treat the function `ascend_bubble_sort` as an O(n^2) (squared time) function.
+```
 
-5) Check the image labelled TBD
+`swap`:
+```
+  A declaration and assignment are being made (nothing too complicated).
+  Total count is 3 steps and is unaffected by inputs.
+  
+  Therefore, we treat `swap` as an O(1) (constant time) function.
+```
 
-6) Check the image labelled TBD
+2) Check the image labelled `solution_Q2_wk12.jpg` in the file directory near the top of this page.
+
+3) Check the image labelled `solution_Q3_wk12.jpg` in the file directory near the top of this page.
+
+4) Check the image labelled `solution_Q4_wk12.jpg` in the file directory near the top of this page.
+
+5) Not possible to run binary search algorithm on current list (list must be in an 
+order in which you can determine smaller/larger halves)
+
+6) Check the image labelled `solution_Q6_wk12.jpg` in the file directory near the top of this page.
 
 -------------------------------------------------------------------------------
 
