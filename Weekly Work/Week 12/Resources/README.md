@@ -11,6 +11,10 @@ This page hosts the solutions to the questions for this week's worksheet.
 
 The worksheet itself is located in its usual place (in the file listing above).
 
+__NOTE__: The solutions for questions 2, 3, 4, and 6 are in the file directory on 
+this page. They are high-resolution, so if something seems blurry chances are zooming-in 
+will fix that for you. If they are unclear, please let me know.
+
 ### Worksheet
 Below is the worksheet solutions for this week.
 
