@@ -5,7 +5,7 @@
   - [Notes](#notes)
     - [Inheritance](#inheritance)
     - [Polymorphism](#polymorphism)
-    - [`virtual` Keyword](#`virtual`-keyword)
+    - [`virtual` Keyword](#virtual-keyword)
     
 ### Intro
 Below are the notes from the Friday (11/21) SI session.

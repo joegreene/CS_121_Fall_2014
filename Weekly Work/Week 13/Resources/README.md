@@ -85,12 +85,14 @@ Therefore, some possible answers (syntax might be written differently) for what 
       friend istream& operator>>(istream& input, Pokemon& pkmn);
   };
   
+  //We're reading from the input stream 'input' and editing Pokemon 'pkmn'
   istream& operator>>(istream& input, Pokemon& pkmn)
   {
     //lazy example, assumes integers are separated by spaces
-    input >> pkmn.health >> pkmn.attack
+    input >> pkmn.health  >> pkmn.attack
           >> pkmn.defense >> pkmn.speed;
     
+    //the operation expects the istream object to be returned
     return input;
   }
 ```

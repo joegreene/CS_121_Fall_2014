@@ -4,7 +4,7 @@
 - [Intro](#intro)
   - [Notes](#notes)
     - [Operator Overloading](#operator-overloading)
-    - [`friend` keyword](#`friend`-keyword)
+    - [`friend` keyword](#friend-keyword)
     
 ### Intro
 Below are the notes from the Wednesday (11/19) SI session.
