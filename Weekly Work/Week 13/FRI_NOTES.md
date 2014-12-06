@@ -11,7 +11,7 @@
 Below are the notes from the Friday (11/21) SI session.
 
 #### Notes
-We worked on this week's worksheet and talked about Friday's lecture. We reviewed a bit on 
+We worked on this week's worksheet and talked about Wednesday's lecture. We reviewed a bit on 
 polymorphism, inheritance, and the virtual keyword.
 
 Topics discussed during the session:
