@@ -4,7 +4,7 @@
 - [Intro](#intro)
   - [Notes](#notes)
     - [Command Arguments](#command-arguments)
-    - [C-string vs. C++ string](#cstring-vs-c++-string)
+    - [C-string vs. C++ string](#cstring-vs-c-string)
     
 ### Intro
 Below are the notes from the Friday (12/5) SI session.
@@ -53,10 +53,10 @@ There are a lot of notes on this in the PowerPoint already, so I won't go into d
 here. The main reason we'd ever really need to use c-strings in C++ is for compatibility and using certain 
 functions. Performance-wise, the C++ standard string isn't too much to worry about versus the c-string.
 
-Referring to compatibility: If we ever want to make our programs work with older systems (e.g. ones that rely 
-on C code or do not have strings implemented in them) then we're forced to use c-strings.
+__Compatibility__: If we ever want to make our programs work with older systems (e.g. ones that rely 
+on C code or do not have C++ strings implemented in them) then we're forced to use c-strings.
 
-Referring to functions: Some functions take in c-strings only as their parameters. For instance, the 
+__Functions__: Some functions take in c-strings only as their parameters. For instance, the 
 `open` function in `fstream` has a function heading something similar to the following:
 ```C++
   open(char * filename);
