@@ -18,7 +18,7 @@ Topics discussed during the session:
 - Templates
 
 ##### Recursion
-<TBD>; For now check [this](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out.
+TBD; For now check [this](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out.
 
 ##### Templates
 Templates are a way to have generalized data types in a class or function, so the class/function 

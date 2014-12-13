@@ -22,7 +22,7 @@ Topics discussed during the session:
 Continuing on from last session, we took a visual approach to understanding how to create recursive solutions 
 to problems).
 
-<TBD>; For now check [this](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out.
+TBD; For now check [this](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out.
 
 ##### Arrow Operator
 You'll be using this a lot in CS 131, so if you don't know it now it's best to look at it from here first (or 

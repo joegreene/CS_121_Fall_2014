@@ -36,7 +36,7 @@ seen before.
 2) Generally, no. Sometimes they're easier to read, but most of the time they're more trouble than they're 
 worth. 
 
-<REST TO BE DONE TODAY, 12/13/14>
+REST TO BE DONE TODAY, 12/13/14
 
 The last two are located on [this page](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/). 
 The syntax is practically identical to C++, so don't worry that it mentions Java there.
@@ -79,7 +79,7 @@ iii) Recursive Solution:
     }
   }
 ```
-iv) Diagrams: <TBD>
+iv) Diagrams: TBD
 
 
 4) Answers below:
@@ -131,7 +131,7 @@ i) Base case: f1 == f0 == 1
    Recursive case: Current term equals two previous terms
    Error-Check: n > 0 (where n is an integer)
 
-ii) Iterative Solution: <TBD>
+ii) Iterative Solution: TBD
 
 iii) Recursive Solution:
 ```C++
@@ -152,7 +152,7 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: <TBD>
+iv) Diagrams: TBD
 
 
 -------------------------------------------------------------------------------
