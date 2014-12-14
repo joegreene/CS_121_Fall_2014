@@ -9,6 +9,14 @@
 ### Intro
 This hosts the activities we worked on during the SI class on 12/10/14 and 12/12/14.
 
+As a pro-tip:
+
+If you're ever lost with any of the recursion (or iteration), the best thing you can do for yourself is to 
+__trace the program__. This helps immensely when trying to understand what's going on each step, and will 
+significantly help you out in 131 and later programming.
+
+Another thing: It's been great working with you guys this semester, and good luck on finals!
+
 ### Topics
 Below is a listing for the Wednesday and Friday notes from this week.
 

@@ -9,7 +9,13 @@
 ### Intro
 This page hosts the solutions to the questions for this week's worksheet. 
 
-The worksheet itself is located in its usual place (in the file listing above).
+The worksheet itself is located in its usual place (in the file listing above). 
+
+As a pro-tip:
+
+If you're ever lost with any of the recursion (or iteration), the best thing you can do for yourself is to 
+__trace the program__. This helps immensely when trying to understand what's going on each step, and will 
+significantly help you out in 131 and later programming.
 
 __NOTE__: The "error check case" on the worksheet was just to note if you understood 
 how the base case stuff worked. I renamed it to something else in the updated worksheet, 
@@ -33,13 +39,11 @@ Grab the questions from the worksheet document.
 slides), although it doesn't matter. Really, you should have just given an example of recursion you've 
 seen before.
 
-2) Generally, no. Sometimes they're easier to read, but most of the time they're more trouble than they're 
-worth. 
-
-REST TO BE DONE TODAY, 12/13/14
+2) Generally, no. Check out [this page](http://www.codeproject.com/Articles/21194/Iterative-vs-Recursive-Approaches) 
+for more information (it has a nice way of explaining the reason).
 
 The last two are located on [this page](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/). 
-The syntax is practically identical to C++, so don't worry that it mentions Java there.
+The syntax is pretty much identical to C++, so don't worry that it mentions Java there.
 
 3) Answers below:
 
@@ -80,12 +84,36 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: TBD
+iv) Diagrams:
 
-Iterative: 
+Iterative psuedo-code (which is pretty much the above solution) below: 
+```
+  Set an integer sum (to accumulate the summation)
+  Set an integer x   (to increment position)
+  
+  For n amount of times
+    Set sum equal to itself plus x times x
+    Increment x
+```
 
 Recursive:
+```
+  recur_sum(4)
+     |
+     --> (4*4) + recur_sum(3)
+                    |
+                    --> (3*3) + recur_sum(2)
+                                   |
+                                   --> (2*2) + recur_sum(1)
+                                                  |
+                                                  --> 1
+```
 
+After each call is made (up to the end), the program trails back up to evaluate 
+the previous function call. In other words: In order to know `recur_sum(4)`, it needs to know 
+`recur_sum(3)`. To know `recur_sum(3)`, the program must know `recur_sum(2)`. When 
+`recur_sum(1)` is reached, the function returns 1. The rest get evaluated backwards from 
+then-on.
 
 4) Answers below:
 
@@ -127,7 +155,7 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: I didn't want to have to take photos of my work, so I found diagrams online that work.
+iv) Diagrams:
 
 Iterative solution diagram found [here](http://www.avrams.ro/imgs/clip_image002_0004.jpg).
 
@@ -144,7 +172,24 @@ i) Base case: f1 == 1, f0 == 0
    
    Error-Check: n >= 0 (where n is an integer)
 
-ii) Iterative Solution: TBD
+ii) Iterative Solution: 
+```C++
+  int iter_fib(int n)
+  {
+    int fn = 0,  //term we want
+        f1 = 1,  //previous, n-1, term
+        f2 = 0;  //n-2 term
+    
+    for(int i = 0; i < n; ++i)
+    {
+      fn = f1 + f2; //set fn to the sum if its two previous terms
+      f2 = f1;      //set n-2 term to n-1 term
+      f1 = fn;      //set n-1 term to n term
+    }
+    
+    return fn;
+  }
+```
 
 iii) Recursive Solution:
 ```C++
@@ -165,9 +210,19 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: I didn't want to have to take photos of my work, so I found diagrams online that work.
+iv) Diagrams:
 
-Iterative diagram: TBD
+Iterative psuedo-code (which is pretty much the above solution) below:
+```
+  Set an integer fn equal to 0 (as nth term)
+  Set an integer f1 equal to 1 (represents 1st term)
+  Set an integer f2 equal to 0 (represents 0th term)
+  
+  For n amount of times
+    Set fn equal to two previous terms
+    Set n-2 term equal to n-1 term
+    Set n-1 term equal to the nth term
+```
 
 Recursive one (except it's for F5) found 
 [here](http://www.computersciencesalaryrange.com/wp-content/uploads/2014/02/recursive-fibonacci.png). 

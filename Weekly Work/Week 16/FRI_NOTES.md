@@ -18,11 +18,63 @@ Topics discussed during the session:
 - Arrow Operator
 - Private Class Functions
 
-##### More on Recursion
-Continuing on from last session, we took a visual approach to understanding how to create recursive solutions 
-to problems).
+As a pro-tip:
 
-TBD; For now check [this](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out.
+If you're ever lost with any of the recursion (or iteration), the best thing you can do for yourself is to 
+__trace the program__. This helps immensely when trying to understand what's going on each step, and will 
+significantly help you out in 131 and later programming.
+
+##### More on Recursion
+Continuing on from last session, we talked more about recursion and made other examples of scenarios 
+where recursion may be used. We focused more on the recursive solution for the Fibonacci sequence 
+problem (from the worksheet).
+
+Solving the Fibonacci sequence problem might be tricky at first, but just realize now that you're 
+calling two recursive calls in your recursive case.
+
+Noting what the recursive and base cases are where already given to you in the problem:
+```
+  Recursive case: fn = fn-1 + fn-2
+  Base case:      f1 = 1, f0 = 0
+```
+
+Note that we have two base cases here (1 and 0). There was also an example listing of the Fibonacci sequence:
+```
+  0, 1, 1, 2, 3, 5, 8, 13, ...
+```
+
+Where the two previous terms (`n-1` and `n-2`) give you the next term, `n`. If we set this up into a 
+recursive function, we just lay it out exactly as given:
+```C++
+  int fib(int n) {
+    if(n == 0) {       //one base case
+      return 0;
+    }
+    else if (n == 1) { //second base case
+      return 1;
+    }
+    else {             //recursive case
+      return fib(n-1) + fib(n-2);
+    }
+  }
+```
+
+The funky part about this solution is that there are two recursive calls in the recursive case. 
+
+A diagram of solving the 5th term of the Fibonacci sequence with this algorithm is [here](https://i.stack.imgur.com/59Rpw.png).
+The bottom terms (`f(1)` and `f(0)`) evaluate to the 5th term when you add them all up.
+
+Here is what I mentioned before as well:
+```
+  Looking at the bottom f1's and f0's of the image:
+    f(5) = f(1) + f(0) + f(1) + f(1) + f(0) + f(1) + f(0) + f(1)
+         = 1    + 0    + 1    + 1    + 0    + 1    + 0    + 1
+         = 5
+```
+
+For more info, check [this page](http://web.eecs.utk.edu/~cs102/lectures/recursion.html) out. It's the 
+same link as last session's notes. [This one](http://www.codeproject.com/Articles/21194/Iterative-vs-Recursive-Approaches) 
+is nice as well (also from last session's notes).
 
 ##### Arrow Operator
 You'll be using this a lot in CS 131, so if you don't know it now it's best to look at it from here first (or 
