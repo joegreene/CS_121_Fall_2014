@@ -34,6 +34,9 @@ Below is the worksheet solutions for this week.
 #### Questions
 Grab the questions from the worksheet document.
 
+__NOTE__: I know a lot of my solutions aren't necessarily the most "optimal" versions. I have them the way they're 
+typed solely for educational purposes (that is, so they're easy to understand and follow guidelines I have made already).
+
 ##### Problems
 1) In a way I wanted you to relate this back to the power point notes (e.g. the telephone factorial 
 slides), although it doesn't matter. Really, you should have just given an example of recursion you've 
@@ -47,11 +50,13 @@ The syntax is pretty much identical to C++, so don't worry that it mentions Java
 
 3) Answers below:
 
-i) Base case: Down to one (you can go up to n as well but down to one is easier)
+i) 
+
+   __Base case__: Down to one (you can go up to n as well but down to one is easier)
    
-   Recursive case: Add current position squared plus the next term squared.
+   __Recursive case__: Add current position squared plus the next term squared.
    
-   Error-Check: That the input is greater than 0 (and is an integer).
+   __Error-Check__: That the input is greater than 0 (and is an integer).
 
 ii) Iterative Solution:
 ```C++
@@ -117,11 +122,13 @@ then-on.
 
 4) Answers below:
 
-i) Base case: n == 0 OR n == 1 (where 1! and 0! are both 1)
+i) 
    
-   Recursive case: n times the next factorial
+   __Base case__: n == 0 and n == 1 (where 1! and 0! are both 1)
    
-   Error-Check: n is greater than 0 (and is an integer)
+   __Recursive case__: n times the next factorial
+   
+   __Error-Check__: n is greater than 0 (and is an integer)
 
 ii) Iterative Solution:
 ```C++
@@ -166,11 +173,13 @@ until its following call is resolved (e.g. you can't solve `fact(3)` without get
 
 5) Answers below:
 
-i) Base case: f1 == 1, f0 == 0
+i) 
 
-   Recursive case: Current term equals two previous terms
+   __Base case__: f1 == 1, f0 == 0
+
+   __Recursive case__: Current term equals two previous terms
    
-   Error-Check: n >= 0 (where n is an integer)
+   __Error-Check__: n >= 0 (where n is an integer)
 
 ii) Iterative Solution: 
 ```C++
