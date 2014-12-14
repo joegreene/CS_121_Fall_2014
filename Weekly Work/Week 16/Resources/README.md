@@ -79,7 +79,12 @@ iii) Recursive Solution:
     }
   }
 ```
+
 iv) Diagrams: TBD
+
+Iterative: 
+
+Recursive:
 
 
 4) Answers below:
@@ -122,14 +127,22 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: <TBD>
+iv) Diagrams: I didn't want to have to take photos of my work, so I found diagrams online that work.
 
+Iterative solution diagram found [here](http://www.avrams.ro/imgs/clip_image002_0004.jpg).
+
+Recursive diagram found [here](http://flylib.com/books/2/254/1/html/2/images/15fig02.jpg). 
+
+The main idea in the recursive solution is to understand that each function call doesn't get resolved 
+until its following call is resolved (e.g. you can't solve `fact(3)` without getting to `fact(2)` first).
 
 5) Answers below:
 
-i) Base case: f1 == f0 == 1
+i) Base case: f1 == 1, f0 == 0
+
    Recursive case: Current term equals two previous terms
-   Error-Check: n > 0 (where n is an integer)
+   
+   Error-Check: n >= 0 (where n is an integer)
 
 ii) Iterative Solution: TBD
 
@@ -152,8 +165,18 @@ iii) Recursive Solution:
   }
 ```
 
-iv) Diagrams: TBD
+iv) Diagrams: I didn't want to have to take photos of my work, so I found diagrams online that work.
 
+Iterative diagram: TBD
+
+Recursive one (except it's for F5) found 
+[here](http://www.computersciencesalaryrange.com/wp-content/uploads/2014/02/recursive-fibonacci.png). 
+If you want it for other Fibonacci values, just split it up like the tree diagram does (same idea).
+
+Note that, by the number of function calls, the recursive solution is much slower for bigger n-values 
+than the iterative one (and more prone to stack overflow errors). There's a way to fix this, which is 
+called [memoisation](http://www.cse.unsw.edu.au/~billw/dictionaries/prolog/memoisation.html), if you're 
+interested.
 
 -------------------------------------------------------------------------------
 
